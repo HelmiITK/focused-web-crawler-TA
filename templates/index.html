@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Pencarian Jurnal</title>
+</head>
+<body>
+    <h1>Hasil Pencarian Jurnal</h1>
+    <form action="/" method="get">
+        <input type="text" name="query" placeholder="Masukkan kata kunci" required>
+        <button type="submit">Cari</button>
+    </form>
+    <ul>
+        {% for journal in journals %}
+        <li>
+            <h3>{{ journal.title }}</h3>
+            <p><strong>Penulis:</strong> {{ journal.author }}</p>
+            <p><strong>Abstrak:</strong> {{ journal.abstract }}</p>
+            <hr>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
