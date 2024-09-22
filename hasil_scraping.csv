@@ -1,0 +1,21 @@
+Judul,Penulis,Abstrak
+Focused crawler for events,"MMG Farag, S Lee, EA Fox - International Journal on Digital Libraries, 2018 - Springer","… Section 6 presents an evaluation of our event model-based focused crawler and of the 
+baseline focused crawler. Finally, Sect. 7 concludes and discusses issues for future research. …"
+A focused crawler for Dark Web forums,"T Fu, A Abbasi, H Chen - Journal of the American Society for …, 2010 - Wiley Online Library","… A Dark Web forum focused crawler faces … crawler also must assess the merits of various 
+collection-update strategies. In this study, we propose the development of a focused crawler that …"
+A focused crawler based on naive bayes classifier,"W Wang, X Chen, Y Zou, H Wang… - 2010 Third International …, 2010 - ieeexplore.ieee.org","… A major problem of above focused crawlers is that it is difficult to learn that some sets … focused 
+crawler was proposed in this paper. A reinforcement learning was used to train the crawler …"
+An ontology-based focused crawler,"L Kozanidis - Natural Language and Information Systems: 13th …, 2008 - Springer","… novel approach for building a focused crawler. The goal of our crawler is to effectively identify 
+… set of training examples that the crawler will regularly consult in its subsequent web visits. …"
+[PDF][PDF] A novel approach to priority based focused crawler,"R Dixit, S Gupta, RS Rathore, S Gupta - International Journal of Computer …, 2015 - Citeseer","… Compared to the standard web search engines, focused crawlers produce good accuracy as 
+… another focused crawler is not being introduced, but another approach for focused crawling …"
+Twitterecho: a distributed focused crawler to support open research with twitter data,"M Bošnjak, E Oliveira, J Martins… - Proceedings of the 21st …, 2012 - dl.acm.org","… was to implement a Twitter crawler and making it available open… the crawler which allows 
+retrieval of Twitter data from a focused community of interest. The modular nature of our crawler …"
+An efficient adaptive focused crawler based on ontology learning,"C Su, Y Gao, J Yang, B Luo - Fifth International Conference on …, 2005 - ieeexplore.ieee.org","… This will have to be extended for the relevance measure of our focused crawler. An ontology 
+is an explicit specification of some topic. For our purposes, it is a formal and declarative …"
+An improved focused crawler based on semantic similarity vector space model,"Y Du, W Liu, X Lv, G Peng - Applied Soft Computing, 2015 - Elsevier","… The selection of URLs ensures that the crawler acquires more web pages that … focused 
+crawler itself can also obtain the seed URLs by providing topic keywords to the focused crawler […"
+Focused crawler optimization using genetic algorithm,"BW Yohanes, H Handoko… - … Electronics and Control), 2011 - telkomnika.uad.ac.id","… Focused crawler intends to explore the Web conform to a specific topic. This paper discusses 
+the problems caused by local searching algorithms. Crawler … empowered focused crawler …"
+Hawk: A focused crawler with content and link analysis,"X Chen, X Zhang - 2008 IEEE International Conference on e …, 2008 - ieeexplore.ieee.org","… Focused crawlers aim to search only the subset of the web related to a specific topic, and … 
+To address this problem we design a focused crawler (we call it HAWK) that not only uses …"
