@@ -28,8 +28,8 @@ if response.status_code == 200:
     journals = soup.find_all('div', class_='gs_r gs_or gs_scl')
 
     # Membuka file CSV untuk ditulis
-    with open('hasil_scraping.csv', mode='w', newline='', encoding='utf-8') as csv_file:
-        fieldnames = ['Judul', 'Penulis', 'Abstrak']
+    with open('tidak_relevan/hasil_scraping1.csv', mode='w', newline='', encoding='utf-8') as csv_file:
+        fieldnames = ['No', 'Judul', 'Penulis', 'Abstrak']
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
         
         # Menulis header ke file CSV
