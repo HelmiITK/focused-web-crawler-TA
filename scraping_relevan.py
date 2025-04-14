@@ -28,7 +28,7 @@ if response.status_code == 200:
     journals = soup.find_all('div', class_='gs_r gs_or gs_scl')
 
     # Menentukan folder untuk menyimpan file CSV
-    folder = 'relevan'
+    folder = 'results/relevan'
 
     # Mengecek nomor urut file terakhir di folder relevan
     existing_files = os.listdir(folder)
@@ -49,34 +49,22 @@ if response.status_code == 200:
         try:
             # Mengambil judul jurnal dari tag 'h3' dengan class 'gs_rt'
             title = journal.find('h3', class_='gs_rt').text.strip()
-
-            # # Daftar kata umum bahasa Indonesia (bisa ditambahkan sesuai kebutuhan)
-            # indonesian_words = [
-            #     'dan', 'atau', 'dengan', 'untuk', 'pada', 'oleh', 'di', 
-            #     'adalah', 'ini', 'yang', 'dalam', 'jurnal', 'penelitian', 
-            #     'studi', 'hasil', 'kajian', 'metode', 'analisis'
-            # ]
-            
-            # Mengecek apakah judul mengandung kata-kata bahasa Indonesia
-            # if any(word in title.lower() for word in indonesian_words):
-                # Mengambil nama penulis dari tag 'div' dengan class 'gs_a'
             author = journal.find('div', class_='gs_a').text.strip()
-
-                # Mengambil abstrak dari tag 'div' dengan class 'gs_rs'
+            # Mengambil abstrak dari tag 'div' dengan class 'gs_rs'
             abstract = journal.find('div', class_='gs_rs').text.strip()
 
-                # Mencetak hasil scraping
+            # Mencetak hasil scraping
             print(f"Judul: {title}")
             print(f"Penulis: {author}")
             print(f"Abstrak: {abstract}")
             print('-' * 100)
 
-                # Menanyakan apakah ingin menyimpan jurnal ini
+            # Menanyakan apakah ingin menyimpan jurnal ini
             save_option = input("Apakah Anda ingin menyimpan jurnal ini? (y/n)").lower()
 
             if save_option == 'y':
                     # Membuka file CSV untuk ditulis
-                    with open(f'relevan/hasil_scraping_{file_counter}.csv', mode='w', newline='', encoding='utf-8') as csv_file:
+                    with open(f'results/relevan/hasil_scraping_{file_counter}.csv', mode='w', newline='', encoding='utf-8') as csv_file:
                         fieldnames = ['Judul', 'Penulis', 'Abstrak']
                         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
                         
