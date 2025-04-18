@@ -121,52 +121,152 @@ Event Detection in Social Media,✅
 Context-aware Systems,✅
 Cross-lingual Information Retrieval,✅
 AI for Smart Agriculture,✅
-Software Defect Prediction,
-Image Captioning with AI,
-Real-time Object Tracking,
-Knowledge Distillation in Deep Learning,
-AI-powered Chatbots,
-Social Network Analysis,
-Fake News Detection,
-Deepfake Detection Systems,
-Video Analytics using AI,
-Cloud-native Application Design,
-Continual Learning in AI,
-Model Interpretability in Machine Learning,
-Large Language Models (LLMs),
-Automatic Speech Translation,
-Handwriting Recognition,
-AI in Autonomous Vehicles,
-Digital Forensics using AI,
-Adaptive User Interfaces,
-Blockchain for Supply Chain,
-Explainable Recommendation Systems,
-Computer Vision for Traffic Monitoring,
-Multimodal Learning Systems,
-Optical Character Recognition (OCR),
-Adversarial Attacks in Deep Learning,
-Cyber Threat Intelligence,
-AI for Disaster Response,
-Voice-based Biometric Authentication,
-AI for Mental Health Analysis,
-Intelligent Tutoring Systems,
-AI-based Code Generation,
-Ethical Hacking Automation,
-Smart Contract Analysis,
-Secure Multi-party Computation,
-Voice Cloning Technology,
-Data Imputation Techniques,
-Cloud Security using AI,
-AI in Smart Cities,
-Sentiment Analysis on Financial Data,
-Deep Learning for Intrusion Detection,
-Multilingual Machine Translation,
-Swarm Robotics,
-AI for Customer Behavior Prediction,
-Adaptive Learning Algorithms,
-AI for Waste Management,
-Intelligent Personal Assistants,
-AI in E-Government Systems,
-Real-time Translation Applications,
-Automatic Code Review Tools,
-AI for Fraud Detection in E-Commerce,
+Software Defect Prediction,✅
+Image Captioning with AI,✅
+Real-time Object Tracking,✅
+Knowledge Distillation in Deep Learning,✅
+AI-powered Chatbots,✅
+Social Network Analysis,✅
+Fake News Detection,✅
+Deepfake Detection Systems, ✅
+Video Analytics using AI,✅
+Cloud-native Application Design,✅
+Continual Learning in AI,✅
+Model Interpretability in Machine Learning,✅
+Large Language Models (LLMs),✅
+Automatic Speech Translation,✅
+Handwriting Recognition,✅
+AI in Autonomous Vehicles,✅
+Digital Forensics using AI,✅
+Adaptive User Interfaces,✅
+Blockchain for Supply Chain,✅
+Explainable Recommendation Systems,✅
+Computer Vision for Traffic Monitoring,✅
+Multimodal Learning Systems,✅
+Optical Character Recognition (OCR),✅
+Adversarial Attacks in Deep Learning,✅
+Cyber Threat Intelligence,✅
+AI for Disaster Response,✅
+Voice-based Biometric Authentication,✅
+AI for Mental Health Analysis,✅
+Intelligent Tutoring Systems,✅
+AI-based Code Generation,✅
+Ethical Hacking Automation,✅
+Smart Contract Analysis,✅
+Secure Multi-party Computation,✅
+Voice Cloning Technology,✅
+Data Imputation Techniques,✅
+Cloud Security using AI,✅
+AI in Smart Cities,✅
+Sentiment Analysis on Financial Data,✅
+Deep Learning for Intrusion Detection,✅
+Multilingual Machine Translation,✅
+Swarm Robotics,✅
+AI for Customer Behavior Prediction,✅
+Adaptive Learning Algorithms,✅
+AI for Waste Management,✅
+Intelligent Personal Assistants,✅
+AI in E-Government Systems,✅
+Real-time Translation Applications,✅
+Automatic Code Review Tools,✅
+AI for Fraud Detection in E-Commerce,✅
+AI dalam Manajemen Proyek,✅
+Data Augmentation Techniques,✅
+Deep Learning untuk Deteksi Penyakit✅
+NLP untuk Analisis Hukum,
+AI dalam Industri Musik,
+Predictive Maintenance menggunakan AI,
+Explainable Computer Visio,
+NLP untuk Bahasa Daerah,
+Emotion-Aware Chatbots,
+Deep Reinforcement Learning untuk Game,
+Intelligent Traffic Light Systems,
+AI dalam Sistem Perpustakaan Digital,
+Smart Farming dengan IoT dan AI,
+Deteksi Kecurangan pada Transaksi Digital,
+AI untuk Deteksi Kejadian Gempa,
+Augmented Analytics,
+Penggunaan AI dalam Diagnosis Otomatis,
+Adaptive Signal Processing,
+AI dalam Sistem Pemilu Elektronik,
+AI untuk Rekomendasi Produk Lokal,
+AI dalam Sistem Pengarsipan Pemerintah,
+Hybrid Recommender Systems,
+AI dalam Deteksi Kejenuhan Pengguna,
+Predictive Analytics untuk E-learning,
+Contextual Bandits dalam Rekomendasi,
+AI dalam Penyuntingan Video Otomatis,
+Content-aware Image Resizing,
+Deep Learning untuk Teks Multimodal,
+Chatbot untuk Layanan Kesehatan,
+AI dalam Manajemen Rumah Sakit,
+Multitask Learning Models,
+AI untuk Deteksi Polusi Udara,
+Knowledge Transfer dalam Federated Learning,
+AI dalam Sistem Transportasi Umum,
+AI dalam Platform Crowdsourcing,
+AI untuk Otomatisasi Email,
+AI dalam Manajemen Inventaris,
+Chatbot Edukasi Berbasis AI,
+AI untuk Penjadwalan Otomatis,
+AI dalam Klasifikasi Malware,
+Data Drift Detection,
+AI dalam Sistem Hukum dan Forensik,
+AI untuk Pemeliharaan Gedung Pintar,
+AI dalam Pengolahan Bahasa Isyarat,
+Deteksi Plagiarisme Berbasis AI,
+AI dalam Analisis Cuaca,
+AI untuk Deteksi Gangguan Kejiwaan,
+Conversational AI untuk Pendidikan,
+AI untuk Penilaian Esai Otomatis,
+AI dalam Penambangan Opini Publik,
+Deep Learning untuk Interpretasi Citra Medis,
+Adaptive Noise Cancellation,
+AI dalam Deteksi Radiasi Berbahaya,
+Rekomendasi Konten Edukatif,
+AI untuk Otomatisasi Tugas Kantor,
+AI dalam Deteksi Bot Media Sosial,
+Analisis Perilaku Digital Mahasiswa,
+Analisis Emosi pada Konten Video,
+AI untuk Desain Kurikulum Adaptif,
+AI dalam Pengawasan Kualitas Udara,
+AI untuk Optimasi Lalu Lintas Laut,
+Pengenalan Suara Anak dengan AI,
+Visual Question Answering,
+Deep Learning untuk Pengenalan Logo,
+AI untuk Manajemen Risiko Bisnis,
+Sistem Deteksi Kemacetan Berbasis AI,
+AI untuk Pendeteksian Kehadiran di Kelas,
+AI dalam Pengelolaan Arsip Digital,
+AI untuk Sistem Deteksi Pencurian Energi,
+AI dalam Diagnosa Tumbuh Kembang Anak,
+Real-time Sign Language Recognition,
+AI dalam Sistem Peringatan Dini Bencana,
+AI untuk Optimalisasi Panen Pertanian,
+AI dalam Analisis Harga Pasar,
+AI untuk Desain Material Pintar,
+Deteksi Spam Otomatis di Platform Edukasi,
+AI dalam Sistem Intervensi Sosial,
+AI untuk Analisis Mobilitas Penduduk,
+Analisis Trafik Jaringan Berbasis AI,
+AI dalam Sistem Penjaminan Mutu Akademik,
+Deep Learning untuk Penghitungan Objek,
+AI dalam Penyusunan Soal Otomatis,
+AI untuk Klasifikasi Jenis Tumbuhan,
+AI dalam Optimasi Rantai Pasok Lokal,
+AI untuk Prediksi Harga Komoditas,
+AI dalam Analisis Musik Tradisional,
+NLP untuk Deteksi Narasi Berita,
+AI untuk Validasi Dokumen Otomatis,
+AI dalam Analisis Psikometrik,
+AI untuk Digitalisasi Manuskrip Kuno,
+Machine Learning untuk Sistem Kepegawaian,
+AI dalam Perencanaan Smart Campus,
+AI untuk Deteksi Kelelahan Pengemudi,
+AI dalam Kontrol Lampu Penerangan Jalan,
+AI untuk Sistem Pemilahan Sampah Otomatis,
+Pengolahan Umpan Balik Mahasiswa dengan NLP,
+Deteksi Kebisingan dalam Audio Pembelajaran,
+Deteksi Gambar Berbasis Emosi,
+AI dalam Klasifikasi Jenis Gangguan Tidur,
+AI untuk Analisis Aktivitas Belajar Siswa,

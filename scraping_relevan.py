@@ -8,10 +8,11 @@ import os
 search_query = input("Masukkan kata kunci pencarian: ")
 
 # Mengubah kata kunci pencarian menjadi format URL-encoded
-encoded_query = urllib.parse.quote(search_query)
+encoded_query = urllib.parse.quote(search_query + " bahasa Indonesia")
 
 # Membuat URL untuk Google Scholar dengan query pencarian
 url = f'https://scholar.google.com/scholar?hl=id&q={encoded_query}'
+print(f"Query URL yang akan dikirim: {url}")
 
 # Mengirim permintaan HTTP GET ke URL
 response = requests.get(url)
@@ -54,6 +55,7 @@ if response.status_code == 200:
             abstract = journal.find('div', class_='gs_rs').text.strip()
 
             # Mencetak hasil scraping
+            print('-' * 100)
             print(f"Judul: {title}")
             print(f"Penulis: {author}")
             print(f"Abstrak: {abstract}")
