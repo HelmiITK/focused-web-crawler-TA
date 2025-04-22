@@ -22,7 +22,7 @@ for file in csv_files:
 combined_data = pd.concat(dataframes, ignore_index=True)
 
 # Menyimpan ke file CSV baru
-output_file = "combined_relevan/combined_results_5.csv"
+output_file = "combined_relevan/combined_results_6.csv"
 combined_data.to_csv(output_file, index=False)
 
 print(f"File berhasil digabungkan dan disimpan sebagai {output_file}")
