@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # Folder tempat file CSV berada
-folder_name = 'results/relevan'
+folder_name = 'results/unrelevan'
 
 # Membaca semua file CSV dalam folder
 csv_files = [os.path.join(folder_name, file) for file in os.listdir(folder_name) if file.endswith('.csv')]
@@ -22,7 +22,7 @@ for file in csv_files:
 combined_data = pd.concat(dataframes, ignore_index=True)
 
 # Menyimpan ke file CSV baru
-output_file = "combined_relevan/combined_results_6.csv"
+output_file = "combined/combined_unrelevan/combined_results.csv"
 combined_data.to_csv(output_file, index=False)
 
 print(f"File berhasil digabungkan dan disimpan sebagai {output_file}")
