@@ -8,7 +8,7 @@ import os
 search_query = input("Masukkan kata kunci pencarian: ")
 
 # Mengubah kata kunci pencarian menjadi format URL-encoded
-encoded_query = urllib.parse.quote(search_query + " bahasa Indonesia")
+encoded_query = urllib.parse.quote(search_query)
 
 # Membuat URL untuk Google Scholar dengan query pencarian
 url = f'https://scholar.google.com/scholar?hl=id&q={encoded_query}'
@@ -29,7 +29,7 @@ if response.status_code == 200:
     journals = soup.find_all('div', class_='gs_r gs_or gs_scl')
 
     # Menentukan folder untuk menyimpan file CSV
-    folder = 'results/tidak_relevan'
+    folder = 'results/unrelevan'
 
     # Mengecek nomor urut file terakhir di folder relevan
     existing_files = os.listdir(folder)
@@ -66,7 +66,7 @@ if response.status_code == 200:
 
             if save_option == 'y':
                     # Membuka file CSV untuk ditulis
-                    with open(f'results/tidak_relevan/hasil_scraping_{file_counter}.csv', mode='w', newline='', encoding='utf-8') as csv_file:
+                    with open(f'results/unrelevan/hasil_scraping_{file_counter}.csv', mode='w', newline='', encoding='utf-8') as csv_file:
                         fieldnames = ['Judul', 'Penulis', 'Abstrak']
                         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
                         
