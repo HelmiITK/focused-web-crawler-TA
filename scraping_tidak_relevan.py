@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 import urllib.parse
 import csv
 import os
+import time
+import random
 
 # Meminta input kata kunci dari pengguna
 search_query = input("Masukkan kata kunci pencarian: ")
@@ -14,8 +16,18 @@ encoded_query = urllib.parse.quote(search_query)
 url = f'https://scholar.google.com/scholar?hl=id&q={encoded_query}'
 print(f"Query URL yang akan dikirim: {url}")
 
+# Menambahkan header untuk menyamar sebagai browser
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+}
+
+# Menambahkan delay sebelum melakukan request
+sleep_time = random.uniform(10, 20)
+print(f"Menunggu {sleep_time:.2f} detik sebelum mengirim permintaan...")
+time.sleep(sleep_time)
+
 # Mengirim permintaan HTTP GET ke URL
-response = requests.get(url)
+response = requests.get(url, headers=headers)
 
 # Mengecek apakah request berhasil
 if response.status_code == 200:
@@ -83,8 +95,10 @@ if response.status_code == 200:
                     file_counter += 1
             else:
                     print("Jurnal dilewatkan.")
-            # else:
-            #     print(f"Judul tidak berbahasa Indonesia: {title}")
+
+            # Tambahkan jeda antar proses jurnal untuk keamanan ekstra
+            time.sleep(random.uniform(5, 10))
+            
         except AttributeError:
             print("Elemen tidak lengkap, melewatkan...")
 else:
