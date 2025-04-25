@@ -97,8 +97,8 @@ if response.status_code == 200:
                     print("Jurnal dilewatkan.")
 
             # Tambahkan jeda antar proses jurnal untuk keamanan ekstra
-            time.sleep(random.uniform(5, 10))
-            
+            # time.sleep(random.uniform(5, 10))
+
         except AttributeError:
             print("Elemen tidak lengkap, melewatkan...")
 else:
