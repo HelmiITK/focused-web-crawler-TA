@@ -2,7 +2,7 @@ import pandas as pd
 
 # Nama file CSV
 # file_path = "combined_result2.csv"
-file_path = "D:/Semester 8/TA/Dataset/scraping-with-beautifulsoup/combined/combined_unrelevan/combined_results_4.csv"
+file_path = "D:/Semester 8/TA/Dataset/scraping-with-beautifulsoup/combined/combined_unrelevan/combined_results_5.csv"
 
 # Membaca file CSV
 data = pd.read_csv(file_path)
