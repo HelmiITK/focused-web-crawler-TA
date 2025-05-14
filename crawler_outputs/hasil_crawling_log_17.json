@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Penerapan MetodeFocused Crawlerdan Algoritma Porter Stemmmer Pada Pencarian Lirik Lagu",
+    "link": "https://e-journal.sari-mutiara.ac.id/index.php/7/article/view/125",
+    "anchor_score": 0.6493
+  },
+  {
+    "id": 2,
+    "title": "Sistem Peringkas Berita Otomatis berbasis Text Mining menggunakan Generalized Vector Space Model: STudi Kasus Berita diambil dari media Massa Online",
+    "link": "http://ojs.jurnaltechne.org/index.php/techne/article/view/117",
+    "anchor_score": 0.5772
+  },
+  {
+    "id": 3,
+    "title": "Deteksi Plagiarisme pada DokumenJurnalMenggunakan Metode Cosine Similarity",
+    "link": "http://ejournal.unikama.ac.id/index.php/jst/article/view/2848",
+    "anchor_score": 0.5393
+  },
+  {
+    "id": 4,
+    "title": "Implementasi website berita online menggunakan metode crawling data dengan bahasa pemrograman Python",
+    "link": "https://jurnal.mdp.ac.id/index.php/jatisi/article/view/4902",
+    "anchor_score": 0.5218
+  },
+  {
+    "id": 5,
+    "title": "Kajian Literatur Penerapan Social Media Network Dan Information Security Intelligent Untuk Mengidentifikasi Potensi Radikalisasi Online",
+    "link": "https://ojs.unimal.ac.id/index.php/sisfo/article/view/6336",
+    "anchor_score": 0.45
+  },
+  {
+    "id": 6,
+    "title": "Aplikasi deteksi plagiarisme menggunakan metode cosine similarity",
+    "link": "http://etheses.uin-malang.ac.id/id/eprint/13894",
+    "anchor_score": 0.5323
+  },
+  {
+    "id": 7,
+    "title": "Pemanfaatan Latent Semantic Indexing untuk Mengukur Potensi KerjasamaJurnalIlmiah Lintas Universitas",
+    "link": "https://journal.maranatha.edu/index.php/jutisi/article/view/2894",
+    "anchor_score": 0.509
+  },
+  {
+    "id": 8,
+    "title": "Academicopter: Mesin Pencarian Meta Untuk Akademik Dengan Peringkasan Otomatis PdfJurnalIlmiah",
+    "link": "https://digilib.uns.ac.id/dokumen/detail/29320",
+    "anchor_score": 0.5263
+  },
+  {
+    "id": 9,
+    "title": "Peningkatan Urgensi Daerah Rawan Bencana melalui Analisis Geoparsing pada Berita Kebencanaan dengan Text Mining",
+    "link": "https://ojs.stmik-banjarbaru.ac.id/index.php/progresif/article/view/1295",
+    "anchor_score": 0.4765
+  }
+]

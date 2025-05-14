@@ -1,3 +1,0 @@
-Judul,Penulis,Abstrak
-Deteksi Aspek Review E-Commerce Menggunakan IndoBERT Embedding dan CNN,"S Imron, EI Setiawan, J Santoso - INSYST: Journal of Intelligent …, 2023 - jurnal.istts.ac.id","… Untuk itu merubah data menjadi tensor pada penelitian ini menggunakan model 
-indoBERT-base-p1 yang didapat dari library huggingface transformer [21] [22]. Untuk contoh BERT …"

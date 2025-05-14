@@ -1,0 +1,608 @@
+[
+  {
+    "id": 1,
+    "title": "Machine Learning: Teori, Studi Kasus dan Implementasi Menggunakan Python",
+    "link": "https://books.google.com/books?hl=id&lr=&id=JvBPEAAAQBAJ&oi=fnd&pg=PA1&dq=Machine+Learning+Untuk+Pemula&ots=j-0oKDxhdw&sig=fPf0VGMlkiJG8U6lVSm-5O8Bs1Q",
+    "anchor_score": 0.6768
+  },
+  {
+    "id": 2,
+    "title": "DeepLearningUntukPemulaJilid 1",
+    "link": "https://books.google.com/books?hl=id&lr=&id=uVvXEAAAQBAJ&oi=fnd&pg=PP1&dq=Machine+Learning+Untuk+Pemula&ots=lKOqIpnb6z&sig=z3BPjj30jKz5XoESABOuhr0Dd6o",
+    "anchor_score": 0.5354
+  },
+  {
+    "id": 3,
+    "title": "PengantarMachine Learning",
+    "link": "http://jurnal.mifandimandiri.com/index.php/penerbitmmd/article/view/38",
+    "anchor_score": 0.6638
+  },
+  {
+    "id": 4,
+    "title": "Radio transformer networks: Attention models forlearningto synchronize in wireless systems",
+    "link": "https://ieeexplore.ieee.org/abstract/document/7869126/",
+    "anchor_score": 0.4224
+  },
+  {
+    "id": 5,
+    "title": "Algoritma Klasifikasi untukPemulaSolusi Python dan RapidMiner",
+    "link": "https://books.google.com/books?hl=id&lr=&id=y84TEQAAQBAJ&oi=fnd&pg=PP1&dq=Machine+Learning+Untuk+Pemula&ots=qqx59pjLMr&sig=Efq2N5llXEW0Ly1MwOZoMgdvZiU",
+    "anchor_score": 0.5466
+  },
+  {
+    "id": 6,
+    "title": "A System to Track Fabricated Content in Social media usingMachine LearningApproach",
+    "link": "https://ieeexplore.ieee.org/abstract/document/10894876/",
+    "anchor_score": 0.4228
+  },
+  {
+    "id": 7,
+    "title": "Kegiatan Studi Independen Bersertifikat PengembangMachine LearningDan Front-End Web Di Pt Presentologics Dicoding Indonesia",
+    "link": "https://ejournal1.unud.ac.id/index.php/jupita/article/view/204",
+    "anchor_score": 0.5389
+  },
+  {
+    "id": 8,
+    "title": "Belajar Data Science: Text Mining UntukPemulaI",
+    "link": "https://books.google.com/books?hl=id&lr=&id=5CKlEAAAQBAJ&oi=fnd&pg=PA139&dq=Machine+Learning+Untuk+Pemula&ots=Mb00PyIAuS&sig=neg0EUs-tBzdbCxNEyUaypWU-t4",
+    "anchor_score": 0.6718
+  },
+  {
+    "id": 9,
+    "title": "Classification of High-Dimensionality Data UsingMachine LearningTechniques",
+    "link": "https://link.springer.com/chapter/10.1007/978-981-19-4863-3_22",
+    "anchor_score": 0.4099
+  },
+  {
+    "id": 10,
+    "title": "Tutorial PHPmachine learningmenggunakan regresi linear berganda pada aplikasi bank sampah istimewa versi 2.0 berbasis web",
+    "link": "https://books.google.com/books?hl=id&lr=&id=-df9DwAAQBAJ&oi=fnd&pg=PA2&dq=Machine+Learning+Untuk+Pemula&ots=aHTA7fT_na&sig=dt9exkbN900B-m5Oe-te52dRT6g",
+    "anchor_score": 0.4606
+  },
+  {
+    "id": 11,
+    "title": "EPCA—Enhanced Principal Component Analysis for Medical Data Dimensionality Reduction",
+    "link": "https://link.springer.com/10.1007/s42979-023-01677-5?fromPaywallRec=true",
+    "anchor_score": 0.3783
+  },
+  {
+    "id": 12,
+    "title": "Principal Components-Based Classification Using a Linear Discriminant Analyzer and Enhancement of its Prediction Accuracy",
+    "link": "https://link.springer.com/10.1007/978-3-031-70285-3_15?fromPaywallRec=true",
+    "anchor_score": 0.2603
+  },
+  {
+    "id": 13,
+    "title": "Analyzing the Impact of Principal Component Analysis on k-Nearest Neighbors and Naive Bayes Classification Algorithms",
+    "link": "https://link.springer.com/10.1007/978-3-031-48981-5_20?fromPaywallRec=true",
+    "anchor_score": 0.2885
+  },
+  {
+    "id": 14,
+    "title": "Analyzing the Impact of Principal Component Analysis on k-Nearest Neighbors and Naive Bayes Classification Algorithms",
+    "link": "https://link.springer.com/10.1007/978-3-031-48981-5_20?fromPaywallRec=true",
+    "anchor_score": 0.2885
+  },
+  {
+    "id": 15,
+    "title": "An Observation of Different Clustering Algorithms and Clustering Evaluation Criteria for a Feature Selection Based on Linear Discriminant Analysis",
+    "link": "https://link.springer.com/10.1007/978-981-19-2095-0_42?fromPaywallRec=true",
+    "anchor_score": 0.2785
+  },
+  {
+    "id": 16,
+    "title": "Discrimination via Principal Components",
+    "link": "https://link.springer.com/10.1007/978-3-031-65699-6_15?fromPaywallRec=true",
+    "anchor_score": 0.4423
+  },
+  {
+    "id": 17,
+    "title": "An effective clustering scheme for high-dimensional data",
+    "link": "https://link.springer.com/10.1007/s11042-023-17129-4?fromPaywallRec=true",
+    "anchor_score": 0.385
+  },
+  {
+    "id": 18,
+    "title": "A Comprehensive Review on Unsupervised Feature Selection Algorithms",
+    "link": "https://link.springer.com/10.1007/978-981-15-0633-8_24?fromPaywallRec=true",
+    "anchor_score": 0.344
+  },
+  {
+    "id": 19,
+    "title": "Implementation of FAST Clustering-Based Feature Subset Selection Algorithm for High-Dimensional Data",
+    "link": "https://link.springer.com/10.1007/978-981-10-0135-2_19?fromPaywallRec=true",
+    "anchor_score": 0.3619
+  },
+  {
+    "id": 20,
+    "title": "Principal Components-Based Classification Using a Linear Discriminant Analyzer and Enhancement of its Prediction Accuracy",
+    "link": "https://link.springer.com/10.1007/978-3-031-70285-3_15?fromPaywallRec=true",
+    "anchor_score": 0.2603
+  },
+  {
+    "id": 21,
+    "title": "An Observation of Different Clustering Algorithms and Clustering Evaluation Criteria for a Feature Selection Based on Linear Discriminant Analysis",
+    "link": "https://link.springer.com/10.1007/978-981-19-2095-0_42?fromPaywallRec=true",
+    "anchor_score": 0.2785
+  },
+  {
+    "id": 22,
+    "title": "Supervised feature selection using principal component analysis",
+    "link": "https://link.springer.com/10.1007/s10115-023-01993-5?fromPaywallRec=true",
+    "anchor_score": 0.3911
+  },
+  {
+    "id": 23,
+    "title": "A taxonomy of unsupervised feature selection methods including their pros, cons, and challenges",
+    "link": "https://link.springer.com/10.1007/s11227-024-06368-3?fromPaywallRec=true",
+    "anchor_score": 0.3047
+  },
+  {
+    "id": 24,
+    "title": "Feature Selection",
+    "link": "https://link.springer.com/10.1007/978-1-4899-7502-7_101-1?fromPaywallRec=true",
+    "anchor_score": 0.4706
+  },
+  {
+    "id": 25,
+    "title": "Why Feature Selection in Data Mining Is Prominent? A Survey",
+    "link": "https://link.springer.com/10.1007/978-3-030-24051-6_88?fromPaywallRec=true",
+    "anchor_score": 0.3637
+  },
+  {
+    "id": 26,
+    "title": "Feature Selection",
+    "link": "https://link.springer.com/10.1007/978-1-4899-7502-7_101-1?fromPaywallRec=true",
+    "anchor_score": 0.4706
+  },
+  {
+    "id": 27,
+    "title": "A review of unsupervised feature selection methods",
+    "link": "https://link.springer.com/10.1007/s10462-019-09682-y?fromPaywallRec=true",
+    "anchor_score": 0.4004
+  },
+  {
+    "id": 28,
+    "title": "Feature selection techniques for machine learning: a survey of more than two decades of research",
+    "link": "https://link.springer.com/10.1007/s10115-023-02010-5?fromPaywallRec=true",
+    "anchor_score": 0.4032
+  },
+  {
+    "id": 29,
+    "title": "A new feature subset selection using bottom-up clustering",
+    "link": "https://link.springer.com/10.1007/s10044-016-0565-8?fromPaywallRec=true",
+    "anchor_score": 0.3387
+  },
+  {
+    "id": 30,
+    "title": "A Feature Selection Approach Based on Information Theory for Classification Tasks",
+    "link": "https://link.springer.com/10.1007/978-3-319-68612-7_41?fromPaywallRec=true",
+    "anchor_score": 0.3302
+  },
+  {
+    "id": 31,
+    "title": "An Observation of Different Clustering Algorithms and Clustering Evaluation Criteria for a Feature Selection Based on Linear Discriminant Analysis",
+    "link": "https://link.springer.com/10.1007/978-981-19-2095-0_42?fromPaywallRec=true",
+    "anchor_score": 0.2785
+  },
+  {
+    "id": 32,
+    "title": "A taxonomy of unsupervised feature selection methods including their pros, cons, and challenges",
+    "link": "https://link.springer.com/10.1007/s11227-024-06368-3?fromPaywallRec=true",
+    "anchor_score": 0.3047
+  },
+  {
+    "id": 33,
+    "title": "Dimensionality Reduction: Is Feature Selection More Effective Than Random Selection?",
+    "link": "https://link.springer.com/10.1007/978-3-030-85030-2_10?fromPaywallRec=true",
+    "anchor_score": 0.3142
+  },
+  {
+    "id": 34,
+    "title": "Dimension Reduction",
+    "link": "https://link.springer.com/10.1007/978-3-031-75953-6_11?fromPaywallRec=true",
+    "anchor_score": 0.5515
+  },
+  {
+    "id": 35,
+    "title": "Implementation of FAST Clustering-Based Feature Subset Selection Algorithm for High-Dimensional Data",
+    "link": "https://link.springer.com/10.1007/978-981-10-0135-2_19?fromPaywallRec=true",
+    "anchor_score": 0.3619
+  },
+  {
+    "id": 36,
+    "title": "A New Proposed Feature Subset Selection Algorithm Based on Maximization of Gain Ratio",
+    "link": "https://link.springer.com/10.1007/978-3-319-27057-9_13?fromPaywallRec=true",
+    "anchor_score": 0.3364
+  },
+  {
+    "id": 37,
+    "title": "Feature Selection Based on Data Clustering",
+    "link": "https://link.springer.com/10.1007/978-3-319-22180-9_23?fromPaywallRec=true",
+    "anchor_score": 0.4249
+  },
+  {
+    "id": 38,
+    "title": "Attribute Selection Based on Correlation Analysis",
+    "link": "https://link.springer.com/10.1007/978-981-10-7200-0_5?fromPaywallRec=true",
+    "anchor_score": 0.3871
+  },
+  {
+    "id": 39,
+    "title": "Feature selection techniques for machine learning: a survey of more than two decades of research",
+    "link": "https://link.springer.com/10.1007/s10115-023-02010-5?fromPaywallRec=true",
+    "anchor_score": 0.4032
+  },
+  {
+    "id": 40,
+    "title": "A taxonomy of unsupervised feature selection methods including their pros, cons, and challenges",
+    "link": "https://link.springer.com/10.1007/s11227-024-06368-3?fromPaywallRec=true",
+    "anchor_score": 0.3047
+  },
+  {
+    "id": 41,
+    "title": "Classification of High-Dimensionality Data Using Machine Learning Techniques",
+    "link": "https://link.springer.com/10.1007/978-981-19-4863-3_22?fromPaywallRec=true",
+    "anchor_score": 0.435
+  },
+  {
+    "id": 42,
+    "title": "An Efficient Approach of Heart Disease Diagnosis Using Modified Principal Component Analysis (M-PCA)",
+    "link": "https://link.springer.com/10.1007/978-3-031-50993-3_31?fromPaywallRec=true",
+    "anchor_score": 0.2559
+  },
+  {
+    "id": 43,
+    "title": "Various dimension reduction techniques for high dimensional data analysis: a review",
+    "link": "https://link.springer.com/10.1007/s10462-020-09928-0?fromPaywallRec=true",
+    "anchor_score": 0.3856
+  },
+  {
+    "id": 44,
+    "title": "Cyber Security and Privacy in Communication Networks",
+    "link": "https://link.springer.com/collections/dgbbfeddad",
+    "anchor_score": 0.4365
+  },
+  {
+    "id": 45,
+    "title": "EPCA—Enhanced Principal Component Analysis for Medical Data Dimensionality Reduction",
+    "link": "https://link.springer.com/10.1007/s42979-023-01677-5?fromPaywallRec=true",
+    "anchor_score": 0.3783
+  },
+  {
+    "id": 46,
+    "title": "A Hybrid Cluster and PCA-Based Framework for Heart Disease Prediction Using Logistic Regression",
+    "link": "https://link.springer.com/10.1007/978-981-15-6014-9_14?fromPaywallRec=true",
+    "anchor_score": 0.3018
+  },
+  {
+    "id": 47,
+    "title": "Assessment of Machine Learning Classifiers for Heart Diseases Discovery",
+    "link": "https://link.springer.com/10.1007/978-3-030-95947-0_31?fromPaywallRec=true",
+    "anchor_score": 0.3913
+  },
+  {
+    "id": 48,
+    "title": "A Comparison of Machine Learning Approaches for Forecasting Heart Disease with PCA Dimensionality Reduction",
+    "link": "https://link.springer.com/10.1007/978-981-99-3982-4_29?fromPaywallRec=true",
+    "anchor_score": 0.3886
+  },
+  {
+    "id": 49,
+    "title": "A Pipelined Framework for the Prediction of Cardiac Disease with Dimensionality Reduction",
+    "link": "https://link.springer.com/10.1007/978-3-031-28183-9_6?fromPaywallRec=true",
+    "anchor_score": 0.3114
+  },
+  {
+    "id": 50,
+    "title": "An Efficient Classification Technique of Data Mining for Predicting Heart Disease",
+    "link": "https://link.springer.com/10.1007/978-981-33-4367-2_2?fromPaywallRec=true",
+    "anchor_score": 0.2872
+  },
+  {
+    "id": 51,
+    "title": "Building an Efficient Heart Disease Prediction System by using Clustering Techniques",
+    "link": "https://link.springer.com/10.1007/978-981-16-9885-9_6?fromPaywallRec=true",
+    "anchor_score": 0.3156
+  },
+  {
+    "id": 52,
+    "title": "A Literature Survey on Various Classifications of Data Mining for Predicting Heart Disease",
+    "link": "https://link.springer.com/10.1007/978-3-030-34515-0_76?fromPaywallRec=true",
+    "anchor_score": 0.252
+  },
+  {
+    "id": 53,
+    "title": "A Data-Driven Heart Disease Prediction Model ThroughK-Means Clustering-Based Anomaly Detection",
+    "link": "https://link.springer.com/10.1007/s42979-021-00518-7?fromPaywallRec=true",
+    "anchor_score": 0.271
+  },
+  {
+    "id": 54,
+    "title": "A Pipelined Framework for the Prediction of Cardiac Disease with Dimensionality Reduction",
+    "link": "https://link.springer.com/10.1007/978-3-031-23683-9_21?fromPaywallRec=true",
+    "anchor_score": 0.3114
+  },
+  {
+    "id": 55,
+    "title": "A Comparison of Machine Learning Approaches for Forecasting Heart Disease with PCA Dimensionality Reduction",
+    "link": "https://link.springer.com/10.1007/978-981-99-3982-4_29?fromPaywallRec=true",
+    "anchor_score": 0.3886
+  },
+  {
+    "id": 56,
+    "title": "Assessment of Machine Learning Classifiers for Heart Diseases Discovery",
+    "link": "https://link.springer.com/10.1007/978-3-030-95947-0_31?fromPaywallRec=true",
+    "anchor_score": 0.3913
+  },
+  {
+    "id": 57,
+    "title": "A Hybrid K-Means Algorithm Combining Preprocessing-Wise and Centroid Based-Criteria for High Dimension Datasets",
+    "link": "https://link.springer.com/10.1007/978-981-10-2772-7_11?fromPaywallRec=true",
+    "anchor_score": 0.3025
+  },
+  {
+    "id": 58,
+    "title": "An Improved K-means Clustering Algorithm Based on Distance Evaluation Function and Entropy",
+    "link": "https://link.springer.com/10.1007/978-3-319-98776-7_149?fromPaywallRec=true",
+    "anchor_score": 0.3117
+  },
+  {
+    "id": 59,
+    "title": "An Observation of Different Clustering Algorithms and Clustering Evaluation Criteria for a Feature Selection Based on Linear Discriminant Analysis",
+    "link": "https://link.springer.com/10.1007/978-981-19-2095-0_42?fromPaywallRec=true",
+    "anchor_score": 0.2785
+  },
+  {
+    "id": 60,
+    "title": "Investigation on Combined Impacts of Different Clustering Techniques and Enhanced K-means Algorithm",
+    "link": "https://link.springer.com/10.1007/978-3-031-75861-4_22?fromPaywallRec=true",
+    "anchor_score": 0.2862
+  },
+  {
+    "id": 61,
+    "title": "Sorted K-Means Towards the Enhancement of K-Means to Form Stable Clusters",
+    "link": "https://link.springer.com/10.1007/978-981-10-2750-5_50?fromPaywallRec=true",
+    "anchor_score": 0.2505
+  },
+  {
+    "id": 62,
+    "title": "A Novel on Automatic K Value for Efficiency Improvement of K-means Clustering",
+    "link": "https://link.springer.com/10.1007/978-981-10-5041-1_31?fromPaywallRec=true",
+    "anchor_score": 0.3239
+  },
+  {
+    "id": 63,
+    "title": "Sorted K-Means Towards the Enhancement of K-Means to Form Stable Clusters",
+    "link": "https://link.springer.com/10.1007/978-981-10-2750-5_50?fromPaywallRec=true",
+    "anchor_score": 0.2505
+  },
+  {
+    "id": 64,
+    "title": "Improved K-Means Algorithm for Optimizing Initial Centers",
+    "link": "https://link.springer.com/10.1007/978-981-15-3863-6_24?fromPaywallRec=true",
+    "anchor_score": 0.3649
+  },
+  {
+    "id": 65,
+    "title": "A Hybrid K-Means Algorithm Combining Preprocessing-Wise and Centroid Based-Criteria for High Dimension Datasets",
+    "link": "https://link.springer.com/10.1007/978-981-10-2772-7_11?fromPaywallRec=true",
+    "anchor_score": 0.3025
+  },
+  {
+    "id": 66,
+    "title": "Review of Existing Research Contribution Toward Dimensional Reduction Methods in High-Dimensional Data",
+    "link": "https://link.springer.com/10.1007/978-981-10-8681-6_37?fromPaywallRec=true",
+    "anchor_score": 0.3729
+  },
+  {
+    "id": 67,
+    "title": "Review on Dimensionality Reduction Techniques",
+    "link": "https://link.springer.com/10.1007/978-3-030-43192-1_41?fromPaywallRec=true",
+    "anchor_score": 0.5086
+  },
+  {
+    "id": 68,
+    "title": "Performance Analysis of Dimensionality Reduction Techniques: A Comprehensive Review",
+    "link": "https://link.springer.com/10.1007/978-981-16-0942-8_60?fromPaywallRec=true",
+    "anchor_score": 0.352
+  },
+  {
+    "id": 69,
+    "title": "Review on Dimensionality Reduction Techniques",
+    "link": "https://link.springer.com/10.1007/978-3-030-43192-1_41?fromPaywallRec=true",
+    "anchor_score": 0.5086
+  },
+  {
+    "id": 70,
+    "title": "An Experimental Study of Dimensionality Reduction Methods",
+    "link": "https://link.springer.com/10.1007/978-3-319-67190-1_14?fromPaywallRec=true",
+    "anchor_score": 0.4317
+  },
+  {
+    "id": 71,
+    "title": "Review of Existing Research Contribution Toward Dimensional Reduction Methods in High-Dimensional Data",
+    "link": "https://link.springer.com/10.1007/978-981-10-8681-6_37?fromPaywallRec=true",
+    "anchor_score": 0.3729
+  },
+  {
+    "id": 72,
+    "title": "Performance Analysis of Dimensionality Reduction Techniques: A Comprehensive Review",
+    "link": "https://link.springer.com/10.1007/978-981-16-0942-8_60?fromPaywallRec=true",
+    "anchor_score": 0.352
+  },
+  {
+    "id": 73,
+    "title": "Review on Dimensionality Reduction Techniques",
+    "link": "https://link.springer.com/10.1007/978-3-030-43192-1_41?fromPaywallRec=true",
+    "anchor_score": 0.5086
+  },
+  {
+    "id": 74,
+    "title": "Various dimension reduction techniques for high dimensional data analysis: a review",
+    "link": "https://link.springer.com/10.1007/s10462-020-09928-0?fromPaywallRec=true",
+    "anchor_score": 0.3856
+  },
+  {
+    "id": 75,
+    "title": "A Pipelined Framework for the Prediction of Cardiac Disease with Dimensionality Reduction",
+    "link": "https://link.springer.com/10.1007/978-3-031-28183-9_6?fromPaywallRec=true",
+    "anchor_score": 0.3114
+  },
+  {
+    "id": 76,
+    "title": "A Pipelined Framework for the Prediction of Cardiac Disease with Dimensionality Reduction",
+    "link": "https://link.springer.com/10.1007/978-3-031-23683-9_21?fromPaywallRec=true",
+    "anchor_score": 0.3114
+  },
+  {
+    "id": 77,
+    "title": "Multiclass Prediction of Heart Disease Patients Using Big Data Analytics",
+    "link": "https://link.springer.com/10.1007/978-981-19-5154-1_11?fromPaywallRec=true",
+    "anchor_score": 0.2804
+  },
+  {
+    "id": 78,
+    "title": "A Comprehensive Review on Unsupervised Feature Selection Algorithms",
+    "link": "https://link.springer.com/10.1007/978-981-15-0633-8_24?fromPaywallRec=true",
+    "anchor_score": 0.344
+  },
+  {
+    "id": 79,
+    "title": "Principal Components-Based Classification Using a Linear Discriminant Analyzer and Enhancement of its Prediction Accuracy",
+    "link": "https://link.springer.com/10.1007/978-3-031-70285-3_15?fromPaywallRec=true",
+    "anchor_score": 0.2603
+  },
+  {
+    "id": 80,
+    "title": "Correlation Scaled Principal Component Regression",
+    "link": "https://link.springer.com/10.1007/978-3-319-76348-4_34?fromPaywallRec=true",
+    "anchor_score": 0.3413
+  },
+  {
+    "id": 81,
+    "title": "Correlation and Regression Techniques",
+    "link": "https://link.springer.com/10.1007/978-981-13-3429-0_7?fromPaywallRec=true",
+    "anchor_score": 0.3828
+  },
+  {
+    "id": 82,
+    "title": "Factor Analysis Regression for Predictive Modeling with High-Dimensional Data",
+    "link": "https://link.springer.com/10.1007/s40953-022-00322-x?fromPaywallRec=true",
+    "anchor_score": 0.301
+  },
+  {
+    "id": 83,
+    "title": "Simultaneous prediction using target function based on principal components estimator with correlated errors",
+    "link": "https://link.springer.com/10.1007/s00362-022-01340-w?fromPaywallRec=true",
+    "anchor_score": 0.2801
+  },
+  {
+    "id": 84,
+    "title": "PCovR2: A flexible principal covariates regression approach to parsimoniously handle multiple criterion variables",
+    "link": "https://link.springer.com/10.3758/s13428-020-01508-y?fromPaywallRec=true",
+    "anchor_score": 0.3189
+  },
+  {
+    "id": 85,
+    "title": "Iterative Stochastic Restricted\\(r-k\\)Class Estimator in Generalized Linear Models: Application on Logistic Regression",
+    "link": "https://link.springer.com/10.1007/s40995-024-01724-7?fromPaywallRec=true",
+    "anchor_score": 0.3042
+  },
+  {
+    "id": 86,
+    "title": "Correlation Scaled Principal Component Regression",
+    "link": "https://link.springer.com/10.1007/978-3-319-76348-4_34?fromPaywallRec=true",
+    "anchor_score": 0.3413
+  },
+  {
+    "id": 87,
+    "title": "Hierarchical disjoint principal component analysis",
+    "link": "https://link.springer.com/10.1007/s10182-022-00458-4?fromPaywallRec=true",
+    "anchor_score": 0.4045
+  },
+  {
+    "id": 88,
+    "title": "Statistical inference and large-scale multiple testing for high-dimensional regression models",
+    "link": "https://link.springer.com/10.1007/s11749-023-00870-1?fromPaywallRec=true",
+    "anchor_score": 0.3308
+  },
+  {
+    "id": 89,
+    "title": "Principal Component Analysis",
+    "link": "https://link.springer.com/10.1007/978-3-319-68253-2_6?fromPaywallRec=true",
+    "anchor_score": 0.5156
+  },
+  {
+    "id": 90,
+    "title": "Correlation and Simple Linear Regression",
+    "link": "https://link.springer.com/10.1007/978-981-99-7390-3_11?fromPaywallRec=true",
+    "anchor_score": 0.3993
+  },
+  {
+    "id": 91,
+    "title": "Regression and Correlation Analysis",
+    "link": "https://link.springer.com/10.1057/978-1-349-95189-5_1873?fromPaywallRec=true",
+    "anchor_score": 0.3706
+  },
+  {
+    "id": 92,
+    "title": "Multiple Linear Regression Analysis",
+    "link": "https://link.springer.com/10.1007/978-981-99-7390-3_12?fromPaywallRec=true",
+    "anchor_score": 0.4885
+  },
+  {
+    "id": 93,
+    "title": "Diagnosis of Heart Disease Using Machine Learning Methods",
+    "link": "https://link.springer.com/10.1007/978-981-16-0866-7_6?fromPaywallRec=true",
+    "anchor_score": 0.4624
+  },
+  {
+    "id": 94,
+    "title": "Predictive Analytics for Cardiovascular Disease Diagnosis Using Machine Learning Techniques",
+    "link": "https://link.springer.com/10.1007/978-981-15-3383-9_45?fromPaywallRec=true",
+    "anchor_score": 0.3957
+  },
+  {
+    "id": 95,
+    "title": "Performance Analysis of Classification Methods in the Diagnosis of Heart Disease",
+    "link": "https://link.springer.com/10.1007/978-981-15-7130-5_58?fromPaywallRec=true",
+    "anchor_score": 0.2813
+  },
+  {
+    "id": 96,
+    "title": "Heart disease classification using data mining tools and machine learning techniques",
+    "link": "https://link.springer.com/10.1007/s12553-020-00438-1?fromPaywallRec=true",
+    "anchor_score": 0.4154
+  },
+  {
+    "id": 97,
+    "title": "Improve the Accuracy of Heart Disease Predictions Using Machine Learning and Feature Selection Techniques",
+    "link": "https://link.springer.com/10.1007/978-981-15-6318-8_19?fromPaywallRec=true",
+    "anchor_score": 0.3429
+  },
+  {
+    "id": 98,
+    "title": "Comparative Analysis of Heart Disease Prediction Using Machine Learning Algorithms",
+    "link": "https://link.springer.com/10.1007/978-981-99-1620-7_23?fromPaywallRec=true",
+    "anchor_score": 0.4044
+  },
+  {
+    "id": 99,
+    "title": "Classification of Cardiovascular Disease Information System Using Machine Learning Approaches",
+    "link": "https://link.springer.com/10.1007/978-981-99-8853-2_13?fromPaywallRec=true",
+    "anchor_score": 0.3761
+  },
+  {
+    "id": 100,
+    "title": "Detection of Heart Disease Using Machine Learning",
+    "link": "https://link.springer.com/10.1007/978-981-97-2508-3_12?fromPaywallRec=true",
+    "anchor_score": 0.4679
+  },
+  {
+    "id": 101,
+    "title": "Heart disease classification using data mining tools and machine learning techniques",
+    "link": "https://link.springer.com/10.1007/s12553-020-00438-1?fromPaywallRec=true",
+    "anchor_score": 0.4154
+  }
+]
