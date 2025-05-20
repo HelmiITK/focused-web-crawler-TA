@@ -8,8 +8,8 @@ import seaborn as sns
 import joblib
 
 # Load data
-X = np.load('pre_processing/embedding/combined_embedding.npy')
-y = pd.read_csv('pre_processing/embedding/combined_label.csv').values.ravel()
+X = np.load('D:\\Semester 8\\TA\\focused-web-crawler\\2_Preprocessing\\embedding\\combined_embedding.npy')
+y = pd.read_csv('D:\\Semester 8\TA\\focused-web-crawler\\2_Preprocessing\\embedding\\combined_label.csv').values.ravel()
 
 # Split dan train
 X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, test_size=0.2, random_state=42)

@@ -1,0 +1,367 @@
+ <!DOCTYPE html>
+
+<html lang="en-US" xml:lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
+		Pengembangan Sistem Identifikasi Fakta Dan Tidak Fakta Berita di Media Informasi Berbahasa Indonesia
+							| Prosiding TAU SNARS-TEK Seminar Nasional Rekayasa dan Teknologi
+			</title>
+<link href="https://www.jurnal.tau.ac.id/public/journals/4/favicon_en_US.png" rel="icon"/>
+<meta content="Open Journal Systems 3.2.1.4" name="generator"/>
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Muh Maulana Stiawan" name="DC.Creator.PersonalName">
+<meta content="Rinto Hidayat" name="DC.Creator.PersonalName">
+<meta content="2020-01-20" name="DC.Date.created" scheme="ISO8601">
+<meta content="2020-01-20" name="DC.Date.dateSubmitted" scheme="ISO8601"/>
+<meta content="2020-01-22" name="DC.Date.issued" scheme="ISO8601"/>
+<meta content="2020-01-22" name="DC.Date.modified" scheme="ISO8601"/>
+<meta content="Media informasi dapat kita temukan dalam bentuk media elektronik atau media cetak. Media sangat memudahkan masyarakat untuk mendapatkan informasi dan memiliki sebuah kerentanan dalam memahaminya jika tidak bijaksana. Oleh sebab itu menjadi salah satu point penting dalam menilai tingkat kebeneran sebuah berita yang beredar di media elektronik seperti website berita dan media social. Untuk mengatasi hal tersebut peneliti bertujuan mambantu pengguna dalam mendeteksi nilai propabilitas dari sebuah berita. Berita akan diklasifikasikan menjadi dua yaitu: fakta dan tidak fakta. Dataset diambil dari beberapa website berita yang beredar di internet, lalu di tag fakta dan tidak fakta. Dataset diproses dengan text preprocessing lalu dibuat model machine learning dengan algoritma Support Vektor Machine untuk menghitung nilai probabilitas sebuah berita tersebut" name="DC.Description" xml:lang="en"/>
+<meta content="application/pdf" name="DC.Format" scheme="IMT"/>
+<meta content="95" name="DC.Identifier"/>
+<meta content="34 - 39" name="DC.Identifier.pageNumber"/>
+<meta content="https://www.jurnal.tau.ac.id/index.php/snartek/article/view/95" name="DC.Identifier.URI"/>
+<meta content="en" name="DC.Language" scheme="ISO639-1"/>
+<meta content="Copyright (c) 2019 Prosiding TAU SNAR-TEK Seminar Nasional Rekayasa dan Teknologi" name="DC.Rights"/>
+<meta content="" name="DC.Rights"/>
+<meta content="Prosiding TAU SNARS-TEK Seminar Nasional Rekayasa dan Teknologi" name="DC.Source"/>
+<meta content="2715-6982" name="DC.Source.ISSN"/>
+<meta content="1" name="DC.Source.Issue"/>
+<meta content="1" name="DC.Source.Volume"/>
+<meta content="https://www.jurnal.tau.ac.id/index.php/snartek" name="DC.Source.URI"/>
+<meta content="Machine Learning" name="DC.Subject" xml:lang="en"/>
+<meta content="Pengembangan Sistem Identifikasi Fakta Dan Tidak Fakta Berita di Media Informasi Berbahasa Indonesia" name="DC.Title"/>
+<meta content="Text.Serial.Journal" name="DC.Type"/>
+<meta content="Articles" name="DC.Type.articleType"/>
+<meta content="1.1" name="gs_meta_revision"/>
+<meta content="Prosiding TAU SNARS-TEK Seminar Nasional Rekayasa dan Teknologi" name="citation_journal_title"/>
+<meta content="snarstek" name="citation_journal_abbrev"/>
+<meta content="2715-6982" name="citation_issn"/>
+<meta content="Muh Maulana Stiawan" name="citation_author"/>
+<meta content="Universitas Tanri Abeng" name="citation_author_institution"/>
+<meta content="Rinto Hidayat" name="citation_author"/>
+<meta content="Universitas Tanri Abeng" name="citation_author_institution"/>
+<meta content="Pengembangan Sistem Identifikasi Fakta Dan Tidak Fakta Berita di Media Informasi Berbahasa Indonesia" name="citation_title"/>
+<meta content="en" name="citation_language"/>
+<meta content="2019" name="citation_date"/>
+<meta content="1" name="citation_volume"/>
+<meta content="1" name="citation_issue"/>
+<meta content="34" name="citation_firstpage"/>
+<meta content="39" name="citation_lastpage"/>
+<meta content="https://www.jurnal.tau.ac.id/index.php/snartek/article/view/95" name="citation_abstract_html_url"/>
+<meta content="Berita" name="citation_keywords" xml:lang="en"/>
+<meta content="Fakta" name="citation_keywords" xml:lang="en"/>
+<meta content="Support Vektor Machine" name="citation_keywords" xml:lang="en"/>
+<meta content="Machine Learning" name="citation_keywords" xml:lang="en"/>
+<meta content="https://www.jurnal.tau.ac.id/index.php/snartek/article/download/95/63" name="citation_pdf_url"/>
+<link href="https://www.jurnal.tau.ac.id/index.php/snartek/$$$call$$$/page/page/css?name=stylesheet" rel="stylesheet" type="text/css"/><link href="//fonts.googleapis.com/css?family=Lato:400,400i,900,900i" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css?v=3.2.1.4" rel="stylesheet" type="text/css"/>
+</meta></meta></meta></link></head>
+<body class="pkp_page_article pkp_op_view has_site_logo" dir="ltr">
+<div class="pkp_structure_page">
+<header class="pkp_structure_head" id="headerNavigationContainer" role="banner">
+<nav aria-label="Jump to content links" class="cmp_skip_to_content">
+<a href="#pkp_content_main">Skip to main content</a>
+<a href="#siteNav">Skip to main navigation menu</a>
+<a href="#pkp_content_footer">Skip to site footer</a>
+</nav>
+<div class="pkp_head_wrapper">
+<div class="pkp_site_name_wrapper">
+<button class="pkp_site_nav_toggle">
+<span>Open Menu</span>
+</button>
+<div class="pkp_site_name">
+<a class="is_img" href="						https://www.jurnal.tau.ac.id/index.php/snartek/index
+					">
+<img height="202" src="https://www.jurnal.tau.ac.id/public/journals/4/pageHeaderLogoImage_en_US.png" width="1628"/>
+</a>
+</div>
+</div>
+<nav aria-label="Site Navigation" class="pkp_site_nav_menu">
+<a id="siteNav"></a>
+<div class="pkp_navigation_primary_row">
+<div class="pkp_navigation_primary_wrapper">
+<ul class="pkp_navigation_primary pkp_nav_list" id="navigationPrimary">
+<li class="">
+<a href="https://www.jurnal.tau.ac.id/index.php/snartek/issue/current">
+					Current
+				</a>
+</li>
+<li class="">
+<a href="https://www.jurnal.tau.ac.id/index.php/snartek/issue/archive">
+					Archives
+				</a>
+</li>
+<li class="">
+<a href="https://www.jurnal.tau.ac.id/index.php/snartek/announcement">
+					Announcements
+				</a>
+</li>
+<li class="">
+<a href="https://www.jurnal.tau.ac.id/index.php/snartek/about">
+					About
+				</a>
+<ul>
+<li class="">
+<a href="https://www.jurnal.tau.ac.id/index.php/snartek/about">
+										About the Journal
+									</a>
+</li>
+<li class="">
+<a href="https://www.jurnal.tau.ac.id/index.php/snartek/about/submissions">
+										Submissions
+									</a>
+</li>
+<li class="">
+<a href="https://www.jurnal.tau.ac.id/index.php/snartek/about/editorialTeam">
+										Editorial Team
+									</a>
+</li>
+<li class="">
+<a href="https://www.jurnal.tau.ac.id/index.php/snartek/about/contact">
+										Contact
+									</a>
+</li>
+</ul>
+</li>
+</ul>
+<form action="https://www.jurnal.tau.ac.id/index.php/snartek/search/search" aria-label="Article Search" class="pkp_search pkp_search_desktop" method="get" role="search">
+<input name="csrfToken" type="hidden" value="9bde67e5e849421c0f7bf6de7aa9a391"/>
+<input aria-label="Search Query" name="query" type="text" value=""/>
+<button type="submit">
+			Search
+		</button>
+<div aria-hidden="true" class="search_controls">
+<a aria-hidden="true" class="headerSearchPrompt search_prompt" href="https://www.jurnal.tau.ac.id/index.php/snartek/search/search">
+				Search
+			</a>
+<a aria-hidden="true" class="search_cancel headerSearchCancel" href="#"></a>
+<span aria-hidden="true" class="search_loading"></span>
+</div>
+</form>
+</div>
+</div>
+<div class="pkp_navigation_user_wrapper" id="navigationUserWrapper">
+<ul class="pkp_navigation_user pkp_nav_list" id="navigationUser">
+<li class="profile">
+<a href="https://jurnal.tau.ac.id/index.php">
+					Home
+				</a>
+</li>
+<li class="profile">
+<a href="https://www.jurnal.tau.ac.id/index.php/snartek/user/register">
+					Register
+				</a>
+</li>
+<li class="profile">
+<a href="https://www.jurnal.tau.ac.id/index.php/snartek/login">
+					Login
+				</a>
+</li>
+</ul>
+</div>
+<form action="https://www.jurnal.tau.ac.id/index.php/snartek/search/search" aria-label="Article Search" class="pkp_search pkp_search_mobile" method="get" role="search">
+<input name="csrfToken" type="hidden" value="9bde67e5e849421c0f7bf6de7aa9a391"/>
+<input aria-label="Search Query" name="query" type="text" value=""/>
+<button type="submit">
+			Search
+		</button>
+<div aria-hidden="true" class="search_controls">
+<a aria-hidden="true" class="headerSearchPrompt search_prompt" href="https://www.jurnal.tau.ac.id/index.php/snartek/search/search">
+				Search
+			</a>
+<a aria-hidden="true" class="search_cancel headerSearchCancel" href="#"></a>
+<span aria-hidden="true" class="search_loading"></span>
+</div>
+</form>
+</nav>
+</div><!-- .pkp_head_wrapper -->
+</header><!-- .pkp_structure_head -->
+<div class="pkp_structure_content has_sidebar">
+<div class="pkp_structure_main" role="main">
+<a id="pkp_content_main"></a>
+<div class="page page_article">
+<nav aria-label="You are here:" class="cmp_breadcrumbs" role="navigation">
+<ol>
+<li>
+<a href="https://www.jurnal.tau.ac.id/index.php/snartek/index">
+				Home
+			</a>
+<span class="separator">/</span>
+</li>
+<li>
+<a href="https://www.jurnal.tau.ac.id/index.php/snartek/issue/archive">
+				Archives
+			</a>
+<span class="separator">/</span>
+</li>
+<li>
+<a href="https://www.jurnal.tau.ac.id/index.php/snartek/issue/view/11">
+					Vol. 1 No. 1 (2019): Prosiding TAU SNAR-TEK Seminar Nasional Rekayasa dan Teknologi 2019
+				</a>
+<span class="separator">/</span>
+</li>
+<li aria-current="page" class="current">
+<span aria-current="page">
+									Articles
+							</span>
+</li>
+</ol>
+</nav>
+<article class="obj_article_details">
+<h1 class="page_title">
+		Pengembangan Sistem Identifikasi Fakta Dan Tidak Fakta Berita di Media Informasi Berbahasa Indonesia
+	</h1>
+<div class="row">
+<div class="main_entry">
+<section class="item authors">
+<h2 class="pkp_screen_reader">Authors</h2>
+<ul class="authors">
+<li>
+<span class="name">
+								Muh Maulana Stiawan
+							</span>
+<span class="affiliation">
+									Universitas Tanri Abeng
+																	</span>
+</li>
+<li>
+<span class="name">
+								Rinto Hidayat
+							</span>
+<span class="affiliation">
+									Universitas Tanri Abeng
+																	</span>
+</li>
+</ul>
+</section>
+<section class="item keywords">
+<h2 class="label">
+										Keywords:
+				</h2>
+<span class="value">
+											Berita, 											Fakta, 											Support Vektor Machine, 											Machine Learning									</span>
+</section>
+<section class="item abstract">
+<h2 class="label">Abstract</h2>
+<p>Media informasi dapat kita temukan dalam bentuk media elektronik atau media cetak. Media sangat memudahkan masyarakat untuk mendapatkan informasi dan memiliki sebuah kerentanan dalam memahaminya jika tidak bijaksana. Oleh sebab itu menjadi salah satu point penting dalam menilai tingkat kebeneran sebuah berita yang beredar di media elektronik seperti website berita dan media social. Untuk mengatasi hal tersebut peneliti bertujuan mambantu pengguna dalam mendeteksi nilai propabilitas dari sebuah berita. Berita akan diklasifikasikan menjadi dua yaitu: fakta dan tidak fakta. Dataset diambil dari beberapa website berita yang beredar di internet, lalu di tag fakta dan tidak fakta. Dataset diproses dengan text preprocessing lalu dibuat model machine learning dengan algoritma Support Vektor Machine untuk menghitung nilai probabilitas sebuah berita tersebut</p>
+</section>
+</div><!-- .main_entry -->
+<div class="entry_details">
+<div class="item cover_image">
+<div class="sub_item">
+<a href="https://www.jurnal.tau.ac.id/index.php/snartek/issue/view/11">
+<img alt="" src="https://www.jurnal.tau.ac.id/public/journals/4/cover_issue_11_en_US.png"/>
+</a>
+</div>
+</div>
+<div class="item galleys">
+<h2 class="pkp_screen_reader">
+						Downloads
+					</h2>
+<ul class="value galleys_links">
+<li>
+<a class="obj_galley_link pdf" href="https://www.jurnal.tau.ac.id/index.php/snartek/article/view/95/63">
+
+		
+	PDF
+
+	</a>
+</li>
+</ul>
+</div>
+<div class="item published">
+<section class="sub_item">
+<h2 class="label">
+						Published
+					</h2>
+<div class="value">
+<span>2020-01-20</span>
+</div>
+</section>
+</div>
+<div class="item issue">
+<section class="sub_item">
+<h2 class="label">
+								Issue
+							</h2>
+<div class="value">
+<a class="title" href="https://www.jurnal.tau.ac.id/index.php/snartek/issue/view/11">
+									Vol. 1 No. 1 (2019): Prosiding TAU SNAR-TEK Seminar Nasional Rekayasa dan Teknologi 2019
+								</a>
+</div>
+</section>
+<section class="sub_item">
+<h2 class="label">
+								Section
+							</h2>
+<div class="value">
+								Articles
+							</div>
+</section>
+</div>
+</div><!-- .entry_details -->
+</div><!-- .row -->
+</article>
+</div><!-- .page -->
+</div><!-- pkp_structure_main -->
+<div aria-label="Sidebar" class="pkp_structure_sidebar left" role="complementary">
+<div class="pkp_block block_custom" id="customblock-ISSN">
+<div class="content">
+<p>E-ISSN</p>
+<p><img height="132" src="/public/site/images/ojsadmin/ISSN_digital_snartek.png" width="190"/></p>
+</div>
+</div>
+<div class="pkp_block block_make_submission">
+<h2 class="pkp_screen_reader">
+		Make a Submission
+	</h2>
+<div class="content">
+<a class="block_make_submission_link" href="https://www.jurnal.tau.ac.id/index.php/snartek/about/submissions">
+			Make a Submission
+		</a>
+</div>
+</div>
+<div class="pkp_block block_language">
+<h2 class="title">
+		Language
+	</h2>
+<div class="content">
+<ul>
+<li class="locale_id_ID" lang="id-ID">
+<a href="https://www.jurnal.tau.ac.id/index.php/snartek/user/setLocale/id_ID?source=%2Findex.php%2Fsnartek%2Farticle%2Fview%2F95">
+						Bahasa Indonesia
+					</a>
+</li>
+<li class="locale_en_US current" lang="en-US">
+<a href="https://www.jurnal.tau.ac.id/index.php/snartek/user/setLocale/en_US?source=%2Findex.php%2Fsnartek%2Farticle%2Fview%2F95">
+						English
+					</a>
+</li>
+</ul>
+</div>
+</div><!-- .block_language -->
+</div><!-- pkp_sidebar.left -->
+</div><!-- pkp_structure_content -->
+<div class="pkp_structure_footer_wrapper" role="contentinfo">
+<a id="pkp_content_footer"></a>
+<div class="pkp_structure_footer">
+<div class="pkp_footer_content">
+<p><a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" rel="license noopener noreferrer" style="display: inline-block;" target="_blank"><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" style="height: 22px!important; margin-left: 3px; vertical-align: text-bottom;"/><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" style="height: 22px!important; margin-left: 3px; vertical-align: text-bottom;"/><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" style="height: 22px!important; margin-left: 3px; vertical-align: text-bottom;"/></a><br/>This work is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" rel="license noopener noreferrer" style="display: inline-block;" target="_blank">Attribution-ShareAlike 4.0 International license.</a></p>
+<p><br/><sup>LPPM Universitas Tanri Abeng</sup></p>
+<p><sup>Jl. Swadarma Raya No.58, Ulujami, Pesanggrahan,  Jakarta Selatan,12250</sup></p>
+<p><sup>Phone : +62 21 5890 8888</sup></p>
+<p><sup>email: snartek@tau.ac.id , lppm@tau.ac.id </sup></p>
+<p><sup>web: <a href="http://tau.ac.id">www.tau.ac.id</a></sup></p>
+</div>
+<div class="pkp_brand_footer" role="complementary">
+<a href="https://www.jurnal.tau.ac.id/index.php/snartek/about/aboutThisPublishingSystem">
+<img alt="More information about the publishing system, Platform and Workflow by OJS/PKP." src="https://www.jurnal.tau.ac.id/templates/images/ojs_brand.png"/>
+</a>
+</div>
+</div>
+</div><!-- pkp_structure_footer_wrapper -->
+</div><!-- pkp_structure_page -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js?v=3.2.1.4" type="text/javascript"></script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js?v=3.2.1.4" type="text/javascript"></script><script src="https://www.jurnal.tau.ac.id/lib/pkp/js/lib/jquery/plugins/jquery.tag-it.js?v=3.2.1.4" type="text/javascript"></script><script src="https://www.jurnal.tau.ac.id/plugins/themes/default/js/lib/popper/popper.js?v=3.2.1.4" type="text/javascript"></script><script src="https://www.jurnal.tau.ac.id/plugins/themes/default/js/lib/bootstrap/util.js?v=3.2.1.4" type="text/javascript"></script><script src="https://www.jurnal.tau.ac.id/plugins/themes/default/js/lib/bootstrap/dropdown.js?v=3.2.1.4" type="text/javascript"></script><script src="https://www.jurnal.tau.ac.id/plugins/themes/default/js/main.js?v=3.2.1.4" type="text/javascript"></script>
+</body>
+</html>
