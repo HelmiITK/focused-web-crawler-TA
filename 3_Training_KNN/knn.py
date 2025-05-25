@@ -13,12 +13,12 @@ y = pd.read_csv('D:\\Semester 8\TA\\focused-web-crawler\\2_Preprocessing\\embedd
 
 # Split dan train
 X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, test_size=0.2, random_state=42)
-knn = KNeighborsClassifier(n_neighbors=4, metric='cosine')
+knn = KNeighborsClassifier(n_neighbors=14, metric='cosine')
 # knn = KNeighborsClassifier(n_neighbors=5)
 knn.fit(X_train, y_train)
 
-joblib.dump(knn, 'save_model_knn/knn_model_k4.pkl')  # Simpan model knn
-print("Model KNN berhasil disimpan ke 'save_model_knn/knn_model_k4.pkl'")
+# joblib.dump(knn, 'save_model_knn/knn_model_k4.pkl')  # Simpan model knn
+# print("Model KNN berhasil disimpan ke 'save_model_knn/knn_model_k4.pkl'")
 
 # Evaluasi
 y_pred = knn.predict(X_test)

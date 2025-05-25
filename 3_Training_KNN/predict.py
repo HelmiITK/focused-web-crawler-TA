@@ -7,7 +7,7 @@ tokenizer = AutoTokenizer.from_pretrained("indobenchmark/indobert-base-p1")
 model = AutoModel.from_pretrained("indobenchmark/indobert-base-p1")
 
 # 2. Load model KNN
-knn = joblib.load('save_model_knn/knn_model_k4.pkl')
+knn = joblib.load('save_model_knn/knn_model_k4.pkl') # Paramter K = 4 Terbaik 
 
 # 3. Fungsi untuk mendapatkan embedding IndoBERT
 def get_embedding(text):
@@ -25,6 +25,6 @@ def predict_text(text):
 
 # 5. Contoh penggunaan
 if __name__ == "__main__":
-    teks_baru = "self injury pada mahasiswa studi kasus pada mahasiswa pelaku self injury"
+    teks_baru = "Pengembangan Aplikasi Berbasis Android Menggunakan Flutter"
     hasil = predict_text(teks_baru)
     print(f"Hasil prediksi untuk teks: '{teks_baru}' adalah {hasil}")
