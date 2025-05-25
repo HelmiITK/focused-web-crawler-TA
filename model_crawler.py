@@ -12,6 +12,7 @@ from transformers import BertTokenizer, BertModel
 import torch
 import os
 import heapq
+import time
 
 # Load KNN dan BERT
 knn = joblib.load('3_Training_KNN/save_model_knn/knn_model_k4.pkl')
@@ -64,7 +65,7 @@ def save_raw_html(soup, index):
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(str(soup))
 
-def shark_search_crawler(query, max_depth=5):
+def shark_search_crawler(query, max_depth=2, size=100, time_limit=60, width=10):
     frontier = []
     heap_counter = 0
     visited = set()
@@ -73,6 +74,7 @@ def shark_search_crawler(query, max_depth=5):
 
     total_documents_visited = 0
     total_documents_evaluated = 0
+    start_time = time.time()
 
     for seed_url in read_seed_urls():
         seed_inherited_score = 1.0
@@ -91,6 +93,13 @@ def shark_search_crawler(query, max_depth=5):
     print(f"[INFO] Memulai crawler dengan query: {query}")
 
     while frontier and len(relevant_results) < MAX_RESULTS:
+        if total_documents_visited >= size:
+            print("[STOP] Mencapai batas ukuran (size).")
+            break
+        if (time.time() - start_time) > time_limit:
+            print("[STOP] Mencapai batas waktu (time_limit).")
+            break
+
         _, _, node = heapq.heappop(frontier)
         url = node['url']
         inherited_score = node['inherited_score']
@@ -106,7 +115,6 @@ def shark_search_crawler(query, max_depth=5):
             soup = BeautifulSoup(response.content, 'html.parser')
             total_documents_visited += 1
 
-            # Simpan halaman web yang telah diunduh
             save_raw_html(soup, len(visited))
 
         except Exception as e:
@@ -116,6 +124,7 @@ def shark_search_crawler(query, max_depth=5):
         links = soup.find_all('a')
         print(f"[INFO] Ditemukan {len(links)} link di halaman ini.")
 
+        scored_links = []
         for a in links:
             title = a.get_text(strip=True)
             anchor_href = a.get('href')
@@ -124,52 +133,56 @@ def shark_search_crawler(query, max_depth=5):
             if not anchor_url or not is_valid_url(anchor_url):
                 continue
 
-            total_documents_evaluated += 1
-
             try:
                 anchor_vec = embed_text(title)
                 anchor_score = cosine_sim(query_vec, anchor_vec)
 
-                if anchor_score == 0:
+                if anchor_score > 0:
+                    anchor_context_score = 1.0
+                else:
                     context_text = soup.get_text()[:500]
                     anchor_context_score = cosine_sim(query_vec, embed_text(context_text))
-                else:
-                    anchor_context_score = 1.0
 
                 neighborhood_score = beta * anchor_score + (1 - beta) * anchor_context_score
                 child_inherited_score = delta * anchor_score if anchor_score > 0 else delta * inherited_score
                 potential_score = gamma * child_inherited_score + (1 - gamma) * neighborhood_score
 
-                is_relevant = predict_relevance(title)
-                print(f"[CHECK] '{title}' | Anchor Score: {anchor_score:.3f} | Relevan: {is_relevant}")
-
-                hasil = {
-                    'id': total_documents_evaluated,
-                    'title': title,
-                    'link': anchor_url,
-                    'anchor_score': float(f"{anchor_score:.4f}"),
-                    'context_score': float(f"{anchor_context_score:.4f}"),
-                    'inherited_score': float(f"{child_inherited_score:.4f}"),
-                    'neighborhood_score': float(f"{neighborhood_score:.4f}"),
-                    'potential_score': float(f"{potential_score:.4f}"),
-                    'relevance': int(is_relevant)
-                }
-
-                if is_relevant == 1:
-                    relevant_results.append(hasil)
-                    print(f"[RELEVAN] +1 → {len(relevant_results)} total")
-
-                if depth < max_depth:
-                    heapq.heappush(frontier, (-potential_score, heap_counter, {
-                        'url': anchor_url,
-                        'depth': depth + 1,
-                        'inherited_score': child_inherited_score
-                    }))
-                    heap_counter += 1
+                scored_links.append((potential_score, title, anchor_url, anchor_score, anchor_context_score, child_inherited_score, neighborhood_score))
 
             except Exception as e:
                 print(f"[ERROR] Gagal proses link: {e}")
                 continue
+
+        # Batasi link anak berdasarkan width (ambil top-N berdasarkan skor)
+        scored_links.sort(reverse=True, key=lambda x: x[0])
+        for i, (potential_score, title, anchor_url, anchor_score, context_score, child_inherited_score, neighborhood_score) in enumerate(scored_links[:width]):
+            total_documents_evaluated += 1
+            is_relevant = predict_relevance(title)
+            print(f"[CHECK] '{title}' | Anchor Score: {anchor_score:.3f} | Relevan: {is_relevant}")
+
+            hasil = {
+                'id': total_documents_evaluated,
+                'title': title,
+                'link': anchor_url,
+                'anchor_score': float(f"{anchor_score:.4f}"),
+                'context_score': float(f"{context_score:.4f}"),
+                'inherited_score': float(f"{child_inherited_score:.4f}"),
+                'neighborhood_score': float(f"{neighborhood_score:.4f}"),
+                'potential_score': float(f"{potential_score:.4f}"),
+                'relevance': int(is_relevant)
+            }
+
+            if is_relevant == 1:
+                relevant_results.append(hasil)
+                print(f"[RELEVAN] +1 → {len(relevant_results)} total")
+
+            if depth < max_depth:
+                heapq.heappush(frontier, (-potential_score, heap_counter, {
+                    'url': anchor_url,
+                    'depth': depth + 1,
+                    'inherited_score': child_inherited_score
+                }))
+                heap_counter += 1
 
     harvest_rate = len(relevant_results) / total_documents_evaluated if total_documents_evaluated > 0 else 0.0
     print(f"\n[INFO] Total halaman web dikunjungi: {total_documents_visited}")
@@ -177,12 +190,11 @@ def shark_search_crawler(query, max_depth=5):
     print(f"[INFO] Total dokumen relevan: {len(relevant_results)}")
     print(f"[INFO] Harvest Rate (HR): {harvest_rate:.4f}")
 
-    #save hasil crawling
-    save_results_to_json(relevant_results, 'hasil_crawling_log_final_dengan_judul_1.json')
+    save_results_to_json(relevant_results, 'hasil_crawling_log_final_dengan_judul_3.json')
 
     return relevant_results
 
 if __name__ == "__main__":
     query = "Pengembangan Aplikasi Berbasis Android Menggunakan Flutter"
-    results = shark_search_crawler(query)
+    results = shark_search_crawler(query, max_depth=2, size=100, time_limit=60, width=10)
     print(f"\n[SELESAI] Total dokumen relevan ditemukan: {len(results)}")

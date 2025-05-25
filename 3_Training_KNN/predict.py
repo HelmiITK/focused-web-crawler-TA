@@ -25,6 +25,6 @@ def predict_text(text):
 
 # 5. Contoh penggunaan
 if __name__ == "__main__":
-    teks_baru = "Pengembangan Aplikasi Berbasis Android Menggunakan Flutter"
+    teks_baru = "analisis keamanan pada teknologi blockchain"
     hasil = predict_text(teks_baru)
     print(f"Hasil prediksi untuk teks: '{teks_baru}' adalah {hasil}")

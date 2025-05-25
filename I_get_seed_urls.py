@@ -35,7 +35,7 @@ def get_google_scholar_seed_urls(query, api_key, limit = 10):
     return []
 
 api_key = "6449b5104e44f9797dadb2294dfb3dd42a08ba77d533faad4e6be932066d67e1"
-query = "Pengembangan Aplikasi Berbasis Android Menggunakan Flutter"
+query = "analisis keamanan pada teknologi blockchain"
 seed_urls = get_google_scholar_seed_urls(query, api_key)
 
 for url in seed_urls:
