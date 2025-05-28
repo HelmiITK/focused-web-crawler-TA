@@ -1,0 +1,536 @@
+
+<!DOCTYPE html>
+
+<html lang="en-US" xml:lang="en-US">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
+		 RANCANG BANGUN SISTEM INFORMASI PENGAWASAN DATA PEMILIH (SEPEDAH) PADA BAWASLU KOTA JAKARTA TIMUR
+							| Jurnal Manajamen Informatika Jayakarta
+			</title>
+<meta content="Open Journal Systems 3.0.2.0" name="generator"/>
+<meta content="1.1" name="gs_meta_revision">
+<meta content="Jurnal Manajamen Informatika Jayakarta" name="citation_journal_title">
+<meta content="2797-0930" name="citation_issn">
+<meta content="Muhammad Tuharyadi" name="citation_author"/>
+<meta content="Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta" name="citation_author_institution"/>
+<meta content="Thomas Budiman" name="citation_author"/>
+<meta content="Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta" name="citation_author_institution"/>
+<meta content="Daniel Rolan" name="citation_author"/>
+<meta content="Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta" name="citation_author_institution"/>
+<meta content=" RANCANG BANGUN SISTEM INFORMASI PENGAWASAN DATA PEMILIH (SEPEDAH) PADA BAWASLU KOTA JAKARTA TIMUR" name="citation_title"/>
+<meta content="2021/04/23" name="citation_date"/>
+<meta content="1" name="citation_volume"/>
+<meta content="2" name="citation_issue"/>
+<meta content="152" name="citation_firstpage"/>
+<meta content="168" name="citation_lastpage"/>
+<meta content="10.52362/jmijayakarta.v1i2.450" name="citation_doi"/>
+<meta content="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/view/450" name="citation_abstract_html_url"/>
+<meta content="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/download/450/280" name="citation_pdf_url"/>
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC"/>
+<meta content=", " name="DC.Creator.PersonalName"/>
+<meta content="2021-04-23" name="DC.Date.created" scheme="ISO8601"/>
+<meta content="2021-04-23" name="DC.Date.dateSubmitted" scheme="ISO8601"/>
+<meta content="2021-04-23" name="DC.Date.issued" scheme="ISO8601"/>
+<meta content="2021-04-23" name="DC.Date.modified" scheme="ISO8601"/>
+<meta content="This research was carried out with the aim of (1) to produce software in the supervision of Voter Data Analysis which is still being carried out with Microsoft Excel, (2) To produce voter data accurately using software applications in accordance with ISO 91 26 standards in terms of functionality, Security, Usebility, Efficiency and Maintanibility.&amp;nbsp;Research Methods in Designing Voter Data Monitoring Information Systems (SEPEDAH) include case studies, needs analysis, system design, system programming, testing, implementation, evaluation and report writing. For application design using the unified modeling language (UML). The process of this research is made interactively, starting from case literacy to implementation and testing stages of software." name="DC.Description" xml:lang="en"/>
+<meta content="application/pdf" name="DC.Format" scheme="IMT"/>
+<meta content="450" name="DC.Identifier"/>
+<meta content="152-168" name="DC.Identifier.pageNumber"/>
+<meta content="10.52362/jmijayakarta.v1i2.450" name="DC.Identifier.DOI"/>
+<meta content="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/view/450" name="DC.Identifier.URI"/>
+<meta content="en" name="DC.Language" scheme="ISO639-1"/>
+<meta content="Copyright (c) 2021 Muhammad Tuharyadi, Thomas Budiman, Daniel Rolan" name="DC.Rights"/>
+<meta content="http://creativecommons.org/licenses/by/4.0" name="DC.Rights"/>
+<meta content="Jurnal Manajamen Informatika Jayakarta" name="DC.Source"/>
+<meta content="2797-0930" name="DC.Source.ISSN"/>
+<meta content="2" name="DC.Source.Issue"/>
+<meta content="1" name="DC.Source.Volume"/>
+<meta content="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta" name="DC.Source.URI"/>
+<meta content=" RANCANG BANGUN SISTEM INFORMASI PENGAWASAN DATA PEMILIH (SEPEDAH) PADA BAWASLU KOTA JAKARTA TIMUR" name="DC.Title"/>
+<meta content="Text.Serial.Journal" name="DC.Type"/>
+<meta content="Articles" name="DC.Type.articleType"/>
+<link href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/$$$call$$$/page/page/css?name=stylesheet" rel="stylesheet" type="text/css"/><link href="//fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Open+Sans:400,400i,700,700i" rel="stylesheet" type="text/css"/><link href="https://www.journal.stmikjayakarta.ac.id/plugins/generic/orcidProfile/css/orcidProfile.css" rel="stylesheet" type="text/css"/>
+</meta></meta></meta></head><body class="pkp_page_article pkp_op_view" dir="ltr">
+<div class="cmp_skip_to_content">
+<a href="#pkp_content_main">Skip to main content</a>
+<a href="#pkp_content_nav">Skip to main navigation menu</a>
+<a href="#pkp_content_footer">Skip to site footer</a>
+</div>
+<div class="pkp_structure_page">
+<header class="pkp_structure_head" id="headerNavigationContainer" role="banner">
+<div class="pkp_head_wrapper">
+<div class="pkp_site_name_wrapper">
+<div class="pkp_site_name">
+<a class="is_text" href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/index">Jurnal Manajamen Informatika Jayakarta</a>
+</div>
+</div>
+<nav aria-label="Site Navigation" class="pkp_navigation_primary_row navDropdownMenu" id="pkp_content_nav">
+<div class="pkp_navigation_primary_wrapper">
+<ul class="pkp_navigation_primary pkp_nav_list" id="navigationPrimary">
+<li>
+<a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/issue/current">
+					Current
+				</a>
+</li>
+<li>
+<a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/issue/archive">
+					Archives
+				</a>
+</li>
+<li aria-expanded="false" aria-haspopup="true">
+<a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/about">
+				About
+			</a>
+<ul>
+<li>
+<a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/about">
+						About the Journal
+					</a>
+</li>
+<li>
+<a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/about/submissions">
+						Submissions
+					</a>
+</li>
+<li>
+<a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/about/contact">
+							Contact
+						</a>
+</li>
+</ul>
+</li>
+</ul>
+<form action="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/search/search" class="pkp_search" method="post" role="search">
+<input name="csrfToken" type="hidden" value="21e62c71076db82fbc925ef57a020dd6"/>
+<input aria-label="Search Query" name="query" type="text" value=""/>
+<button type="submit">
+			Search
+		</button>
+<div aria-hidden="true" class="search_controls">
+<a aria-hidden="true" class="headerSearchPrompt search_prompt" href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/search/search">
+				Search
+			</a>
+<a aria-hidden="true" class="search_cancel headerSearchCancel" href="#"></a>
+<span aria-hidden="true" class="search_loading"></span>
+</div>
+</form>
+</div>
+</nav>
+<nav aria-label="User Navigation" class="pkp_navigation_user_wrapper navDropdownMenu" id="navigationUserWrapper">
+<ul class="pkp_navigation_user pkp_nav_list" id="navigationUser">
+<li><a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/user/register">Register</a></li>
+<li><a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/login">Login</a></li>
+</ul>
+</nav><!-- .pkp_navigation_user_wrapper -->
+</div><!-- .pkp_head_wrapper -->
+</header><!-- .pkp_structure_head -->
+<div class="pkp_structure_content has_sidebar">
+<div class="pkp_structure_main" id="pkp_content_main" role="main">
+<div class="page page_article">
+<nav aria-label="You are here:" class="cmp_breadcrumbs" role="navigation">
+<ol>
+<li>
+<a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/index">
+				Home
+			</a>
+<span class="separator">/</span>
+</li>
+<li>
+<a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/issue/archive">
+				Archives
+			</a>
+<span class="separator">/</span>
+</li>
+<li>
+<a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/issue/view/27">
+				Vol 1 No 2 (2021): Jurnal Manajemen Informatika Jayakarta
+			</a>
+<span class="separator">/</span>
+</li>
+<li class="current">
+									Articles
+						</li>
+</ol>
+</nav>
+<article class="obj_article_details">
+<h1 class="page_title">
+		 RANCANG BANGUN SISTEM INFORMASI PENGAWASAN DATA PEMILIH (SEPEDAH) PADA BAWASLU KOTA JAKARTA TIMUR
+	</h1>
+<div class="row">
+<div class="main_entry">
+<ul class="item authors">
+<li>
+<span class="name">
+								Muhammad Tuharyadi
+							</span>
+<span class="affiliation">
+									Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta
+								</span>
+</li>
+<li>
+<span class="name">
+								Thomas Budiman
+							</span>
+<span class="affiliation">
+									Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta
+								</span>
+</li>
+<li>
+<span class="name">
+								Daniel Rolan
+							</span>
+<span class="affiliation">
+									Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta
+								</span>
+</li>
+</ul>
+<div class="item doi">
+<span class="label">
+							DOI:
+						</span>
+<span class="value">
+<a href="https://doi.org/10.52362/jmijayakarta.v1i2.450">
+								https://doi.org/10.52362/jmijayakarta.v1i2.450
+							</a>
+</span>
+</div>
+<div class="item abstract">
+<h3 class="label">Abstract</h3>
+<p><em>This research was carried out with the aim of (1) to produce software in the supervision of Voter Data Analysis which is still being carried out with Microsoft Excel, (2) To produce voter data accurately using software applications in accordance with ISO 91 26 standards in terms of functionality, Security, Usebility, Efficiency and Maintanibility. </em><em>Research Methods in Designing Voter Data Monitoring Information Systems (SEPEDAH) include case studies, needs analysis, system design, system programming, testing, implementation, evaluation and report writing. For application design using the unified modeling language (UML). The process of this research is made interactively, starting from case literacy to implementation and testing stages of software.</em></p>
+</div>
+<div class="item author_bios">
+<h3 class="label">
+													Author Biographies
+											</h3>
+<div class="sub_item">
+<div class="label">
+																																							Muhammad Tuharyadi, <span class="affiliation">Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta</span>
+</div>
+<div class="value">
+<p>Program Studi Teknik Informatika</p>
+</div>
+</div>
+<div class="sub_item">
+<div class="label">
+																																							Thomas Budiman, <span class="affiliation">Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta</span>
+</div>
+<div class="value">
+<p>Program Stud Teknik Informatika</p>
+</div>
+</div>
+<div class="sub_item">
+<div class="label">
+																																							Daniel Rolan, <span class="affiliation">Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta</span>
+</div>
+<div class="value">
+<p>Program Studi Sistem Informasi</p>
+</div>
+</div>
+</div>
+<div class="item references">
+<h3 class="label">
+						References
+					</h3>
+<div class="value">
+						[1] Akil, Ibnu. 2016. “Rekayasa Perangkat Lunak Dengan Model Unified Process Studi Kasus: Sistem Informasi Journal.” Jurnal Pilar Nusa Mandiri 12 (1): 11.<br/>
+[2] Bhuvan, Unhelker. 2018. Software Enginering with UML. Boca Raton: Taylor and Francis Group.<br/>
+[3] D. Jaya, Mela, and Geetha S. 2013. Object Oriented Analysis and Design Using UML. New Delhi: McGraw Hill Education.<br/>
+[4] Indonesia, Republik. 2017. UU Nomor 7 Tahun 2017 Tentang Pemilihan Umum.<br/>
+[5] ———. 2018. Peraturan Bawaslu Nomor 24 Tahun 2018 Tentang Pengawasan Pemutakhiran Data Dan Penyusunan Daftar Pemilih Dalam Pemilihan Umum.<br/>
+[6] J, Hutahaean. 2015. Konsep Sistem Informasi. Yogyakarta: Deepublish.<br/>
+[7] J. W. Satzinger, R. B. Jackson and S. D. Burd. 2012. Systems Analysis and Design in a Changing World. USA: Course Technology, Changage Learning. <br/>
+[8] Ladjamudin, Al-Bahra Bin. 2013. Analisis Dan Desain Sistem Informasi. Yogyakarta: Graha Ilmu.<br/>
+[9] Mehta, Chintan, Ankit Bhavsar, Hetal Oza, and Subhash Shah. 2018. MySQL 8 Administrator’s Guide. Birmingham: Packt Publishing Ltd.<br/>
+[10] Muslihudin, Muhammad, and Oktavianto. 2016. Analisis Dan Perancangan Sistem Informasi Menggunakan Model Terstruktur Dan UML. Yogyakarta: CV. Andi Offset.<br/>
+[11] Prasetyo, Budi, Timothy John Pattiasina, and Anggya Nanda Soetarmono. 2015. “Perancangan Dan Pembuatan Sistem Informasi Gudang (Studi Kasus : PT. PLN (Persero) Area Surabaya Barat).” Teknika 4 (1): 12–16. https://doi.org/10.34148/teknika.v4i1.30.<br/>
+[12] R. A., Sukamto, and Shalahuddin M. 2013. Rekayasa Perangkat Lunak. Bandung: Informatika.<br/>
+[13] Roger, S. Pressman, Ph.D. 2012. Rekayasa Perangkat Lunak Pendekatan Praktisi Edisi 7 Buku 1. Yogyakarta: Andi.<br/>
+[14] Rosana Junita Sirait, Sutarman, Ika Mustika Rahim. 2015. “Rancang Bangun Sistem Informasi Akuntansi Aktiva Tetap Studi Kasus PT Sumber Indah Lestari ( Dan + Dan ).” Jurnal Sisfotek Global 5 (2): 42–49.<br/>
+[15] Sakhroji, and Dkk. 2019. Jejak Pengawasan Pemilihan Umum Tahun 2019 Bawaslu Kota jakarta timur. Jakarta: Media Gorup Pranada.<br/>
+[16] Soepomo, Prof. 2014. “Perancangan Sistem Informasi Inventory Spare Part Elektronik Berbasis Web Php (Studi CV. Human Global Service YOGYAKARTA)” 2 (2): 534–43. https://doi.org/10.12928/jstie.v2i2.2847.<br/>
+[17] Swara, G. Y. Kom. M., &amp; Pebriadi, Y. 2016. Rekayasa Perangkat Lunak Pemesanan Tiket Bioskop Berbasis Web. Jurnal TEKNOINFO 4 (2):27-39.<br/>
+[18] Muharto, dan Ambarita Arisandy, 2016. Metode Penelitian sistem informasi. Yogyakarta: Deepublish.<br/>
+[19] Yakub. 2012. Pengantar Sistem Informasi.Yogyakarta: Graha Ilmu,<br/>
+[20] Benni Triyono, Sri Purwanti, Verdi Yasin (2017) “Rekayasa Perangkat Lunak Sistem Informasi Pengiriman Dan Penerimaan Surat Atau Paket Berbasis Web”, Journal of Information System, Applied, Management, Accounting and Research, e-ISSN: 2598-8719. p-ISSN: 2598-8700.Vol.1 No.1 (30 Desember 2017) p46-53  http://journal.stmikjayakarta.ac.id/index.php/jisamar/article/view/12<br/>
+[21]  Verdi Yasin, Muhammad Zarlis, Mahyuddin K.M. Nasution (2018) “Filsafat Logika Dan Ontologi Ilmu Komputer”,  Journal of Information System, Applied, Management, Accounting and Research, e-ISSN: 2598-8719. p-ISSN: 2598-8700.Vol.2 No.2 (19 Juni 2018) p68-75  http://journal.stmikjayakarta.ac.id/index.php/jisamar/article/view/39 <br/>
+[22] Julinda Maya Paramudita, Verdi Yasin (2019) “Perancangan Aplikasi Sistem Penyewaan Alat Berat “, Journal of Information System, Applied, Management, Accounting and Research, e-ISSN: 2598-8719. p-ISSN: 2598-8700.Vol.3 No.1 (20 Februari 2019) p23-29  http://journal.stmikjayakarta.ac.id/index.php/jisamar/article/view/73 <br/>
+[23] Muryan Awaludin, Verdi Yasin (2020) “Application Of Oriented Fast And Rotated Brief (Orb) And Bruteforce Hamming In Library Opencv For Classification Of Plants”, Journal of Information System, Applied, Management, Accounting and Research, e-ISSN: 2598-8719. p-ISSN: 2598-8700.Vol.4 No.3 (14 Agustus 2020) p51-59 http://journal.stmikjayakarta.ac.id/index.php/jisamar/article/view/247   <br/>
+[24] Ifan Junaedi, Dimas Abdillah, Verdi Yasin (2020) “Analisis Perancangan Dan Pembangunan Aplikasi Business Intelligence Penerimaan Negara Bukan Pajak Kementerian Keuangan RI”, Journal of Information System, Applied, Management, Accounting and Research, e-ISSN: 2598-8719. p-ISSN: 2598-8700.Vol.4 No.3 (14 Agustus 2020) p88-101 http://journal.stmikjayakarta.ac.id/index.php/jisamar/article/view/249
+					</div>
+</div>
+</div><!-- .main_entry -->
+<div class="entry_details">
+<div class="item galleys">
+<ul class="value galleys_links">
+<li>
+<a class="obj_galley_link pdf" href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/view/450/280">
+
+		
+	PDF
+</a> </li>
+</ul>
+</div>
+<div class="item published">
+<div class="label">
+						Published
+					</div>
+<div class="value">
+						2021-04-23
+					</div>
+</div>
+<div class="item citation_formats">
+<div class="sub_item citation_display">
+<div class="label">
+								How to Cite
+							</div>
+<div class="value" id="citationOutput">
+															TUHARYADI, Muhammad; 						BUDIMAN, Thomas; 						ROLAN, Daniel.
+ RANCANG BANGUN SISTEM INFORMASI PENGAWASAN DATA PEMILIH (SEPEDAH) PADA BAWASLU KOTA JAKARTA TIMUR.
+<strong>Jurnal Manajamen Informatika Jayakarta</strong>, [S.l.], v. 1, n. 2, p. 152-168, apr. 2021.
+ISSN 2797-0930.
+Available at: &lt;<a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/view/450" target="_new">https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/view/450</a>&gt;. Date accessed: 29 may 2025.
+doi: <a href="https://doi.org/10.52362/jmijayakarta.v1i2.450">https://doi.org/10.52362/jmijayakarta.v1i2.450</a>. 
+							</div>
+</div>
+<div class="sub_item citation_format_options">
+<div class="label">
+							Citation Formats
+						</div>
+<div class="value">
+<ul>
+<li class="AbntCitationPlugin current">
+<a data-load-citation="true" href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/cite/450/AbntCitationPlugin" target="_blank">ABNT</a>
+</li>
+<li class="ApaCitationPlugin">
+<a data-load-citation="true" href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/cite/450/ApaCitationPlugin" target="_blank">APA</a>
+</li>
+<li class="BibtexCitationPlugin">
+<a data-load-citation="true" href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/cite/450/BibtexCitationPlugin" target="_blank">BibTeX</a>
+</li>
+<li class="CbeCitationPlugin">
+<a data-load-citation="true" href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/cite/450/CbeCitationPlugin" target="_blank">CBE</a>
+</li>
+<li class="EndNoteCitationPlugin">
+<a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/cite/450/EndNoteCitationPlugin" target="_blank">EndNote - EndNote format (Macintosh &amp; Windows)</a>
+</li>
+<li class="MlaCitationPlugin">
+<a data-load-citation="true" href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/cite/450/MlaCitationPlugin" target="_blank">MLA</a>
+</li>
+<li class="ProCiteCitationPlugin">
+<a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/cite/450/ProCiteCitationPlugin" target="_blank">ProCite - RIS format (Macintosh &amp; Windows)</a>
+</li>
+<li class="RefWorksCitationPlugin">
+<a data-load-citation="true" href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/cite/450/RefWorksCitationPlugin" target="_blank">RefWorks</a>
+</li>
+<li class="RefManCitationPlugin">
+<a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/cite/450/RefManCitationPlugin" target="_blank">Reference Manager - RIS format (Windows only)</a>
+</li>
+<li class="TurabianCitationPlugin">
+<a data-load-citation="true" href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/cite/450/TurabianCitationPlugin" target="_blank">Turabian</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="item issue">
+<div class="sub_item">
+<div class="label">
+						Issue
+					</div>
+<div class="value">
+<a class="title" href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/issue/view/27">
+							Vol 1 No 2 (2021): Jurnal Manajemen Informatika Jayakarta
+						</a>
+</div>
+</div>
+<div class="sub_item">
+<div class="label">
+							Section
+						</div>
+<div class="value">
+							Articles
+						</div>
+</div>
+</div>
+<div class="item copyright">
+<a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img alt="Creative Commons License" src="//i.creativecommons.org/l/by/4.0/88x31.png"/></a><p>This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a>.</p>
+</div>
+</div><!-- .entry_details -->
+</div><!-- .row -->
+</article>
+<div id="articlesBySameAuthorList">
+<h3>Most read articles by the same author(s)</h3>
+		Obs.: This plugin requires at least one statistics/report plugin to be enabled. If your statistics plugins provide more than one metric then please also select a main metric on the admin's site settings page and/or on the journal manager's settings pages.
+	</div>
+</div><!-- .page -->
+</div><!-- pkp_structure_main -->
+<div aria-label="Sidebar" class="pkp_structure_sidebar left" role="complementary">
+<div class="pkp_block block_custom" id="customblock-SitasiScholar">
+<div class="content">
+<center><strong><span class="gsc_rsb_title">Dikutip oleh Google Scholar</span></strong>
+<table id="gsc_rsb_st">
+<thead>
+<tr><th class="gsc_rsb_sth"> </th><th class="gsc_rsb_sth">Semua</th><th class="gsc_rsb_sth">Sejak 2017</th></tr>
+</thead>
+<tbody>
+<tr>
+<td class="gsc_rsb_sc1"><a class="gsc_rsb_f gs_ibl" title='Ini adalah jumlah kutipan untuk semua terbitan. Kolom kedua mencantumkan versi "terkini" dari metrik ini yang merupakan jumlah kutipan baru ke semua terbitan dalam 5 tahun terakhir.'>Kutipan</a></td>
+<td class="gsc_rsb_std">577</td>
+<td class="gsc_rsb_std">577</td>
+</tr>
+<tr>
+<td class="gsc_rsb_sc1"><a class="gsc_rsb_f gs_ibl" title='indeks-h adalah jumlah h terbesar sehingga h publikasi memiliki setidaknya h kutipan. Kolom kedua memiliki versi "terkini" dari metrik ini yang merupakan jumlah terbesar h sehingga h publikasi memiliki setidaknya h kutipan baru dalam 5 tahun terakhir.'>indeks-h</a></td>
+<td class="gsc_rsb_std">11</td>
+<td class="gsc_rsb_std">11</td>
+</tr>
+<tr>
+<td class="gsc_rsb_sc1"><a class="gsc_rsb_f gs_ibl" title='indeks-i10 adalah jumlah publikasi dengan setidaknya 10 kutipan. Kolom kedua memiliki versi "terkini" dari metrik ini yang merupakan jumlah publikasi yang telah diterima setidaknya di 10 kutipan baru dalam 5 tahun terakhir.'>indeks-i10</a></td>
+<td class="gsc_rsb_std">11</td>
+<td class="gsc_rsb_std">11</td>
+</tr>
+</tbody>
+</table>
+</center>
+</div>
+</div><div class="pkp_block block_custom" id="customblock-Details">
+<div class="content">
+<h1><span style="text-decoration: underline;"><strong>QUICK MENU</strong></span></h1>
+<p><a href="http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/history ">HISTORY</a></p>
+<p><a href="http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/focus-scope">FOCUS AND SCOPE</a></p>
+<p><a href="http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/plagiarism-policy">PLAGIARISM POLICY</a></p>
+<p><a href="http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/open-access-policy">OPEN ACCESS POLICY</a></p>
+<p><a href="http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/ethics">PUBLICATION ETHICS</a></p>
+<p><a href="http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/author-guidelines">AUTHOR GUIDELINES</a></p>
+<p><a href="http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/peer-reviewer-process">PEER REVIEW PROCESS</a></p>
+<p><a href="http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/copyright-notice">COPYRIGHT NOTICE</a></p>
+<p><a href="http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/statement-letter ">AUTHOR'S STATEMENT LETTER</a></p>
+<p><a href="http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/reviewer">REVIEWER</a></p>
+<p><a href="http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/about/editorialTeam">EDITORIAL TEAM</a></p>
+<p><a href="http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/about/submissions">ONLINE SUBMISSION</a></p>
+<p><a href="http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/about/contact">CONTACT</a></p>
+<p><a href="https://drive.google.com/drive/folders/1_2LHkMo2NJUf7xvfB56U5pDCDi3xZHwC?usp=sharing">JOURNAL TEMPLATE</a></p>
+<p><a href="https://drive.google.com/file/d/1kuWLDM3lreX0lL2RBBFzhZPLoKtbEAgD/view?usp=sharing" title="TERKAREDITASI PERINGKAT 5">KEPUTUSAN DIREKTUR JENDERAL PENDIDIKAN TINGGI, RISET DAN TEKNOLOGI. KEMENTERIAN PENDIDIKAN, KEBUDAYAAN, RISET DAN TEKNOLOGI REPUBLIK INDONESIA, <strong>NOMOR : 79/E/KPT/2023</strong> TENTANG PERINGKAT AKREDITASI JURNAL ILMIAH PERIODE I TAHUN 2023, BERLAKU SEJAK <strong>VOLOME 1 NOMOR 1 TAHUN 2021</strong> SAMPAI DENGAN <strong>VOLUME 5 NOMOR 2 TAHUN 2025</strong>. <strong>TERAKREDITASI PERINGKAT 5 (SINTA 5</strong>).</a></p>
+<p><a href="https://drive.google.com/file/d/1V-jrmd819kN-Qh54KkOtXMm2e50XbGuw/view?usp=sharing" title="Sertifikat Akreditasi JMI Jayakarta 2021-2025"><img alt="" src="/public/site/images/verdiyasin/Sertifikat-Akreditasi_JMI_Jayakarta_(1,2_MB)_uk200_pxl.jpg"/></a></p>
+<div class="block custom" id="customblock-custom-block"><br/>
+<table align="left" cellpadding="0" cellspacing="0" id="othermenus" width="100%"></table>
+</div>
+</div>
+</div><div class="pkp_block block_custom" id="customblock-Indexed">
+<div class="content">
+<p><span style="text-decoration: underline;"><strong>INDEXED JOURNAL BY</strong></span></p>
+<p><span style="text-decoration: underline;"><strong><img alt="" src="/public/site/images/rumadi/Logo_SINTA_5.jpg"/></strong></span></p>
+<p> </p>
+<p><a href="http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/oai%20" title="Open Access (OAI)"><span style="text-decoration: underline;"><strong><img alt="" src="/public/site/images/rumadi/Logo_Open_Access_uk501.png"/></strong></span></a></p>
+<p> <img alt="" src="/public/site/images/verdiyasin/pkp-index1.png"/> </p>
+<p> <a href="https://scholar.google.com/citations?hl=id&amp;authuser=5&amp;user=n3cS57UAAAAJ%20"><img alt="" src="/public/site/images/rumadi/Logo_Google_Scholar_uk502.png"/></a></p>
+<p> <a href="https://garuda.kemdikbud.go.id/journal/view/21313" title="Garuda Ristekbrin"><img alt="" src="/public/site/images/verdiyasin/Logo_Garuda2_uk60.png"/></a></p>
+<p> <a href="https://onesearch.id/Repositories/Widget?repository_id=15791" title="Indonesia One Search"><img alt="" src="/public/site/images/verdiyasin/onesearch-1024x585_uk15.png"/></a></p>
+<p><a href="https://onesearch.id/Repositories/Repository?library_id=3377" title="IOS Repository Library"><img alt="" src="/public/site/images/verdiyasin/IOS_PERPUSNAS_RI_uk15.png"/></a></p>
+<p><a href="https://paperity.org/journal/376691/jurnal-manajemen-informatika-jayakarta%20" title="International Database Indexed by paperity"><img alt="" src="https://journal.stmikjayakarta.ac.id/public/site/images/verdiyasin/Logo_Paperity-1-uk200_pxl.jpg"/></a></p>
+<p> </p>
+</div>
+</div><div class="pkp_block block_custom" id="customblock-Tempalte">
+<div class="content">
+<p><strong>Please Download Journal Templates</strong></p>
+<p> <a href="https://drive.google.com/file/d/1LIXe31Eo5NNdpnEeoSHNMadW9cPXJE6q/view?usp=sharing" title="Journal Template"><img alt="" src="/public/site/images/verdiyasin/Journal_Tempalate.jpg"/></a></p>
+</div>
+</div><div class="pkp_block block_custom" id="customblock-issn">
+<div class="content">
+<p><strong>P-ISSN :<a href="https://issn.lipi.go.id/terbit/detail/1576085699"> 2746-5985</a> (Print)</strong></p>
+<p><a href="http://issn.lipi.go.id/issn.cgi?daftar&amp;1576085699&amp;1&amp;&amp;2019" title="P-ISSN: 2746-5985"><img alt="" src="/public/site/images/rumadi/1576085699_ISSN-JMI_Jayakarta_(Cetak)_Barcode3.png"/></a></p>
+<p> </p>
+<p><strong>E-ISSN : <a href="https://issn.lipi.go.id/terbit/detail/20210526292020103">2797-0930</a> (Online)</strong></p>
+<p><a href="http://issn.lipi.go.id/issn.cgi?daftar&amp;1576085699&amp;1&amp;&amp;2019" title="E-ISSN 2797-0930"><strong> </strong><img alt="" src="/public/site/images/rumadi/Barcode_uk100.jpg"/></a></p>
+<p> </p>
+<p><a href="https://portal.issn.org/api/search?search[]=MUST=default=Jurnal+Manajemen+Informatika+Jayakarta&amp;search_id=13440365#%20" title="ISSN International Center"><img alt="" src="/public/site/images/admin/ISSN_Internasional_uk601.png"/></a></p>
+</div>
+</div><div class="pkp_block block_custom" id="customblock-Partners">
+<div class="content">
+<p><strong>PARTNERS JOURNAL</strong></p>
+<p> <a href="https://relawanjurnal.id/%20"><img alt="" src="/public/site/images/rumadi/Logo_RJI._uk50_1.jpg"/></a></p>
+<p> <strong>DOI Prefix: <a href="https://doi.org/10.52362">10.52362</a></strong></p>
+<p><a href="https://search.crossref.org/?q=+Jurnal+Manajamen+Informatika+Jayakarta&amp;from_ui=yes" title="Crossref Indexed"><strong><img alt="" src="/public/site/images/rumadi/doi_crossref_uk50.png"/></strong></a></p>
+<p> </p>
+<p><strong>Call for Manuskrip 2025</strong></p>
+<p>Periode Terbitan mulai 2025 ialah Februari, April, September, November</p>
+<p> </p>
+<p><strong>Vol. 5 No. 1 (2025) </strong> terbitan  <strong>Februari</strong> <strong>2025</strong></p>
+<p><strong>Vol. 5 No. 2 (2025) </strong> terbitan <strong> April 2025</strong></p>
+<p><strong>Vol. 5 No. 3 (2025) </strong> terbitan <strong> September 2025</strong></p>
+<p><strong>Vol. 5 No. 4 (2025)</strong>  terbitan <strong>November 2025</strong></p>
+</div>
+</div><div class="pkp_block block_custom" id="customblock-Tools">
+<div class="content">
+<p><strong>TOOLS :</strong></p>
+<p>Silahkan Ceck Plagiasi atau Kemiripan Isi Naskah/Artikel Jurnal Penulis dengan Menggunakan  Software dibawah ini !</p>
+<p><a href="https://www.grammarly.com/%20"><img alt="" src="/public/site/images/rumadi/logo_grammarly_uk60.jpg"/></a></p>
+<p><a href="https://www.duplichecker.com/%20"><img alt="" src="/public/site/images/rumadi/logo_dupli_checker_uk60.jpg"/></a></p>
+<p><a href="https://crosscheck.ithenticate.com/en_us/login%20"><img alt="" src="/public/site/images/rumadi/logo_crossref_similarity_check_uk40.png"/></a></p>
+<p> </p>
+<p><a href="https://drive.google.com/file/d/1dTn_vVWs4pFAqXQszKxvdxAltavcBLkg/view?usp=sharing">KEPUTUSAN KETUA SEKOLAH TINGGI MANAJEMEN INFORMATIKA DAN KOMPUTER JAYAKARTA Nomor : 107/KT/STMIK-J/IX/2024 Ditetapkan di Jakarta, 7 September 2024. Tentang PENGANGKATAN SUSUNAN DEWAN REDAKSI &amp; REVIEWER/PUBLIKASI "JURNAL MANAJEMEN INFORMATIKA JAYAKARTA (JMI JAYAKARTA)" ISSN : 2746-5985 (CETAK) DAN ISSN : 2797-0930 (ELEKTRONIK)</a></p>
+</div>
+</div><div class="pkp_block block_custom" id="customblock-RegisterForm">
+<div class="content">
+<p><strong>Silahkan Register <a href="http://journal.stmikjayakarta.ac.id/index.php/jmijayakarta/user/register">disini </a>Author, Reviewer, Reader</strong></p>
+<p><strong>Bagi yang berminat dengan calon reviewer, silahkan mengisi <a href="https://docs.google.com/forms/d/1vLaMAR0Tf73Qm4be554EjDYvvo9FD64UlXZq2vRA71g/edit?usp=sharing ">Formulir</a> pendaftaran</strong></p>
+</div>
+</div><div class="pkp_block block_custom" id="customblock-StatistikVisitors">
+<div class="content">
+<center><a href="https://info.flagcounter.com/zdhK"><img alt="Flag Counter" border="0" src="https://s01.flagcounter.com/count2/zdhK/bg_85FF59/txt_000000/border_7ECC49/columns_2/maxflags_16/viewers_0/labels_1/pageviews_1/flags_0/percent_0/"/></a><center></center></center>
+</div>
+</div><div class="pkp_block block_information">
+<span class="title">Information</span>
+<div class="content">
+<ul>
+<li>
+<a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/information/readers">
+						For Readers
+					</a>
+</li>
+<li>
+<a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/information/authors">
+						For Authors
+					</a>
+</li>
+<li>
+<a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/information/librarians">
+						For Librarians
+					</a>
+</li>
+</ul>
+</div>
+</div>
+</div><!-- pkp_sidebar.left -->
+</div><!-- pkp_structure_content -->
+<div class="pkp_structure_footer_wrapper" id="pkp_content_footer" role="contentinfo">
+<div class="pkp_structure_footer">
+<div class="pkp_footer_content">
+<p><a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width: 0;"/></a><br/> This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a>.</p>
+<p><strong>Diterbitkan oleh STMIK  Jayakarta</strong></p>
+<p><strong>Website Jurnal : <a href="http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta">http://journal.stmikjayakarta.ac.id/index.php/jmijayakarta</a> - Email : jmijayakarta@gmail.com , jmijayakarta@jayakarta.ac.id<br/>Jurnal Manajemen Informatika Jayakarta (JMI Jayakarta), E-ISSN: <a href="https://issn.lipi.go.id/terbit/detail/20210526292020103">2797-0930</a>  (Online), P-ISSN: <a href="http://issn.lipi.go.id/issn.cgi?daftar&amp;1576085699&amp;1&amp;&amp;2019">2746-5985</a>  (Print). <a href="https://drive.google.com/drive/folders/1_2LHkMo2NJUf7xvfB56U5pDCDi3xZHwC?usp=sharing">Download Template Article Jurnal</a></strong></p>
+<p> </p>
+</div>
+<div aria-label="About this Publishing System" class="pkp_brand_footer" role="complementary">
+<a href="https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/about/aboutThisPublishingSystem">
+<img alt="Open Journal Systems" src="https://www.journal.stmikjayakarta.ac.id/templates/images/ojs_brand.png"/>
+</a>
+<a href="http://pkp.sfu.ca/ojs">
+<img alt="Public Knowledge Project" src="https://www.journal.stmikjayakarta.ac.id/lib/pkp/templates/images/pkp_brand.png"/>
+</a>
+</div>
+</div>
+</div><!-- pkp_structure_footer_wrapper -->
+</div><!-- pkp_structure_page -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js" type="text/javascript"></script><script src="https://www.journal.stmikjayakarta.ac.id/lib/pkp/js/lib/jquery/plugins/jquery.tag-it.js" type="text/javascript"></script><script src="https://www.journal.stmikjayakarta.ac.id/plugins/themes/default/js/main.js" type="text/javascript"></script><script src="https://www.journal.stmikjayakarta.ac.id/js/plugins/citationFormats.js" type="text/javascript"></script><script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'user=n3cS57UAAAAJ&hl=id', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+</html>

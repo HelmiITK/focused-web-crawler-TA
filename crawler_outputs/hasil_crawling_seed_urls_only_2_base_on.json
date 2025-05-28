@@ -1,0 +1,744 @@
+[
+  {
+    "id": 1,
+    "title": "RANCANG BANGUN APLIKASI UTS IN ME BERBASIS ANDROID MENGGUNAKAN FLUTTER DENGAN METODE RAPID APPLICATION DEVELOPMENT",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1323",
+    "potential_score": 0.6742,
+    "relevance": 1
+  },
+  {
+    "id": 2,
+    "title": "DESAIN DAN IMPLEMENTASI RESTful WEB SERVICES UNTUK INTEGRASI DATA DAN APLIKASI",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1529",
+    "potential_score": 0.6557,
+    "relevance": 1
+  },
+  {
+    "id": 3,
+    "title": "PENGEMBANGAN APLIKASI BELAJAR MATEMATIKA KONTEKSTUAL BERBASIS ANDROID DENGAN METODE WATERFALL",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/4960",
+    "potential_score": 0.6519,
+    "relevance": 1
+  },
+  {
+    "id": 4,
+    "title": "PENGEMBANGAN GAME EDUKASI PEMBELAJARAN AKHLAK BERBASIS VIRTUAL REALITY",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/752",
+    "potential_score": 0.6391,
+    "relevance": 1
+  },
+  {
+    "id": 5,
+    "title": "RANCANG BANGUN MEDIA INFORMASI KEGIATAN PROFESI BIDAN DAERAH SUMBAWA BERBASIS ANDROID",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/5002",
+    "potential_score": 0.6369,
+    "relevance": 1
+  },
+  {
+    "id": 6,
+    "title": "PENGEMBANGAN SISTEM INFORMASI PENDATAAN BEDAH RUMAH BERBASIS WEB PADA DINAS PERUMAHAN RAKYAT DAN KAWASAN PEMUKIMAN DI KABUPATEN SUMBAWA",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/561",
+    "potential_score": 0.6221,
+    "relevance": 1
+  },
+  {
+    "id": 7,
+    "title": "ANALISIS PERBANDINGAN PERFORMA FREERADIUS DAN USERMANAGER PADA MIKROTIK",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/755",
+    "potential_score": 0.6219,
+    "relevance": 1
+  },
+  {
+    "id": 8,
+    "title": "SISTEM INFORMASI KREDIT SAHABAT PADA  BADAN USAHA MILIK DESA  (BUMDES) DESA MOYO BERBASIS WEB",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1578",
+    "potential_score": 0.6116,
+    "relevance": 1
+  },
+  {
+    "id": 11,
+    "title": "Perancangan sistem informasi inventarisasi aset berbasis web menggunakan metode waterfall",
+    "link": "https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/view/415",
+    "potential_score": 0.5947,
+    "relevance": 1
+  },
+  {
+    "id": 12,
+    "title": "PERANCANGAN APLIKASI PEMANTAUAN KINERJA KARYAWAN BERBASIS ANDROID DI PT. SALESTRADE CORP. INDONESIA",
+    "link": "https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/view/481",
+    "potential_score": 0.583,
+    "relevance": 1
+  },
+  {
+    "id": 13,
+    "title": "PERANCANGAN SISTEM INFORMASI PENGELOLAAN LAPANGAN FUTSAL BERBASIS WEB DENGAN METODE RAPID APPLICATION DEVELOPMENT MENGGUNAKAN ALGORITMA STRING MATCHING DI MAESTRO FUTSAL KEMAYORAN  JAKARTA",
+    "link": "https://www.journal.stmikjayakarta.ac.id/index.php/jisicom/article/view/375",
+    "potential_score": 0.5826,
+    "relevance": 1
+  },
+  {
+    "id": 14,
+    "title": "PERANCANGAN APLIKASI PENGGAJIAN KARYAWAN BERBASIS WEB MENGGUNAKAN FRAMEWORK CODEIGNITER  PADA PO ARISTA TEHNIK JAKARTA",
+    "link": "https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/view/446",
+    "potential_score": 0.5776,
+    "relevance": 1
+  },
+  {
+    "id": 15,
+    "title": "Perancangan sistem informasi peserta kursus mengemudi berbasis web pada kursus mengemudi AR’RAHMAN Jakarta",
+    "link": "https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/view/416",
+    "potential_score": 0.5718,
+    "relevance": 1
+  },
+  {
+    "id": 16,
+    "title": "ANALISIS  DAN RANCANGAN MANAJEMEN PROSES BISNIS UNTUK LAYANAN PELANGGAN DI PT. PGAS TELEKOMUNIKASI NUSANTARA",
+    "link": "https://www.journal.stmikjayakarta.ac.id/index.php/jisicom/article/view/381",
+    "potential_score": 0.5672,
+    "relevance": 1
+  },
+  {
+    "id": 18,
+    "title": "SISTEM PEMINJAMAN DAN PENGEMBALIAN BUKU PERPUSTAKAAN KELILING BERBASIS WEB MENGGUNAKAN ALGORITMA STRING MATCHING PADA SUKU DINAS PERPUSTAKAAN DAN KEARSIPAN KOTA ADMINISTRASI JAKARTA UTARA",
+    "link": "https://www.journal.stmikjayakarta.ac.id/index.php/jisicom/article/view/384",
+    "potential_score": 0.5562,
+    "relevance": 1
+  },
+  {
+    "id": 19,
+    "title": "RANCANG BANGUN SISTEM INFORMASI PENGAWASAN DATA PEMILIH (SEPEDAH) PADA BAWASLU KOTA JAKARTA TIMUR",
+    "link": "https://www.journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/view/450",
+    "potential_score": 0.5547,
+    "relevance": 1
+  },
+  {
+    "id": 20,
+    "title": "PENDATAAN ASET BIRO PENGELOLAAN BARANG MILIK NEGARA KEMENTERIAN PEKERJAAN UMUM DAN PERUMAHAN RAKYAT MENGGUNAKAN SISTEM INFORMASI GEOGRAFIS BERBASIS WEB",
+    "link": "https://www.journal.stmikjayakarta.ac.id/index.php/jisicom/article/view/376",
+    "potential_score": 0.553,
+    "relevance": 1
+  },
+  {
+    "id": 21,
+    "title": "RANCANG BANGUN APLIKASI UTS IN ME BERBASIS ANDROID MENGGUNAKAN FLUTTER DENGAN METODE RAPID APPLICATION DEVELOPMENT",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1323",
+    "potential_score": 0.6476,
+    "relevance": 1
+  },
+  {
+    "id": 22,
+    "title": "DESAIN DAN IMPLEMENTASI RESTful WEB SERVICES UNTUK INTEGRASI DATA DAN APLIKASI",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1529",
+    "potential_score": 0.6291,
+    "relevance": 1
+  },
+  {
+    "id": 24,
+    "title": "SISTEM INFORMASI KREDIT SAHABAT PADA  BADAN USAHA MILIK DESA  (BUMDES) DESA MOYO BERBASIS WEB",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1578",
+    "potential_score": 0.585,
+    "relevance": 1
+  },
+  {
+    "id": 26,
+    "title": "ANALISIS KEAMANAN WIRELESS LOCAL AREA NETWORK (WLAN) TERHADAP SERANGAN BRUTE FORCE DENGAN METODE PENETRATION TESTING (Studi kasus:RS H.LMANAMBAI ABDULKADIR)",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1528",
+    "potential_score": 0.569,
+    "relevance": 1
+  },
+  {
+    "id": 28,
+    "title": "Jurnal Informatika Teknologi dan Sains (Jinteks): Vol. 3 No. 4 (2021): EDISI 10",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/issue/view/102",
+    "potential_score": 0.5534,
+    "relevance": 1
+  },
+  {
+    "id": 29,
+    "title": "Jurnal Informatika Teknologi dan Sains (Jinteks): Vol. 4 No. 1 (2022): EDISI 11",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/issue/view/109",
+    "potential_score": 0.553,
+    "relevance": 1
+  },
+  {
+    "id": 30,
+    "title": "Jurnal Informatika Teknologi dan Sains (Jinteks): Vol. 4 No. 1 (2022): EDISI 11",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/issue/view/109",
+    "potential_score": 0.553,
+    "relevance": 1
+  },
+  {
+    "id": 31,
+    "title": "RANCANG BANGUN APLIKASI UTS IN ME BERBASIS ANDROID MENGGUNAKAN FLUTTER DENGAN METODE RAPID APPLICATION DEVELOPMENT",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1323",
+    "potential_score": 0.6391,
+    "relevance": 1
+  },
+  {
+    "id": 32,
+    "title": "PENGEMBANGAN APLIKASI BELAJAR MATEMATIKA KONTEKSTUAL BERBASIS ANDROID DENGAN METODE WATERFALL",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/4960",
+    "potential_score": 0.6168,
+    "relevance": 1
+  },
+  {
+    "id": 33,
+    "title": "PENGEMBANGAN GAME EDUKASI PEMBELAJARAN AKHLAK BERBASIS VIRTUAL REALITY",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/752",
+    "potential_score": 0.604,
+    "relevance": 1
+  },
+  {
+    "id": 34,
+    "title": "RANCANG BANGUN MEDIA INFORMASI KEGIATAN PROFESI BIDAN DAERAH SUMBAWA BERBASIS ANDROID",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/5002",
+    "potential_score": 0.6018,
+    "relevance": 1
+  },
+  {
+    "id": 35,
+    "title": "PENGEMBANGAN SISTEM INFORMASI PENDATAAN BEDAH RUMAH BERBASIS WEB PADA DINAS PERUMAHAN RAKYAT DAN KAWASAN PEMUKIMAN DI KABUPATEN SUMBAWA",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/561",
+    "potential_score": 0.587,
+    "relevance": 1
+  },
+  {
+    "id": 36,
+    "title": "ANALISIS PERBANDINGAN PERFORMA FREERADIUS DAN USERMANAGER PADA MIKROTIK",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/755",
+    "potential_score": 0.5868,
+    "relevance": 1
+  },
+  {
+    "id": 38,
+    "title": "SIMULASI PERBAIKAN DROP TEGANGAN DAN SUSUT PADA GARDU INDUK ALAS  DENGAN PENAMBAHAN KAPASITOR BANK",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/5410",
+    "potential_score": 0.5576,
+    "relevance": 1
+  },
+  {
+    "id": 41,
+    "title": "RANCANG BANGUN APLIKASI UTS IN ME BERBASIS ANDROID MENGGUNAKAN FLUTTER DENGAN METODE RAPID APPLICATION DEVELOPMENT",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1323",
+    "potential_score": 0.6213,
+    "relevance": 1
+  },
+  {
+    "id": 42,
+    "title": "PENGEMBANGAN APLIKASI MENGENAL AKSARA SATERA JONTAL BERBASIS ANDROID",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1035",
+    "potential_score": 0.6099,
+    "relevance": 1
+  },
+  {
+    "id": 43,
+    "title": "PENGEMBANGAN GAME EDUKASI PEMBELAJARAN AKHLAK BERBASIS VIRTUAL REALITY",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/752",
+    "potential_score": 0.5862,
+    "relevance": 1
+  },
+  {
+    "id": 44,
+    "title": "RANCANG BANGUN APLIKASI PENDATAAN PENDUDUK BERBASIS WEB DI KELURAHAN BUGIS",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1037",
+    "potential_score": 0.5857,
+    "relevance": 1
+  },
+  {
+    "id": 45,
+    "title": "RANCANG BANGUN APLIKASI TATA KELOLA DESA BERBASIS WEB MENGGUNAKAN METODE WATERFALL DI KANTOR DESA SEPUKUR",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1009",
+    "potential_score": 0.5847,
+    "relevance": 1
+  },
+  {
+    "id": 47,
+    "title": "PENGEMBANGAN SISTEM INFORMASI PENDATAAN BEDAH RUMAH BERBASIS WEB PADA DINAS PERUMAHAN RAKYAT DAN KAWASAN PEMUKIMAN DI KABUPATEN SUMBAWA",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/561",
+    "potential_score": 0.5693,
+    "relevance": 1
+  },
+  {
+    "id": 48,
+    "title": "ANALISIS PERBANDINGAN PERFORMA FREERADIUS DAN USERMANAGER PADA MIKROTIK",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/755",
+    "potential_score": 0.5691,
+    "relevance": 1
+  },
+  {
+    "id": 49,
+    "title": "RANCANG BANGUN E-LEARNING BERBASIS WEB PADA SMK NEGERI 3 SUMBAWA",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/980",
+    "potential_score": 0.5685,
+    "relevance": 1
+  },
+  {
+    "id": 51,
+    "title": "RANCANG BANGUN APLIKASI UTS IN ME BERBASIS ANDROID MENGGUNAKAN FLUTTER DENGAN METODE RAPID APPLICATION DEVELOPMENT",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1323",
+    "potential_score": 0.6266,
+    "relevance": 1
+  },
+  {
+    "id": 52,
+    "title": "PENGEMBANGAN APLIKASI BELAJAR MATEMATIKA KONTEKSTUAL BERBASIS ANDROID DENGAN METODE WATERFALL",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/4960",
+    "potential_score": 0.6043,
+    "relevance": 1
+  },
+  {
+    "id": 53,
+    "title": "PENGEMBANGAN GAME EDUKASI PEMBELAJARAN AKHLAK BERBASIS VIRTUAL REALITY",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/752",
+    "potential_score": 0.5915,
+    "relevance": 1
+  },
+  {
+    "id": 54,
+    "title": "RANCANG BANGUN MEDIA INFORMASI KEGIATAN PROFESI BIDAN DAERAH SUMBAWA BERBASIS ANDROID",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/5002",
+    "potential_score": 0.5893,
+    "relevance": 1
+  },
+  {
+    "id": 55,
+    "title": "PENGEMBANGAN SISTEM INFORMASI PENDATAAN BEDAH RUMAH BERBASIS WEB PADA DINAS PERUMAHAN RAKYAT DAN KAWASAN PEMUKIMAN DI KABUPATEN SUMBAWA",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/561",
+    "potential_score": 0.5746,
+    "relevance": 1
+  },
+  {
+    "id": 56,
+    "title": "ANALISIS PERBANDINGAN PERFORMA FREERADIUS DAN USERMANAGER PADA MIKROTIK",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/755",
+    "potential_score": 0.5744,
+    "relevance": 1
+  },
+  {
+    "id": 60,
+    "title": "Jurnal Informatika Teknologi dan Sains (Jinteks): Vol. 2 No. 1 (2020): EDISI 3",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/issue/view/45",
+    "potential_score": 0.5332,
+    "relevance": 1
+  },
+  {
+    "id": 61,
+    "title": "RANCANG BANGUN APLIKASI UTS IN ME BERBASIS ANDROID MENGGUNAKAN FLUTTER DENGAN METODE RAPID APPLICATION DEVELOPMENT",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1323",
+    "potential_score": 0.6175,
+    "relevance": 1
+  },
+  {
+    "id": 62,
+    "title": "PENGEMBANGAN GAME EDUKASI PEMBELAJARAN AKHLAK BERBASIS VIRTUAL REALITY",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/752",
+    "potential_score": 0.5824,
+    "relevance": 1
+  },
+  {
+    "id": 63,
+    "title": "RANCANG BANGUN APLIKASI TATA KELOLA DESA BERBASIS WEB MENGGUNAKAN METODE WATERFALL DI KANTOR DESA SEPUKUR",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1009",
+    "potential_score": 0.5808,
+    "relevance": 1
+  },
+  {
+    "id": 64,
+    "title": "PENGEMBANGAN APPLET GEOGEBRA  PADA MATERI DISTRIBUSI PELUANG KHUSUS",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/2044",
+    "potential_score": 0.5721,
+    "relevance": 1
+  },
+  {
+    "id": 65,
+    "title": "PENGEMBANGAN SISTEM INFORMASI PENDATAAN BEDAH RUMAH BERBASIS WEB PADA DINAS PERUMAHAN RAKYAT DAN KAWASAN PEMUKIMAN DI KABUPATEN SUMBAWA",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/561",
+    "potential_score": 0.5655,
+    "relevance": 1
+  },
+  {
+    "id": 66,
+    "title": "SISTEM INFORMASI PENGOLAHAN DATA TERNAK UNIT PELAKSANA TEKNIS PRODUKSI DAN KESEHATAN HEWAN BERBASIS WEB",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/556",
+    "potential_score": 0.5615,
+    "relevance": 1
+  },
+  {
+    "id": 67,
+    "title": "IMPLEMENTASI PORT KNOCKING UNTUK KEAMANAN JARINGAN SMKN 1 SUMBAWA BESAR",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1016",
+    "potential_score": 0.5601,
+    "relevance": 1
+  },
+  {
+    "id": 68,
+    "title": "SISTEM INFORMASI MANAJEMEN RUMAH SUSUN SUMBAWA  UNIVERSITAS TEKNOLOGI SUMBAWA BERBASIS WEB",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1261",
+    "potential_score": 0.5578,
+    "relevance": 1
+  },
+  {
+    "id": 70,
+    "title": "RANCANG BANGUN SISTEM INFORMASI PENERIMAAN MAHASISWA BARU BERBASIS WEB DI SEKOLAH TINGGI KEGURUAN ILMU PENDIDIKAN PARACENDEKIA NAHDLATUL WATHAN SUMBAWA",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/555",
+    "potential_score": 0.5377,
+    "relevance": 1
+  },
+  {
+    "id": 71,
+    "title": "RANCANG BANGUN APLIKASI UTS IN ME BERBASIS ANDROID MENGGUNAKAN FLUTTER DENGAN METODE RAPID APPLICATION DEVELOPMENT",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1323",
+    "potential_score": 0.6048,
+    "relevance": 1
+  },
+  {
+    "id": 72,
+    "title": "PENGEMBANGAN APLIKASI BELAJAR MATEMATIKA KONTEKSTUAL BERBASIS ANDROID DENGAN METODE WATERFALL",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/4960",
+    "potential_score": 0.5825,
+    "relevance": 1
+  },
+  {
+    "id": 73,
+    "title": "PENGEMBANGAN GAME EDUKASI PEMBELAJARAN AKHLAK BERBASIS VIRTUAL REALITY",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/752",
+    "potential_score": 0.5696,
+    "relevance": 1
+  },
+  {
+    "id": 74,
+    "title": "RANCANG BANGUN MEDIA INFORMASI KEGIATAN PROFESI BIDAN DAERAH SUMBAWA BERBASIS ANDROID",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/5002",
+    "potential_score": 0.5675,
+    "relevance": 1
+  },
+  {
+    "id": 75,
+    "title": "ANALISIS SERANGAN BOTNET PADA WEBSITE APLIKASI FACEBOOK DENGAN MENGGUNAKAN  METODE NATIONAL INSTITUTE OF STANDARS AND TECHNOLOGY",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/4202",
+    "potential_score": 0.5571,
+    "relevance": 1
+  },
+  {
+    "id": 76,
+    "title": "PENGEMBANGAN SISTEM INFORMASI PENDATAAN BEDAH RUMAH BERBASIS WEB PADA DINAS PERUMAHAN RAKYAT DAN KAWASAN PEMUKIMAN DI KABUPATEN SUMBAWA",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/561",
+    "potential_score": 0.5527,
+    "relevance": 1
+  },
+  {
+    "id": 77,
+    "title": "ANALISIS PERBANDINGAN PERFORMA FREERADIUS DAN USERMANAGER PADA MIKROTIK",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/755",
+    "potential_score": 0.5525,
+    "relevance": 1
+  },
+  {
+    "id": 78,
+    "title": "IMPLEMENTASI HOTSPOT DENGAN USER MANAGERUNTUK INTERNET WIRELESS MENGGUNAKANMIKROTIK Rb 941-2nd DI MTsN 1 SUMBAWA BESAR",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1274",
+    "potential_score": 0.5503,
+    "relevance": 1
+  },
+  {
+    "id": 81,
+    "title": "RANCANG BANGUN APLIKASI UTS IN ME BERBASIS ANDROID MENGGUNAKAN FLUTTER DENGAN METODE RAPID APPLICATION DEVELOPMENT",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1323",
+    "potential_score": 0.602,
+    "relevance": 1
+  },
+  {
+    "id": 82,
+    "title": "PENGEMBANGAN APLIKASI MENGENAL AKSARA SATERA JONTAL BERBASIS ANDROID",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1035",
+    "potential_score": 0.5905,
+    "relevance": 1
+  },
+  {
+    "id": 83,
+    "title": "DESAIN DAN IMPLEMENTASI RESTful WEB SERVICES UNTUK INTEGRASI DATA DAN APLIKASI",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1529",
+    "potential_score": 0.5835,
+    "relevance": 1
+  },
+  {
+    "id": 84,
+    "title": "SISTEM INFORMASI PENJUALAN PADA TOKO JILBAB RJS KABUPATEN SUMBAWA BERBASIS WEB",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/414",
+    "potential_score": 0.5476,
+    "relevance": 1
+  },
+  {
+    "id": 85,
+    "title": "SISTEM INFORMASI MANAJEMEN ASET BERBASIS WEB DI UNIVERSITAS TEKNLOGI SUMBAWA",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1530",
+    "potential_score": 0.5464,
+    "relevance": 1
+  },
+  {
+    "id": 86,
+    "title": "SISTEM INFORMASI KREDIT SAHABAT PADA  BADAN USAHA MILIK DESA  (BUMDES) DESA MOYO BERBASIS WEB",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1578",
+    "potential_score": 0.5394,
+    "relevance": 1
+  },
+  {
+    "id": 89,
+    "title": "Download PDF (Bahasa Indonesia)",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1578/922",
+    "potential_score": 0.5163,
+    "relevance": 1
+  },
+  {
+    "id": 90,
+    "title": "Jurnal Informatika Teknologi dan Sains (Jinteks): Vol. 3 No. 4 (2021): EDISI 10",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/issue/view/102",
+    "potential_score": 0.5078,
+    "relevance": 1
+  },
+  {
+    "id": 91,
+    "title": "PENGEMBANGAN APLIKASI MENGENAL AKSARA SATERA JONTAL BERBASIS ANDROID",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1035",
+    "potential_score": 0.6329,
+    "relevance": 1
+  },
+  {
+    "id": 92,
+    "title": "PENGEMBANGAN GAME EDUKASI PEMBELAJARAN AKHLAK BERBASIS VIRTUAL REALITY",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/752",
+    "potential_score": 0.6092,
+    "relevance": 1
+  },
+  {
+    "id": 93,
+    "title": "RANCANG BANGUN APLIKASI PENDATAAN PENDUDUK BERBASIS WEB DI KELURAHAN BUGIS",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1037",
+    "potential_score": 0.6087,
+    "relevance": 1
+  },
+  {
+    "id": 94,
+    "title": "RANCANG BANGUN APLIKASI TATA KELOLA DESA BERBASIS WEB MENGGUNAKAN METODE WATERFALL DI KANTOR DESA SEPUKUR",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1009",
+    "potential_score": 0.6076,
+    "relevance": 1
+  },
+  {
+    "id": 96,
+    "title": "RANCANG BANGUN E-LEARNING BERBASIS WEB PADA SMK NEGERI 3 SUMBAWA",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/980",
+    "potential_score": 0.5915,
+    "relevance": 1
+  },
+  {
+    "id": 97,
+    "title": "SISTEM INFORMASI PENJUALAN PADA TOKO JILBAB RJS KABUPATEN SUMBAWA BERBASIS WEB",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/414",
+    "potential_score": 0.5899,
+    "relevance": 1
+  },
+  {
+    "id": 98,
+    "title": "SISTEM INFORMASI MANAJEMEN ASET BERBASIS WEB DI UNIVERSITAS TEKNLOGI SUMBAWA",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1530",
+    "potential_score": 0.5887,
+    "relevance": 1
+  },
+  {
+    "id": 99,
+    "title": "SISTEM INFORMASI KREDIT SAHABAT PADA  BADAN USAHA MILIK DESA  (BUMDES) DESA MOYO BERBASIS WEB",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1578",
+    "potential_score": 0.5818,
+    "relevance": 1
+  },
+  {
+    "id": 101,
+    "title": "PENGEMBANGAN GAME EDUKASI PEMBELAJARAN AKHLAK BERBASIS VIRTUAL REALITY",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/752",
+    "potential_score": 0.596,
+    "relevance": 1
+  },
+  {
+    "id": 102,
+    "title": "RANCANG BANGUN APLIKASI PENDATAAN PENDUDUK BERBASIS WEB DI KELURAHAN BUGIS",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1037",
+    "potential_score": 0.5955,
+    "relevance": 1
+  },
+  {
+    "id": 103,
+    "title": "RANCANG BANGUN APLIKASI TATA KELOLA DESA BERBASIS WEB MENGGUNAKAN METODE WATERFALL DI KANTOR DESA SEPUKUR",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1009",
+    "potential_score": 0.5945,
+    "relevance": 1
+  },
+  {
+    "id": 104,
+    "title": "RANCANG BANGUN SISTEM INFORMASI PENJUALAN KAIN TENUN (KRE ALANG) BERBASIS WEB",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/749",
+    "potential_score": 0.5819,
+    "relevance": 1
+  },
+  {
+    "id": 106,
+    "title": "RANCANG BANGUN E-LEARNING BERBASIS WEB PADA SMK NEGERI 3 SUMBAWA",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/980",
+    "potential_score": 0.5783,
+    "relevance": 1
+  },
+  {
+    "id": 107,
+    "title": "REKAYASA SISTEM INFORMASI MANAJEMEN PANTI ASUHAN MUHAMMADIYAH SUMBAWA BERBASIS WEB",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1326",
+    "potential_score": 0.5772,
+    "relevance": 1
+  },
+  {
+    "id": 108,
+    "title": "IMPLEMENTASI HOTSPOT DENGAN USER MANAGERUNTUK INTERNET WIRELESS MENGGUNAKANMIKROTIK Rb 941-2nd DI MTsN 1 SUMBAWA BESAR",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1274",
+    "potential_score": 0.5767,
+    "relevance": 1
+  },
+  {
+    "id": 109,
+    "title": "SISTEM INFORMASI PENDAFTARAN SISWA BARU PADA SMKN 2 SUMBAWA BESAR BERBASIS WEB",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/594",
+    "potential_score": 0.5707,
+    "relevance": 1
+  },
+  {
+    "id": 110,
+    "title": "SISTEM INFORMASI PENJUALAN PRODUK PERTANIAN PADA BADAN USAHA MILIK DESA (BUMDES) PERNEK",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/756",
+    "potential_score": 0.5548,
+    "relevance": 1
+  },
+  {
+    "id": 111,
+    "title": "PENGEMBANGAN GAME EDUKASI PEMBELAJARAN AKHLAK BERBASIS VIRTUAL REALITY",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/752",
+    "potential_score": 0.6036,
+    "relevance": 1
+  },
+  {
+    "id": 112,
+    "title": "RANCANG BANGUN APLIKASI PENDATAAN PENDUDUK BERBASIS WEB DI KELURAHAN BUGIS",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1037",
+    "potential_score": 0.6031,
+    "relevance": 1
+  },
+  {
+    "id": 113,
+    "title": "RANCANG BANGUN APLIKASI TATA KELOLA DESA BERBASIS WEB MENGGUNAKAN METODE WATERFALL DI KANTOR DESA SEPUKUR",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1009",
+    "potential_score": 0.602,
+    "relevance": 1
+  },
+  {
+    "id": 114,
+    "title": "PENGEMBANGAN SISTEM INFORMASI PENDATAAN BEDAH RUMAH BERBASIS WEB PADA DINAS PERUMAHAN RAKYAT DAN KAWASAN PEMUKIMAN DI KABUPATEN SUMBAWA",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/561",
+    "potential_score": 0.5867,
+    "relevance": 1
+  },
+  {
+    "id": 115,
+    "title": "RANCANG BANGUN E-LEARNING BERBASIS WEB PADA SMK NEGERI 3 SUMBAWA",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/980",
+    "potential_score": 0.5859,
+    "relevance": 1
+  },
+  {
+    "id": 116,
+    "title": "SISTEM INFORMASI PENGOLAHAN DATA TERNAK UNIT PELAKSANA TEKNIS PRODUKSI DAN KESEHATAN HEWAN BERBASIS WEB",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/556",
+    "potential_score": 0.5827,
+    "relevance": 1
+  },
+  {
+    "id": 117,
+    "title": "IMPLEMENTASI PORT KNOCKING UNTUK KEAMANAN JARINGAN SMKN 1 SUMBAWA BESAR",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1016",
+    "potential_score": 0.5813,
+    "relevance": 1
+  },
+  {
+    "id": 118,
+    "title": "SISTEM INFORMASI MANAJEMEN RUMAH SUSUN SUMBAWA  UNIVERSITAS TEKNOLOGI SUMBAWA BERBASIS WEB",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1261",
+    "potential_score": 0.579,
+    "relevance": 1
+  },
+  {
+    "id": 120,
+    "title": "RANCANG BANGUN SISTEM INFORMASI PENERIMAAN MAHASISWA BARU BERBASIS WEB DI SEKOLAH TINGGI KEGURUAN ILMU PENDIDIKAN PARACENDEKIA NAHDLATUL WATHAN SUMBAWA",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/555",
+    "potential_score": 0.5589,
+    "relevance": 1
+  },
+  {
+    "id": 121,
+    "title": "DESAIN DAN IMPLEMENTASI RESTful WEB SERVICES UNTUK INTEGRASI DATA DAN APLIKASI",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1529",
+    "potential_score": 0.5953,
+    "relevance": 1
+  },
+  {
+    "id": 122,
+    "title": "RANCANG BANGUN APLIKASI TATA KELOLA DESA BERBASIS WEB MENGGUNAKAN METODE WATERFALL DI KANTOR DESA SEPUKUR",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1009",
+    "potential_score": 0.577,
+    "relevance": 1
+  },
+  {
+    "id": 123,
+    "title": "PENGEMBANGAN APPLET GEOGEBRA  PADA MATERI DISTRIBUSI PELUANG KHUSUS",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/2044",
+    "potential_score": 0.5683,
+    "relevance": 1
+  },
+  {
+    "id": 124,
+    "title": "PENGEMBANGAN SISTEM INFORMASI PENDATAAN BEDAH RUMAH BERBASIS WEB PADA DINAS PERUMAHAN RAKYAT DAN KAWASAN PEMUKIMAN DI KABUPATEN SUMBAWA",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/561",
+    "potential_score": 0.5616,
+    "relevance": 1
+  },
+  {
+    "id": 125,
+    "title": "SISTEM INFORMASI PENGOLAHAN DATA TERNAK UNIT PELAKSANA TEKNIS PRODUKSI DAN KESEHATAN HEWAN BERBASIS WEB",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/556",
+    "potential_score": 0.5577,
+    "relevance": 1
+  },
+  {
+    "id": 126,
+    "title": "IMPLEMENTASI PORT KNOCKING UNTUK KEAMANAN JARINGAN SMKN 1 SUMBAWA BESAR",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1016",
+    "potential_score": 0.5563,
+    "relevance": 1
+  },
+  {
+    "id": 127,
+    "title": "SISTEM INFORMASI MANAJEMEN RUMAH SUSUN SUMBAWA  UNIVERSITAS TEKNOLOGI SUMBAWA BERBASIS WEB",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1261",
+    "potential_score": 0.554,
+    "relevance": 1
+  },
+  {
+    "id": 129,
+    "title": "ANALISIS KEAMANAN WIRELESS LOCAL AREA NETWORK (WLAN) TERHADAP SERANGAN BRUTE FORCE DENGAN METODE PENETRATION TESTING (Studi kasus:RS H.LMANAMBAI ABDULKADIR)",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/1528",
+    "potential_score": 0.5351,
+    "relevance": 1
+  },
+  {
+    "id": 130,
+    "title": "RANCANG BANGUN SISTEM INFORMASI PENERIMAAN MAHASISWA BARU BERBASIS WEB DI SEKOLAH TINGGI KEGURUAN ILMU PENDIDIKAN PARACENDEKIA NAHDLATUL WATHAN SUMBAWA",
+    "link": "http://www.jurnal.uts.ac.id/index.php/JINTEKS/article/view/555",
+    "potential_score": 0.5339,
+    "relevance": 1
+  }
+]

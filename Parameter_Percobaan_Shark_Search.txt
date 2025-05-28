@@ -1,0 +1,35 @@
+[PERCOBAAN 1] 
+delta = 0.1 # δ 
+beta = 0.5  # β
+gamma = 0.5 # γ
+[RESULTS] = 
+
+[PERCOBAAN 2]
+delta = 0.2 # δ 
+beta = 0.5  # β
+gamma = 0.5 # γ
+[RESULTS] = 
+
+[PERCOBAAN 3]
+delta = 0.2 # δ 
+beta = 0.5  # β
+gamma = 0.5 # γ
+[RESULTS] = 
+
+[PERCOBAAN 4]
+delta = 0.2 # δ 
+beta = 0.5  # β
+gamma = 0.5 # γ
+[RESULTS] = 
+
+[PERCOBAAN 5]
+delta = 0.2 # δ 
+beta = 0.5  # β
+gamma = 0.5 # γ
+[RESULTS] = 
+
+[PERCOBAAN 6]
+delta = 0.2 # δ 
+beta = 0.5  # β
+gamma = 0.5 # γ
+[RESULTS] = 
