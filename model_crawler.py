@@ -19,12 +19,12 @@ tokenizer = BertTokenizer.from_pretrained('indobenchmark/indobert-base-p1')
 model = BertModel.from_pretrained('indobenchmark/indobert-base-p1')
 
 # Parameter Shark Search
-delta = 0.7 # δ  
-beta = 0.6  # β
-gamma = 0.6 # γ
+delta = 0.4 # δ  fix terbaik [0.4]
+beta = 0.5  # β  fix terbaik [0.5]
+gamma = 0.5 # γ  fix terbaik [0.5]
 # MAX_RESULTS = 100
 
-threshold_score = 0.4
+threshold_score = 0.4 # ambil nilai tengah [0.4]
 
 # BACA SEED URL DARI FILE [seed urls awal untuk dilakuakn crawl oleh shark search]
 SEED_FILE = 'seed_urls_percobaan_1.txt'
@@ -49,7 +49,7 @@ def read_seed_urls():
         return [line.strip() for line in f if line.strip()]
     
 def save_results_to_json(data, filename):
-    folder = 'crawler_outputs'
+    folder = 'crawler_outputs/Q1/Crawling'
     os.makedirs(folder, exist_ok=True)
     filepath = os.path.join(folder, filename)
 
@@ -57,7 +57,7 @@ def save_results_to_json(data, filename):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 def save_raw_html(soup, index):
-    folder = 'downloaded_pages_percobaan_1_100'
+    folder = 'crawler_outputs/Q1/Page/downloaded_pages_eksperimen_100'
     os.makedirs(folder, exist_ok=True)
     filepath = os.path.join(folder, f'page_{index}.html')
     with open(filepath, 'w', encoding='utf-8') as f:
@@ -141,9 +141,8 @@ def is_relevant_anchor(anchor_text: str) -> bool:
     text = anchor_text.strip().lower()
     return not any(irrelevant in text for irrelevant in irrelevant_anchor_keywords)
 
-
 # ===== Shark Search ====
-def shark_search_crawler(query, max_depth=5, size=50, time_limit=900, width=20):
+def shark_search_crawler(query, max_depth=5, size=100, time_limit=900, width=20, single_seed_mode=False, seed_url_override=None):
     frontier = []
     heap_counter = 0
     visited = set()
@@ -156,11 +155,16 @@ def shark_search_crawler(query, max_depth=5, size=50, time_limit=900, width=20):
 
     banned_domains = get_banned_domains()
 
-    for seed_url in read_seed_urls():
+    if single_seed_mode and seed_url_override:
+        seed_urls = [seed_url_override]
+    else:
+        seed_urls = read_seed_urls()
+
+    for seed_url in seed_urls:
         if any(banned in seed_url.lower() for banned in banned_domains):
             print(f"[SKIP] Seed URL melewati banned domain: {seed_url}")
             continue
-        
+    
         seed_inherited_score = 1.0
         seed_anchor_score = 1.0
         seed_context_score = 1.0
@@ -176,7 +180,7 @@ def shark_search_crawler(query, max_depth=5, size=50, time_limit=900, width=20):
 
     print(f"[INFO] Memulai crawler dengan query: {query}")
 
-    # while frontier and len(relevant_results) < MAX_RESULTS:
+    # while frontier and len(relevant_results) < size:
     while frontier:
         if total_documents_visited >= size:
             print("[STOP] Mencapai batas ukuran (size).")
@@ -323,13 +327,24 @@ def shark_search_crawler(query, max_depth=5, size=50, time_limit=900, width=20):
 
     harvest_rate = len(relevant_results) / total_documents_evaluated if total_documents_evaluated > 0 else 0.0
     print(f"\n[INFO] Total halaman web dikunjungi: {total_documents_visited}")
-    print(f"[INFO] Total dokumen dievaluasi: {total_documents_evaluated}")
+    print(f"[INFO] Total dokumen dievaluasi: {total_documents_evaluated}") # Di evaluasi = dikunjungi oleh hiu pencari
     print(f"[INFO] Total dokumen relevan: {len(relevant_results)}")
     print(f"[INFO] Harvest Rate (HR): {harvest_rate:.4f}")
     print(f"[INFO] Waktu berjalan: {int(time.time() - start_time)} detik")
 
-    # save_results_to_json(relevant_results, 'results_pengujian_1_100.json')
+    # simpan hasil evaluasi
+    evaluasi = {
+        "total_halaman_web_dikunjungi": total_documents_visited,
+        "total_dokumen_dievaluasi": total_documents_evaluated,
+        "total_dokumen_relevan": len(relevant_results),
+        "harvest_rate": round(harvest_rate, 4),
+        "waktu_berjalan_detik": int(time.time() - start_time)
+    }
+    os.makedirs("crawler_outputs", exist_ok=True)
+    with open("crawler_outputs/Q1/HR/100.json", "w", encoding="utf-8") as file:
+        json.dump(evaluasi, file, ensure_ascii=False, indent=4)
 
+    save_results_to_json(relevant_results, '100.json')
     return relevant_results
 
 # ===== BFS Crawler =====
@@ -405,21 +420,54 @@ def bfs_crawler(seed_urls, max_page):
     else:
         print("Harvest Rate           : 0.0000")
 
-# if __name__ == "__main__":
-#     # max_pages = 50
-#     # query = "Pengembangan Aplikasi Berbasis Android Menggunakan Flutter" 
-#     query = "Kecerdasan Buatan Masa Depan Akuntansi" 
-#     results = shark_search_crawler(query, max_depth=3, size=100, time_limit=400, width=10)
-#     print(f"\n[SELESAI] Total dokumen relevan ditemukan: {len(results)}")
+#====== Fungsi Evaluasi Seed Urls Terbaik =============
+def evaluate_seeds(query, max_depth=5, size=25, time_limit=900, width=20):
+    seed_urls = read_seed_urls()
+    seed_stats = []
 
+    for seed_url in seed_urls:
+        print(f"\n[INFO] Evaluating seed URL: {seed_url}")
+        results = shark_search_crawler(
+            query,
+            max_depth=max_depth,
+            size=size,
+            time_limit=time_limit,
+            width=width,
+            single_seed_mode=True,
+            seed_url_override=seed_url
+        )
+        relevant_count = len(results)
+        seed_stats.append({
+            'seed_url': seed_url,
+            'relevant_documents': relevant_count
+        })
 
+    # Urutkan berdasarkan jumlah dokumen relevan secara menurun
+    seed_stats.sort(key=lambda x: x['relevant_documents'], reverse=True)
+
+    # Tampilkan hasil ranking
+    print("\n=== Seed URL Ranking Berdasarkan Jumlah Dokumen Relevan ===")
+    for rank, stat in enumerate(seed_stats, start=1):
+        print(f"{rank}. {stat['seed_url']} → {stat['relevant_documents']} dokumen relevan")
+
+    # Simpan hasil ke file JSON
+    os.makedirs("evaluasi_seed_urls", exist_ok=True)
+    with open("evaluasi_seed_urls/ranking_seed_urls.json", "w", encoding="utf-8") as f:
+        json.dump(seed_stats, f, ensure_ascii=False, indent=2)
+
+    return seed_stats
+
+#=======Choose Main Run Termined=============
 if __name__ == '__main__':
-    mode = input("Pilih mode crawler (bfs/shark): ").strip().lower()
+    mode = input("Pilih mode crawler (bfs/shark/evaluate): ").strip().lower()
     if mode == 'bfs':
         seed_urls = read_seed_urls()
         bfs_crawler(seed_urls, max_page=100)
     elif mode == 'shark':
         query = input("Masukkan query pencarian: ")
-        shark_search_crawler(query, max_depth=5, size=50, time_limit=900, width=20)
+        shark_search_crawler(query, max_depth=5, size=100, time_limit=900, width=20)
+    elif mode == 'evaluate':
+        query = input("Masukkan query pencarian untuk evaluasi seed URLs: ")
+        evaluate_seeds(query, max_depth=5, size=25, time_limit=900, width=20)
     else:
         print("Mode tidak dikenali.")

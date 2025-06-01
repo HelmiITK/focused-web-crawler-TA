@@ -1,0 +1,860 @@
+ <!DOCTYPE html>
+
+<html lang="en-US" xml:lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
+		RANCANG BANGUN APLIKASI KELOMPOK TANI UMA BERINGIN KECAMATAN ALAS BERBASIS WEB
+							| Jurnal Informatika Teknologi dan Sains (Jinteks)
+			</title>
+<link href="http://jurnal.uts.ac.id/public/journals/12/favicon_en_US.png" rel="icon"/>
+<meta content="Open Journal Systems 3.2.0.3" name="generator"/>
+<meta content="H-kPw6ng9NDHm4e44WiIcKUk2u5Ne0GeTx0FD2QIbEg" name="google-site-verification">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Herfandi Herfandi" name="DC.Creator.PersonalName">
+<meta content="M. Julkarnain" name="DC.Creator.PersonalName">
+<meta content="Ahmad Fauzul Kabir" name="DC.Creator.PersonalName"/>
+<meta content="2022-05-29" name="DC.Date.created" scheme="ISO8601"/>
+<meta content="2022-05-29" name="DC.Date.dateSubmitted" scheme="ISO8601"/>
+<meta content="2022-05-23" name="DC.Date.issued" scheme="ISO8601"/>
+<meta content="2022-08-02" name="DC.Date.modified" scheme="ISO8601"/>
+<meta content="Kelompok Tani Uma Beringin Kecamatan Alas di dalam proses pembukuan dan informasi masih bersifat manual sehingga kurang efektif dikarenakan masih seringnya ada kesalahan antara pengurus dan gudang, seperti stok pupuk, benih dan alat. Dengan&amp;nbsp; berkembangnya&amp;nbsp; teknologi&amp;nbsp; maka aplikasi dengan berbasis web mampu mempermudah pemrosesan data sampai penyampaian informasi sehingga dapat membantu para kelompok tani dalam&amp;nbsp; mengelolah&amp;nbsp; dan&amp;nbsp; mengendalikan&amp;nbsp; strategi&amp;nbsp; organisasi&amp;nbsp; untuk&amp;nbsp; penyesuaian&amp;nbsp; pemberdayaan&amp;nbsp; kelompok&amp;nbsp; tani&amp;nbsp; agar tetap seimbang. Karenanya penelitian ini melakukan rancang bangun aplikasi kelompok tani berbasis web. Penelitian ini menghasilak aplikasi kelompok tani yang di bangun memiliki fitur admin yang bisa melakukan create, read, update, dan delete (CRUD) stok barang, data anggota, stok alat, serta berita. Sedangkan anggota tani memiliki fitur melihat stok barang dan melakukan pengajuan pengambila secara online. Metode pengembangan ialah waterfall, berbasis web, perancangan menggunakan pendekatan Unified Modelling Language (UML). Pengujian perangkat lunak dengan metode black box dengan teknik Test Case Equivalence Partitioning mendapatkan kesimpulan berhasil dari berbagai jenis pengujian. diharapkan dengan adanya aplikasi ini dapat membantu Kelompok Tani Uma Beringin untuk bekerja secara efisien yang dapat meningkatkan solidaritas dan kualitas pangan bagi seluruh petani." name="DC.Description" xml:lang="id"/>
+<meta content="The Uma Beringin Farmer's Group, Alas Subdistrict, in the process of bookkeeping and information is still manual so it is not effective because there are still frequent mistakes between the management and the warehouse, such as stock of fertilizers, seeds and tools. With the development of technology, web-based applications are able to facilitate data processing to the delivery of information so that it can assist farmer groups in managing and controlling organizational strategies to adjust farmer group empowerment to keep it balanced. Therefore, this study designed a web-based farmer group application. This study resulted in a farmer group application that was built to have admin features that can create, read, update, and delete (CRUD) stock of goods, member data, stock of tools, and news. Meanwhile, farmer members have the feature of viewing stock of goods and submitting online pick-up requests. The development method is waterfall, web-based, the design uses the Unified Modeling Language (UML) approach. Software testing using the black box method with the Test Case Equivalence Partitioning technique gets successful conclusions from various types of tests. it is hoped that this application can help the Uma Beringin Farmer Group to work efficiently which can increase solidarity and food quality for all farmers." name="DC.Description" xml:lang="en"/>
+<meta content="application/pdf" name="DC.Format" scheme="IMT"/>
+<meta content="1575" name="DC.Identifier"/>
+<meta content="80-86" name="DC.Identifier.pageNumber"/>
+<meta content="10.51401/jinteks.v4i2.1575" name="DC.Identifier.DOI"/>
+<meta content="http://jurnal.uts.ac.id/index.php/JINTEKS/article/view/1575" name="DC.Identifier.URI"/>
+<meta content="id" name="DC.Language" scheme="ISO639-1"/>
+<meta content="Copyright (c) 2022 " name="DC.Rights"/>
+<meta content="https://creativecommons.org/licenses/by/4.0" name="DC.Rights"/>
+<meta content="Jurnal Informatika Teknologi dan Sains (Jinteks)" name="DC.Source"/>
+<meta content="2686-3359" name="DC.Source.ISSN"/>
+<meta content="2" name="DC.Source.Issue"/>
+<meta content="4" name="DC.Source.Volume"/>
+<meta content="http://jurnal.uts.ac.id/index.php/JINTEKS" name="DC.Source.URI"/>
+<meta content="Waterfall" name="DC.Subject" xml:lang="en"/>
+<meta content="RANCANG BANGUN APLIKASI KELOMPOK TANI UMA BERINGIN KECAMATAN ALAS BERBASIS WEB" name="DC.Title"/>
+<meta content="RANCANG BANGUN APLIKASI KELOMPOK TANI UMA BERINGIN KECAMATAN ALAS BERBASIS WEB" name="DC.Title.Alternative" xml:lang="en"/>
+<meta content="Text.Serial.Journal" name="DC.Type"/>
+<meta content="Articles" name="DC.Type.articleType"/>
+<meta content="1.1" name="gs_meta_revision"/>
+<meta content="Jurnal Informatika Teknologi dan Sains (Jinteks)" name="citation_journal_title"/>
+<meta content="JINTEKS" name="citation_journal_abbrev"/>
+<meta content="2686-3359" name="citation_issn"/>
+<meta content="Herfandi Herfandi" name="citation_author"/>
+<meta content="Universitas Teknologi Sumbawa" name="citation_author_institution"/>
+<meta content="M. Julkarnain" name="citation_author"/>
+<meta content="Ahmad Fauzul Kabir" name="citation_author"/>
+<meta content="Universitas Teknologi Sumbawa" name="citation_author_institution"/>
+<meta content="RANCANG BANGUN APLIKASI KELOMPOK TANI UMA BERINGIN KECAMATAN ALAS BERBASIS WEB" name="citation_title"/>
+<meta content="id" name="citation_language"/>
+<meta content="2022/05/29" name="citation_date"/>
+<meta content="4" name="citation_volume"/>
+<meta content="2" name="citation_issue"/>
+<meta content="80" name="citation_firstpage"/>
+<meta content="86" name="citation_lastpage"/>
+<meta content="10.51401/jinteks.v4i2.1575" name="citation_doi"/>
+<meta content="http://jurnal.uts.ac.id/index.php/JINTEKS/article/view/1575" name="citation_abstract_html_url"/>
+<meta content="Black box Testing" name="citation_keywords" xml:lang="en"/>
+<meta content="Farmers Group" name="citation_keywords" xml:lang="en"/>
+<meta content="Unified Modeling Language" name="citation_keywords" xml:lang="en"/>
+<meta content="Waterfall" name="citation_keywords" xml:lang="en"/>
+<meta content="http://jurnal.uts.ac.id/index.php/JINTEKS/article/download/1575/920" name="citation_pdf_url"/>
+<meta content="H. Hermawan, “DAMPAK PENGEMBANGAN DESA WISATA NGLANGGERAN TERHADAP EKONOMI MASYARAKAT LOKAL,” Jurnal Pariwisata, vol. III, no. 2, 2016, [Online]. Available: http://ejournal.bsi.ac.id/ejurnal/index.php/jp" name="citation_reference"/>
+<meta content="M. Farhan Setiawan, M. Nur Witama, and R. Hikmah, “Perancangan Sistem Pengolahan Data Produksi Konveksi Berbasis Java Pada CV Nirwana Bunga Abadi,” Jurnal Nasional Komputasi dan Teknologi Informasi, vol. 3, no. 3, 2020." name="citation_reference"/>
+<meta content="H. Herfandi, M. Julkarnain, and M. Hanif, “DESAIN DAN IMPLEMENTASI RESTful WEB SERVICES UNTUK INTEGRASI DATA DAN APLIKASI,” Jurnal Informatika Teknologi dan Sains, vol. 4, no. 1, pp. 36–41, Feb. 2022, doi: 10.51401/jinteks.v4i1.1529." name="citation_reference"/>
+<meta content="N. Purwanti and I. D. Fatmaningtyas, “Sistem Informasi Pengolahan Data Anak dan Guru pada Yayasan Rumah Qur’an Violet Indonesia Berbasis Website,” INFORMATICS FOR EDUCATORS AND PROFESSIONAL?: Journal of Informatics, vol. 5, no. 1, p. 53, Dec. 2020, doi: 10.51211/itbi.v5i1.1425." name="citation_reference"/>
+<meta content="NURZAKINA SOPHYAN, “RANCANG BANGUN SISTEM INFORMASI MANAJEMEN PEMBERDAYAAN KELOMPOK TANI PADA DINAS PERTANIAN KABUPATEN BARRU,” Universitas Islam Negeri Alauddin Makassar., MAKASSAR, 2017. Accessed: May 27, 2022. [Online]. Available: http://repositori.uin-alauddin.ac.id/12765/" name="citation_reference"/>
+<meta content="S. Fitrianti, S. Pengajar Prodi, A. Pertanian, P. Pertanian, and N. Payakumbuh, “Aplikasi Sistem Informasi Manajemen pada Usaha Peternakan (Studi Kasus: Kelompok Tani Serambi Mekah Padang Panjang) Application Management Information Systems (MIS) in dairy cattle business (Case Study: Serambi Mekah farmer groups Padang Panjang),” Jurnal Penelitian Pertanian Terapan, vol. 14, no. 3, pp. 181–189, 2018." name="citation_reference"/>
+<meta content="Y. P. Ariyani, H. Suryamen, and F. Akbar, “Pencarian Kelompok Tani Menggunakan Sistem Informasi Geografis bagi Penyuluh di Kabupaten Agam,” Jurnal Nasional Teknologi dan Sistem Informasi, vol. 3, no. 3, pp. 334–342, Dec. 2017, doi: 10.25077/teknosi.v3i3.2017.334-342." name="citation_reference"/>
+<meta content="J. Suganda and M. Solahudin, “Rancang Bangun Sistem Informasi Kelompok Tani pada Dinas Pertanian Kabupaten Jombang,” Bogor, 2017." name="citation_reference"/>
+<meta content="M. F. Hidayatullah, “Rancang Bangun Aplikasi Analisis Kesehatan Keuangan Umkm Berbasis Web pada UMKM Kelompok Tani Elok Mekar Sari,” 2020." name="citation_reference"/>
+<meta content="R. I. Borman, A. T. Priandika, and A. R. Edison, “Implementasi Metode Pengembangan Sistem Extreme Programming (XP) pada Aplikasi Investasi Peternakan,” Jurnal Sistem dan Teknologi Informasi (Justin), vol. 8, no. 3, p. 272, Jul. 2020, doi: 10.26418/justin.v8i3.40273." name="citation_reference"/>
+<meta content="Haryono and Cosmas Gatot, Ragam Metode Penelitian Kualitatif Komunikasi. CV Jejak (Jejak Publisher), 2020." name="citation_reference"/>
+<meta content="H. Herfandi, E. Ramdani, S. Dwiasnati, A. Susilo Yuda Irawan, and R. Habibie Sukarna, “Penerapan Self-Service Technology pada Aplikasi Pelayanan Penduduk Desa Labuhan Sumbawa,” Format?: Jurnal Ilmiah Teknik Informatika, vol. 11, 2022, doi: http://dx.doi.org/10.22441/10.22441/format.2022.v11.i1.010." name="citation_reference"/>
+<meta content="D. S. Maylawati, W. Darmalaksana, and M. A. Ramdhani, “Systematic Design of Expert System Using Unified Modelling Language,” in IOP Conference Series: Materials Science and Engineering, Jan. 2018, vol. 288, no. 1. doi: 10.1088/1757-899X/288/1/012047." name="citation_reference"/>
+<meta content="B. H. Rambe et al., “UML Modeling and Black Box Testing Methods in the School Payment Information System,” 2020. [Online]. Available: https://iocscience.org/ejournal/index.php/mantik" name="citation_reference"/>
+<meta content="Roman and Adam, Black-Box Testing Techniques. Springer, 2018." name="citation_reference"/>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="http://jurnal.htp.ac.id/script.js"></script>
+<link href="http://jurnal.uts.ac.id/index.php/JINTEKS/$$$call$$$/page/page/css?name=stylesheet" rel="stylesheet" type="text/css"/><link href="//fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css?v=3.2.0.3" rel="stylesheet" type="text/css"/><link href="http://jurnal.uts.ac.id/public/journals/12/styleSheet.css?v=3.2.0.3" rel="stylesheet" type="text/css"/>
+</meta></meta></link></meta></head>
+<body class="pkp_page_article pkp_op_view has_site_logo" dir="ltr">
+<div class="pkp_structure_page">
+<header class="pkp_structure_head" id="headerNavigationContainer" role="banner">
+<div class="pkp_head_wrapper">
+<div class="pkp_site_name_wrapper">
+<button class="pkp_site_nav_toggle">
+<span>Open Menu</span>
+</button>
+<div class="pkp_site_name">
+<a class="is_img" href="													http://jurnal.uts.ac.id/index.php/JINTEKS/index
+											">
+<img height="158" src="http://jurnal.uts.ac.id/public/journals/12/pageHeaderLogoImage_en_US.png" width="1160"/>
+</a>
+</div>
+</div>
+<nav class="cmp_skip_to_content">
+<a href="#pkp_content_main">Skip to main content</a>
+<a href="#siteNav">Skip to main navigation menu</a>
+<a href="#pkp_content_footer">Skip to site footer</a>
+</nav>
+<nav aria-label="Site Navigation" class="pkp_site_nav_menu">
+<a id="siteNav"></a>
+<div class="pkp_navigation_primary_row">
+<div class="pkp_navigation_primary_wrapper">
+<ul class="pkp_navigation_primary pkp_nav_list" id="navigationPrimary">
+<li class="">
+<a href="http://www.jurnal.uts.ac.id/index.php/JINTEKS/index">
+					Home
+				</a>
+</li>
+<li class="">
+<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/issue/current">
+					Current
+				</a>
+</li>
+<li class="">
+<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/issue/archive">
+					Archives
+				</a>
+</li>
+<li class="">
+<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/announcement">
+					Announcements
+				</a>
+</li>
+<li class="">
+<a href="https://jurnal.uts.ac.id/index.php/jinteks/about/submissions">
+					Submissions
+				</a>
+</li>
+<li class="">
+<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/about">
+					About
+				</a>
+<ul>
+<li class="">
+<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/about">
+										About the Journal
+									</a>
+</li>
+<li class="">
+<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/aimscope">
+										Aim &amp; Scope
+									</a>
+</li>
+<li class="">
+<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/Reviewer">
+										Reviewer
+									</a>
+</li>
+<li class="">
+<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/about/editorialTeam">
+										Editorial Team
+									</a>
+</li>
+<li class="">
+<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/about/contact">
+										Contact
+									</a>
+</li>
+</ul>
+</li>
+</ul>
+<form action="http://jurnal.uts.ac.id/index.php/JINTEKS/search/search" aria-label="Article Search" class="pkp_search pkp_search_desktop" method="get" role="search">
+<input name="csrfToken" type="hidden" value="5d891689a766180fa0cd741e7617a35f"/>
+<input aria-label="Search Query" name="query" type="text" value=""/>
+<button type="submit">
+			Search
+		</button>
+<div aria-hidden="true" class="search_controls">
+<a aria-hidden="true" class="headerSearchPrompt search_prompt" href="http://jurnal.uts.ac.id/index.php/JINTEKS/search/search">
+				Search
+			</a>
+<a aria-hidden="true" class="search_cancel headerSearchCancel" href="#"></a>
+<span aria-hidden="true" class="search_loading"></span>
+</div>
+</form>
+</div>
+</div>
+<div class="pkp_navigation_user_wrapper" id="navigationUserWrapper">
+<ul class="pkp_navigation_user pkp_nav_list" id="navigationUser">
+<li class="profile">
+<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/user/register">
+					Register
+				</a>
+</li>
+<li class="profile">
+<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/login">
+					Login
+				</a>
+</li>
+</ul>
+</div>
+<form action="http://jurnal.uts.ac.id/index.php/JINTEKS/search/search" aria-label="Article Search" class="pkp_search pkp_search_mobile" method="get" role="search">
+<input name="csrfToken" type="hidden" value="5d891689a766180fa0cd741e7617a35f"/>
+<input aria-label="Search Query" name="query" type="text" value=""/>
+<button type="submit">
+			Search
+		</button>
+<div aria-hidden="true" class="search_controls">
+<a aria-hidden="true" class="headerSearchPrompt search_prompt" href="http://jurnal.uts.ac.id/index.php/JINTEKS/search/search">
+				Search
+			</a>
+<a aria-hidden="true" class="search_cancel headerSearchCancel" href="#"></a>
+<span aria-hidden="true" class="search_loading"></span>
+</div>
+</form>
+</nav>
+</div><!-- .pkp_head_wrapper -->
+</header><!-- .pkp_structure_head -->
+<div class="pkp_structure_content has_sidebar">
+<div class="pkp_structure_main" role="main">
+<a id="pkp_content_main"></a>
+<div class="page page_article">
+<nav aria-label="You are here:" class="cmp_breadcrumbs" role="navigation">
+<ol>
+<li>
+<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/index">
+				Home
+			</a>
+<span class="separator">/</span>
+</li>
+<li>
+<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/issue/archive">
+				Archives
+			</a>
+<span class="separator">/</span>
+</li>
+<li>
+<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/issue/view/115">
+					Vol. 4 No. 2 (2022): EDISI 12
+				</a>
+<span class="separator">/</span>
+</li>
+<li aria-current="page" class="current">
+<span aria-current="page">
+									Articles
+							</span>
+</li>
+</ol>
+</nav>
+<article class="obj_article_details">
+<h1 class="page_title">
+		RANCANG BANGUN APLIKASI KELOMPOK TANI UMA BERINGIN KECAMATAN ALAS BERBASIS WEB
+	</h1>
+<div class="row">
+<div class="main_entry">
+<section class="item authors">
+<h2 class="pkp_screen_reader">Authors</h2>
+<ul class="authors">
+<li>
+<span class="name">
+								Herfandi Herfandi
+							</span>
+<span class="affiliation">
+									Universitas Teknologi Sumbawa
+								</span>
+</li>
+<li>
+<span class="name">
+								M. Julkarnain
+							</span>
+<span class="affiliation">
+									UTS
+								</span>
+</li>
+<li>
+<span class="name">
+								Ahmad Fauzul Kabir
+							</span>
+<span class="affiliation">
+									Universitas Teknologi Sumbawa
+								</span>
+</li>
+</ul>
+</section>
+<section class="item doi">
+<h2 class="label">
+														DOI:
+						</h2>
+<span class="value">
+<a href="https://doi.org/10.51401/jinteks.v4i2.1575">
+								https://doi.org/10.51401/jinteks.v4i2.1575
+							</a>
+</span>
+</section>
+<section class="item keywords">
+<h2 class="label">
+										Keywords:
+				</h2>
+<span class="value">
+											Black box Testing, 											Farmers Group, 											Unified Modeling Language, 											Waterfall									</span>
+</section>
+<section class="item abstract">
+<h2 class="label">Abstract</h2>
+<p>The Uma Beringin Farmer's Group, Alas Subdistrict, in the process of bookkeeping and information is still manual so it is not effective because there are still frequent mistakes between the management and the warehouse, such as stock of fertilizers, seeds and tools. With the development of technology, web-based applications are able to facilitate data processing to the delivery of information so that it can assist farmer groups in managing and controlling organizational strategies to adjust farmer group empowerment to keep it balanced. Therefore, this study designed a web-based farmer group application. This study resulted in a farmer group application that was built to have admin features that can create, read, update, and delete (CRUD) stock of goods, member data, stock of tools, and news. Meanwhile, farmer members have the feature of viewing stock of goods and submitting online pick-up requests. The development method is waterfall, web-based, the design uses the Unified Modeling Language (UML) approach. Software testing using the black box method with the Test Case Equivalence Partitioning technique gets successful conclusions from various types of tests. it is hoped that this application can help the Uma Beringin Farmer Group to work efficiently which can increase solidarity and food quality for all farmers.</p>
+</section>
+<section class="item references">
+<h2 class="label">
+						References
+					</h2>
+<div class="value">
+<p>H. Hermawan, “DAMPAK PENGEMBANGAN DESA WISATA NGLANGGERAN TERHADAP EKONOMI MASYARAKAT LOKAL,” Jurnal Pariwisata, vol. III, no. 2, 2016, [Online]. Available: <a href="http://ejournal.bsi.ac.id/ejurnal/index.php/jp">http://ejournal.bsi.ac.id/ejurnal/index.php/jp</a> </p>
+<p>M. Farhan Setiawan, M. Nur Witama, and R. Hikmah, “Perancangan Sistem Pengolahan Data Produksi Konveksi Berbasis Java Pada CV Nirwana Bunga Abadi,” Jurnal Nasional Komputasi dan Teknologi Informasi, vol. 3, no. 3, 2020. </p>
+<p>H. Herfandi, M. Julkarnain, and M. Hanif, “DESAIN DAN IMPLEMENTASI RESTful WEB SERVICES UNTUK INTEGRASI DATA DAN APLIKASI,” Jurnal Informatika Teknologi dan Sains, vol. 4, no. 1, pp. 36–41, Feb. 2022, doi: 10.51401/jinteks.v4i1.1529. </p>
+<p>N. Purwanti and I. D. Fatmaningtyas, “Sistem Informasi Pengolahan Data Anak dan Guru pada Yayasan Rumah Qur’an Violet Indonesia Berbasis Website,” INFORMATICS FOR EDUCATORS AND PROFESSIONAL?: Journal of Informatics, vol. 5, no. 1, p. 53, Dec. 2020, doi: 10.51211/itbi.v5i1.1425. </p>
+<p>NURZAKINA SOPHYAN, “RANCANG BANGUN SISTEM INFORMASI MANAJEMEN PEMBERDAYAAN KELOMPOK TANI PADA DINAS PERTANIAN KABUPATEN BARRU,” Universitas Islam Negeri Alauddin Makassar., MAKASSAR, 2017. Accessed: May 27, 2022. [Online]. Available: <a href="http://repositori.uin-alauddin.ac.id/12765/">http://repositori.uin-alauddin.ac.id/12765/</a> </p>
+<p>S. Fitrianti, S. Pengajar Prodi, A. Pertanian, P. Pertanian, and N. Payakumbuh, “Aplikasi Sistem Informasi Manajemen pada Usaha Peternakan (Studi Kasus: Kelompok Tani Serambi Mekah Padang Panjang) Application Management Information Systems (MIS) in dairy cattle business (Case Study: Serambi Mekah farmer groups Padang Panjang),” Jurnal Penelitian Pertanian Terapan, vol. 14, no. 3, pp. 181–189, 2018. </p>
+<p>Y. P. Ariyani, H. Suryamen, and F. Akbar, “Pencarian Kelompok Tani Menggunakan Sistem Informasi Geografis bagi Penyuluh di Kabupaten Agam,” Jurnal Nasional Teknologi dan Sistem Informasi, vol. 3, no. 3, pp. 334–342, Dec. 2017, doi: 10.25077/teknosi.v3i3.2017.334-342. </p>
+<p>J. Suganda and M. Solahudin, “Rancang Bangun Sistem Informasi Kelompok Tani pada Dinas Pertanian Kabupaten Jombang,” Bogor, 2017. </p>
+<p>M. F. Hidayatullah, “Rancang Bangun Aplikasi Analisis Kesehatan Keuangan Umkm Berbasis Web pada UMKM Kelompok Tani Elok Mekar Sari,” 2020. </p>
+<p>R. I. Borman, A. T. Priandika, and A. R. Edison, “Implementasi Metode Pengembangan Sistem Extreme Programming (XP) pada Aplikasi Investasi Peternakan,” Jurnal Sistem dan Teknologi Informasi (Justin), vol. 8, no. 3, p. 272, Jul. 2020, doi: 10.26418/justin.v8i3.40273. </p>
+<p>Haryono and Cosmas Gatot, Ragam Metode Penelitian Kualitatif Komunikasi. CV Jejak (Jejak Publisher), 2020. </p>
+<p>H. Herfandi, E. Ramdani, S. Dwiasnati, A. Susilo Yuda Irawan, and R. Habibie Sukarna, “Penerapan Self-Service Technology pada Aplikasi Pelayanan Penduduk Desa Labuhan Sumbawa,” Format?: Jurnal Ilmiah Teknik Informatika, vol. 11, 2022, doi: <a href="http://dx.doi.org/10.22441/10.22441/format.2022.v11.i1.010">http://dx.doi.org/10.22441/10.22441/format.2022.v11.i1.010</a>. </p>
+<p>D. S. Maylawati, W. Darmalaksana, and M. A. Ramdhani, “Systematic Design of Expert System Using Unified Modelling Language,” in IOP Conference Series: Materials Science and Engineering, Jan. 2018, vol. 288, no. 1. doi: 10.1088/1757-899X/288/1/012047. </p>
+<p>B. H. Rambe et al., “UML Modeling and Black Box Testing Methods in the School Payment Information System,” 2020. [Online]. Available: <a href="https://iocscience.org/ejournal/index.php/mantik">https://iocscience.org/ejournal/index.php/mantik</a> </p>
+<p>Roman and Adam, Black-Box Testing Techniques. Springer, 2018. </p>
+</div>
+</section>
+</div><!-- .main_entry -->
+<div class="entry_details">
+<div class="item cover_image">
+<div class="sub_item">
+<img alt="" src="http://jurnal.uts.ac.id/public/journals/12/submission_1575_1430_coverImage_en_US.png"/>
+</div>
+</div>
+<div class="item galleys">
+<ul class="value galleys_links">
+<li>
+<a class="obj_galley_link pdf" href="http://jurnal.uts.ac.id/index.php/JINTEKS/article/view/1575/920">
+
+		
+	Download PDF (Bahasa Indonesia)
+
+	</a>
+</li>
+</ul>
+</div>
+<div class="item published">
+<section class="sub_item">
+<h2 class="label">
+						Published
+					</h2>
+<div class="value">
+<span>2022-05-29</span>
+</div>
+</section>
+</div>
+<div class="item citation">
+<section class="sub_item citation_display">
+<h2 class="label">
+							How to Cite
+						</h2>
+<div class="value">
+<div aria-live="polite" id="citationOutput" role="region">
+<div class="csl-bib-body">
+<div class="csl-entry"><div class="csl-left-margin">[1]</div><div class="csl-right-inline">H. Herfandi, M. Julkarnain, and A. Fauzul Kabir, “RANCANG BANGUN APLIKASI KELOMPOK TANI UMA BERINGIN KECAMATAN ALAS BERBASIS WEB”, <i>JINTEKS</i>, vol. 4, no. 2, pp. 80-86, May 2022.</div></div>
+</div>
+</div>
+<div class="citation_formats">
+<button aria-controls="cslCitationFormats" aria-expanded="false" class="cmp_button citation_formats_button" data-csl-dropdown="true">
+									More Citation Formats
+								</button>
+<div aria-hidden="true" class="citation_formats_list" id="cslCitationFormats">
+<ul class="citation_formats_styles">
+<li>
+<a aria-controls="citationOutput" data-json-href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/acm-sig-proceedings?submissionId=1575&amp;publicationId=1430&amp;return=json" data-load-citation="" href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/acm-sig-proceedings?submissionId=1575&amp;publicationId=1430">
+													ACM
+												</a>
+</li>
+<li>
+<a aria-controls="citationOutput" data-json-href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/acs-nano?submissionId=1575&amp;publicationId=1430&amp;return=json" data-load-citation="" href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/acs-nano?submissionId=1575&amp;publicationId=1430">
+													ACS
+												</a>
+</li>
+<li>
+<a aria-controls="citationOutput" data-json-href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/apa?submissionId=1575&amp;publicationId=1430&amp;return=json" data-load-citation="" href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/apa?submissionId=1575&amp;publicationId=1430">
+													APA
+												</a>
+</li>
+<li>
+<a aria-controls="citationOutput" data-json-href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/associacao-brasileira-de-normas-tecnicas?submissionId=1575&amp;publicationId=1430&amp;return=json" data-load-citation="" href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/associacao-brasileira-de-normas-tecnicas?submissionId=1575&amp;publicationId=1430">
+													ABNT
+												</a>
+</li>
+<li>
+<a aria-controls="citationOutput" data-json-href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/chicago-author-date?submissionId=1575&amp;publicationId=1430&amp;return=json" data-load-citation="" href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/chicago-author-date?submissionId=1575&amp;publicationId=1430">
+													Chicago
+												</a>
+</li>
+<li>
+<a aria-controls="citationOutput" data-json-href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/harvard-cite-them-right?submissionId=1575&amp;publicationId=1430&amp;return=json" data-load-citation="" href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/harvard-cite-them-right?submissionId=1575&amp;publicationId=1430">
+													Harvard
+												</a>
+</li>
+<li>
+<a aria-controls="citationOutput" data-json-href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/ieee?submissionId=1575&amp;publicationId=1430&amp;return=json" data-load-citation="" href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/ieee?submissionId=1575&amp;publicationId=1430">
+													IEEE
+												</a>
+</li>
+<li>
+<a aria-controls="citationOutput" data-json-href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/modern-language-association?submissionId=1575&amp;publicationId=1430&amp;return=json" data-load-citation="" href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/modern-language-association?submissionId=1575&amp;publicationId=1430">
+													MLA
+												</a>
+</li>
+<li>
+<a aria-controls="citationOutput" data-json-href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/turabian-fullnote-bibliography?submissionId=1575&amp;publicationId=1430&amp;return=json" data-load-citation="" href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/turabian-fullnote-bibliography?submissionId=1575&amp;publicationId=1430">
+													Turabian
+												</a>
+</li>
+<li>
+<a aria-controls="citationOutput" data-json-href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/vancouver?submissionId=1575&amp;publicationId=1430&amp;return=json" data-load-citation="" href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/get/vancouver?submissionId=1575&amp;publicationId=1430">
+													Vancouver
+												</a>
+</li>
+</ul>
+<div class="label">
+											Download Citation
+										</div>
+<ul class="citation_formats_styles">
+<li>
+<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/download/ris?submissionId=1575&amp;publicationId=1430">
+<span class="fa fa-download"></span>
+														Endnote/Zotero/Mendeley (RIS)
+													</a>
+</li>
+<li>
+<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/citationstylelanguage/download/bibtex?submissionId=1575&amp;publicationId=1430">
+<span class="fa fa-download"></span>
+														BibTeX
+													</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="item issue">
+<section class="sub_item">
+<h2 class="label">
+								Issue
+							</h2>
+<div class="value">
+<a class="title" href="http://jurnal.uts.ac.id/index.php/JINTEKS/issue/view/115">
+									Vol. 4 No. 2 (2022): EDISI 12
+								</a>
+</div>
+</section>
+<section class="sub_item">
+<h2 class="label">
+								Section
+							</h2>
+<div class="value">
+								Articles
+							</div>
+</section>
+</div>
+<div class="item copyright">
+<p>Copyright (c) 2022 Herfandi Herfandi, M. Julkarnain, Ahmad Fauzul Kabir</p>
+<a href="https://creativecommons.org/licenses/by/4.0/" rel="license"><img alt="Creative Commons License" src="//i.creativecommons.org/l/by/4.0/88x31.png"/></a><p>This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a>.</p>
+</div>
+</div><!-- .entry_details -->
+</div><!-- .row -->
+</article>
+<div id="articlesBySameAuthorList">
+<h3>Most read articles by the same author(s)</h3>
+<ul>
+<li>
+													Yudi Mulyanto,
+													Herfandi Herfandi,
+													Randi Candra Kirana,
+												<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/article/view/1528">
+							ANALISIS KEAMANAN WIRELESS LOCAL AREA NETWORK (WLAN) TERHADAP SERANGAN BRUTE FORCE DENGAN METODE PENETRATION TESTING (Studi kasus:RS H.LMANAMBAI ABDULKADIR)
+						</a>,
+						<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/issue/view/109">
+							Jurnal Informatika Teknologi dan Sains (Jinteks): Vol. 4 No. 1 (2022): EDISI 11
+						</a>
+</li>
+<li>
+													Nawassyarif,
+													M. Julkarnain,
+													Kiki Rizki Ananda,
+												<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/article/view/556">
+							SISTEM INFORMASI PENGOLAHAN DATA TERNAK UNIT PELAKSANA TEKNIS PRODUKSI DAN KESEHATAN HEWAN BERBASIS WEB
+						</a>,
+						<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/issue/view/45">
+							Jurnal Informatika Teknologi dan Sains (Jinteks): Vol. 2 No. 1 (2020): EDISI 3
+						</a>
+</li>
+<li>
+													yudi mulyanto,
+													M. Julkarnain,
+													Aldela Jabi Afahar,
+												<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/article/view/1016">
+							IMPLEMENTASI PORT KNOCKING UNTUK KEAMANAN JARINGAN SMKN 1 SUMBAWA BESAR
+						</a>,
+						<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/issue/view/83">
+							Jurnal Informatika Teknologi dan Sains (Jinteks): Vol. 3 No. 2 (2021): EDISI 8
+						</a>
+</li>
+<li>
+													M. Julkarnain,
+													Herfandi,
+													Deri Afriliyansa,
+												<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/article/view/1009">
+							RANCANG BANGUN APLIKASI TATA KELOLA DESA BERBASIS WEB MENGGUNAKAN METODE WATERFALL DI KANTOR DESA SEPUKUR
+						</a>,
+						<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/issue/view/83">
+							Jurnal Informatika Teknologi dan Sains (Jinteks): Vol. 3 No. 2 (2021): EDISI 8
+						</a>
+</li>
+<li>
+													Muhammad Dian Fajri,
+													Wirentake,
+													M. Julkarnain,
+												<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/article/view/555">
+							RANCANG BANGUN SISTEM INFORMASI PENERIMAAN MAHASISWA BARU BERBASIS WEB DI SEKOLAH TINGGI KEGURUAN ILMU PENDIDIKAN PARACENDEKIA NAHDLATUL WATHAN SUMBAWA
+						</a>,
+						<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/issue/view/45">
+							Jurnal Informatika Teknologi dan Sains (Jinteks): Vol. 2 No. 1 (2020): EDISI 3
+						</a>
+</li>
+<li>
+													Herfandi Herfandi,
+													M Julkarnain,
+													Muhammad Hanif,
+												<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/article/view/1529">
+							DESAIN DAN IMPLEMENTASI RESTful WEB SERVICES UNTUK INTEGRASI DATA DAN APLIKASI
+						</a>,
+						<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/issue/view/109">
+							Jurnal Informatika Teknologi dan Sains (Jinteks): Vol. 4 No. 1 (2022): EDISI 11
+						</a>
+</li>
+<li>
+													Dendi Saputro,
+													I Made Widiarta,
+													M. Julkarnain,
+												<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/article/view/561">
+							PENGEMBANGAN SISTEM INFORMASI PENDATAAN BEDAH RUMAH BERBASIS WEB PADA DINAS PERUMAHAN RAKYAT DAN KAWASAN PEMUKIMAN DI KABUPATEN SUMBAWA 
+						</a>,
+						<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/issue/view/45">
+							Jurnal Informatika Teknologi dan Sains (Jinteks): Vol. 2 No. 1 (2020): EDISI 3
+						</a>
+</li>
+<li>
+													Yuliadi Idrus,
+													M. Julkarnain,
+													Rodianto,
+												<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/article/view/1026">
+							PROTOTYPE USER INTERFACE EMPLOYEE LEAVE IN THE DEPARTMENT OF MANPOWER AND TRANSMIGRATION BASED LOCAL AREA NETWORK (LAN)
+						</a>,
+						<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/issue/view/83">
+							Jurnal Informatika Teknologi dan Sains (Jinteks): Vol. 3 No. 2 (2021): EDISI 8
+						</a>
+</li>
+<li>
+													Yana Karisma,
+													M. Julkarnain,
+													Shinta Esabella,
+													Muhammad Rifqi  Fawzan,
+												<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/article/view/1261">
+							SISTEM INFORMASI MANAJEMEN RUMAH SUSUN SUMBAWA  UNIVERSITAS TEKNOLOGI SUMBAWA BERBASIS WEB
+						</a>,
+						<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/issue/view/90">
+							Jurnal Informatika Teknologi dan Sains (Jinteks): Vol. 3 No. 3 (2021): EDISI 9
+						</a>
+</li>
+<li>
+													Rina Susilowati,
+													M. Julkarnain,
+												<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/article/view/2044">
+							PENGEMBANGAN APPLET GEOGEBRA  PADA MATERI DISTRIBUSI PELUANG KHUSUS
+						</a>,
+						<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/issue/view/123">
+							Jurnal Informatika Teknologi dan Sains (Jinteks): Vol. 4 No. 4 (2022): EDISI 14
+						</a>
+</li>
+</ul>
+<div id="articlesBySameAuthorPages">
+<strong>1</strong> <a href="http://jurnal.uts.ac.id/index.php/JINTEKS/article/view/1575?articlesBySameAuthorPage=2#articlesBySameAuthor">2</a> <a href="http://jurnal.uts.ac.id/index.php/JINTEKS/article/view/1575?articlesBySameAuthorPage=2#articlesBySameAuthor">&gt;</a> <a href="http://jurnal.uts.ac.id/index.php/JINTEKS/article/view/1575?articlesBySameAuthorPage=2#articlesBySameAuthor">&gt;&gt;</a> 
+			</div>
+</div>
+</div><!-- .page -->
+</div><!-- pkp_structure_main -->
+<div aria-label="Sidebar" class="pkp_structure_sidebar left" role="complementary">
+<div class="pkp_block block_custom" id="customblock-Menubar2">
+<div class="content">
+<div class="content"><center>
+<p><span class="title">SERTIFIKAT</span></p>
+<table class="hover1" style="height: 181px;" width="211">
+<tbody>
+<tr>
+<td style="width: 202.707px;">
+<p><a href="https://drive.google.com/file/d/1fiwg_zIqCjG3adFezTn3nB7bV3UCuB5c/view?usp=sharing" rel="noopener" target="_blank"><img alt="" height="143" src="https://jurnal.uts.ac.id/public/site/images/eriss/sertifikat-sinta-4-jinteks.png" width="215"/></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="content"> </div>
+<div class="content"><center>
+<p><span class="title">ABOUT</span></p>
+</center></div>
+<table class="hover">
+<tbody>
+<tr>
+<td><a href="http://jurnal.uts.ac.id/index.php/JINTEKS/about" rel="noopener" target="_blank">About The Journal</a></td>
+</tr>
+<tr>
+<td><a href="http://www.jurnal.uts.ac.id/index.php/JINTEKS/aimscope" rel="noopener" target="_blank">Aim &amp; Scope</a></td>
+</tr>
+<tr>
+<td><a href="http://jurnal.uts.ac.id/index.php/JINTEKS/about/editorialTeam" rel="noopener" target="_blank">Editorial Team</a></td>
+</tr>
+<tr>
+<td><a href="http://jurnal.uts.ac.id/index.php/JINTEKS/Reviewer" rel="noopener" target="_blank">Peer Review</a></td>
+</tr>
+<tr>
+<td><a href="http://jurnal.uts.ac.id/index.php/JINTEKS/about/contact" rel="noopener" target="_blank">Contact</a></td>
+</tr>
+</tbody>
+</table>
+<div class="content"> </div>
+<div class="content"><center>
+<p><span class="title">FOR AUTHOR</span></p>
+</center></div>
+<table class="hover">
+<tbody>
+<tr>
+<td><a href="https://www.jurnal.uts.ac.id/index.php/JINTEKS/AuthorGuidelines" rel="noopener" target="_blank">Author Guidelines</a></td>
+</tr>
+<tr>
+<td><a href="https://www.jurnal.uts.ac.id/index.php/JINTEKS/reviewprocess" rel="noopener" target="_blank">Review Process</a></td>
+</tr>
+<tr>
+<td><a href="http://www.jurnal.uts.ac.id/index.php/JINTEKS/screeningplagiarism" rel="noopener" target="_blank">Screening For Plagiarism</a></td>
+</tr>
+<tr>
+<td><a href="http://jurnal.uts.ac.id/index.php/JINTEKS/publicationethics" rel="noopener" target="_blank">Publication Ethics</a></td>
+</tr>
+<tr>
+<td><a href="https://www.jurnal.uts.ac.id/index.php/JINTEKS/authorfee" rel="noopener" target="_blank">Author Fee</a></td>
+</tr>
+<tr>
+<td><a href="http://jurnal.uts.ac.id/index.php/JINTEKS/accessstatment" rel="noopener" target="_blank">Open Access Statement</a></td>
+</tr>
+<tr>
+<td><a href="http://jurnal.uts.ac.id/index.php/JINTEKS/creativecommons" rel="noopener" target="_blank">Copyright and License</a></td>
+</tr>
+<tr>
+<td><a href="http://jurnal.uts.ac.id/index.php/JINTEKS/plagiarismpolicy" rel="noopener" target="_blank">Plagiarism Policy</a></td>
+</tr>
+<tr>
+<td><a href="http://jurnal.uts.ac.id/index.php/JINTEKS/archivespolicy" rel="noopener" target="_blank">Archives Policy</a></td>
+</tr>
+</tbody>
+</table>
+<div class="content"> </div>
+<div class="content"><center>
+<p><span class="title">INDEX BY</span></p>
+</center></div>
+<table class="hover1" style="height: 442px;" width="234">
+<tbody>
+<tr>
+<td>
+<p><a href="https://sinta.kemdikbud.go.id/journals/detail?id=8942" rel="noopener" target="_blank"><strong><img alt="" height="94" src="https://jurnal.uts.ac.id/public/site/images/eriss/logo-sinta-4.png" width="224"/></strong></a></p>
+<p><a href="https://scholar.google.com/citations?hl=en&amp;view_op=list_works&amp;authuser=6&amp;gmla=AJsN-F7RyZRyGst4rHw0UQNt55_2u0Ch2Agm4e6OFofPe1hCZ3E9MiuEQWflmsuFTXWwpG9IqRHxbWY5L2tWMepZaz0ly4peQw&amp;user=Z1RzR80AAAAJ" rel="noopener" target="_blank"><strong><img alt="" height="50" src="http://jurnal.uts.ac.id/public/site/images/jinteks/scholar-logo-64dp.png" width="217"/></strong></a></p>
+<p><a href="https://search.crossref.org/?q=jinteks&amp;from_ui=yes&amp;type-name=Journal+Article&amp;container-title=Jurnal+Informatika%2C+Teknologi+dan+Sains" rel="noopener" target="_blank"><strong><img alt="" height="50" src="http://jurnal.uts.ac.id/public/site/images/jinteks/crossref-logo-landscape-200.png" width="217"/></strong></a></p>
+<p><a href="https://garuda.kemdikbud.go.id/journal/view/25364" rel="noopener" target="_blank"><strong><img alt="" height="43" src="http://jurnal.uts.ac.id/public/site/images/jinteks/garuda1.png" width="224"/></strong></a></p>
+<p><a href="https://www.neliti.com/journals/jinteks" rel="noopener" target="_blank"><img alt="" height="53" src="http://jurnal.uts.ac.id/public/site/images/jinteks/neliti.jpg" width="230"/></a></p>
+<p><a href="https://onesearch.id/Search/Results?lookfor=JINTEKS&amp;type=AllFields&amp;filter%5B%5D=collection%3A%22JINTEKS%22&amp;filter%5B%5D=collection%3A%22Jurnal+informatika%2C+Teknologi+dan+Sains+%28JINTEKS%29%22" rel="noopener" target="_blank"><strong><img alt="" height="53" src="http://jurnal.uts.ac.id/public/site/images/jinteks/one-search.jpg" width="230"/></strong></a></p>
+<p><a href="https://portal.issn.org/resource/ISSN/2686-3359" rel="noopener" target="_blank"><strong><img alt="" height="68" src="http://jurnal.uts.ac.id/public/site/images/jinteks/road-issn.png" width="220"/></strong></a></p>
+<p><a href="https://www.base-search.net/Search/Results?lookfor=http%3A%2F%2Fjurnal.uts.ac.id%2Findex.php%2FJINTEKS&amp;name=&amp;oaboost=1&amp;newsearch=1&amp;refid=dcbasen" rel="noopener" target="_blank"><strong><img alt="" height="82" src="http://jurnal.uts.ac.id/public/site/images/jinteks/base-logo-kl.png" width="212"/></strong></a></p>
+<p><a href="https://journalstories.ai/journal/2686-3359" rel="noopener" target="_blank"><img alt="JournalStories Main logo" src="https://journalstories.ai/images/journalstories.png" width="200"/></a></p>
+<p><a href="https://app.dimensions.ai/discover/publication?search_mode=content&amp;and_facet_source_title=jour.1455502" rel="noopener" target="_blank"><img alt="" height="43" src="http://www.jurnal.uts.ac.id/public/site/images/jinteks/dimensions-logo-400x80.png" width="215"/></a></p>
+<p><a href="https://journals.indexcopernicus.com/search/journal/issue?issueId=all&amp;journalId=122802" rel="noopener" target="_blank"><img alt="" height="50" src="http://www.jurnal.uts.ac.id/public/site/images/jinteks/ici2.png" width="218"/></a></p>
+<p><a href="https://www.scilit.net/sources/22589" rel="noopener" target="_blank"><img alt="" height="60" src="https://jurnal.uts.ac.id/public/site/images/eriss/scilit.jpg" width="238"/></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="content"> </div>
+<div class="content"><center>
+<p><span class="title">JOURNAL TEMPLATE</span></p>
+</center></div>
+<p><a href="https://docs.google.com/uc?export=download&amp;id=14zuhaGc0FTJ4ZGNIOEsxsPLoxg33wlmO" rel="noopener" target="_blank"><img alt="" height="68" src="https://jurnal.uts.ac.id/public/site/images/eriss/artikel-template.png" width="223"/></a></p>
+<div class="content"> </div>
+<div class="content"><center>
+<p><span class="title">RECOMMENDED TOOLS</span></p>
+</center></div>
+<table class="hover" style="height: 100px;" width="273">
+<tbody>
+<tr>
+<th>
+<p><a href="https://www.turnitin.com/" rel="noopener" target="_blank"><img alt="" height="66" src="https://jurnal.uts.ac.id/public/site/images/eriss/turnitin-logo-.jpg" width="211"/></a></p>
+</th>
+</tr>
+</tbody>
+</table>
+<div class="content"> </div>
+<div class="content"><center>
+<p><span class="title">SUPERVISED</span></p>
+</center></div>
+<table class="hover" style="height: 81px;" width="217">
+<tbody>
+<tr>
+<th>
+<p><a href="https://relawanjurnal.id/" rel="noopener" target="_blank"><img alt="" height="95" src="http://jurnal.uts.ac.id/public/site/images/jinteks/logorji-t.png" width="213"/></a></p>
+</th>
+</tr>
+</tbody>
+</table>
+<div class="content"> </div>
+<div class="content"><center>
+<p><span class="title">VISITOR</span></p>
+</center></div>
+<p><a href="https://info.flagcounter.com/5nUx"><img alt="Flag Counter" border="0" src="https://s11.flagcounter.com/count2/5nUx/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" style="display: block; margin-left: auto; margin-right: auto;"/></a></p>
+<p><a href="http://statcounter.com/p12484594/summary/?guest=1" rel="noopener" target="_blank" title="Web Analytics"><img alt="Web Analytics" src="https://c.statcounter.com/12484594/0/7a1d6f1d/0/" style="display: block; margin-left: auto; margin-right: auto;"/></a></p>
+<a href="https://clustrmaps.com/site/1c62d" title="ClustrMaps"><img src="//www.clustrmaps.com/map_v2.png?d=K9X-3GQ4JgYxM2jcIPyhHhkpncu1xm0ahjUexmbvfA0&amp;cl=ffffff"/></a>
+<div class="content"> </div>
+<div class="content"><center>
+<p><span class="title">CONTACT SUPPORT</span></p>
+</center></div>
+<div>
+<table>
+<tbody>
+<tr>
+<th>
+<p><a href="https://wa.me/6287777374592" rel="noopener" target="_blank"><img alt="" height="79" src="https://jurnal.uts.ac.id/public/site/images/eriss/whatsapp1-removebg-preview-removebg-preview.png" width="223"/></a></p>
+</th>
+</tr>
+</tbody>
+</table>
+</div>
+</center></div>
+</div>
+</div>
+<div class="pkp_block block_Keywordcloud">
+<h2 class="title">Keywords</h2>
+<div class="content" id="wordcloud"></div>
+<script>
+		function randomColor() {
+			var colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'];
+			return colors[Math.floor(Math.random()*colors.length)];
+		}
+
+					document.addEventListener("DOMContentLoaded", function() {
+				var keywords = [{"text":"cnn","size":1},{"text":"structural equation modeling","size":1},{"text":"sampel produk, customer, engineering, sistem informasi, web","size":1},{"text":"regresi linear","size":1},{"text":"rapidminer","size":1},{"text":"pelastik","size":1},{"text":"application, leave, waterfall, website","size":1},{"text":"keywords: service sytem, e-commerce, electronics","size":1},{"text":"whatsapp business","size":1},{"text":"hot fit model","size":1},{"text":"sem","size":1},{"text":"amos","size":1},{"text":"social commerce","size":1},{"text":"tiktok","size":1},{"text":"tiktok shop","size":1},{"text":"technology acceptance model","size":1},{"text":"camscanner","size":1},{"text":"supply, php mysql, systems development life cycle","size":1},{"text":"delone and mclean","size":1},{"text":"scan","size":1},{"text":"structural equation modeling (sem)","size":1},{"text":"ecomemrce","size":1},{"text":"shopee","size":1},{"text":"spaylater","size":1},{"text":"technology acceptance model (tam)","size":1},{"text":"smks damar","size":1},{"text":"structural equation model (sem)","size":1},{"text":"peou","size":1},{"text":"pu","size":1},{"text":"atut","size":1},{"text":"keputusan","size":1},{"text":"pemasok","size":1},{"text":"php, doctor's practice, medical records, uml, waterfall.","size":1},{"text":"analisis mc. farlan grid dan rencana strategi","size":1},{"text":"penggajian, extreme programming, uml, blackbox testing, kementerian agama.","size":1},{"text":"software engineering","size":1},{"text":"iso\/iec 25010","size":1},{"text":"uang komite","size":1},{"text":"design, management system, website based","size":1},{"text":"autism spectrum disorder","size":1},{"text":"fuzzy k-nearest neighbor","size":1},{"text":"diagnosis","size":1},{"text":"spare parts","size":1},{"text":"linier regression","size":1},{"text":"smape","size":1},{"text":"barang","size":1},{"text":"kasir","size":1},{"text":"architecture visualization","size":1},{"text":"kamus","size":1},{"text":"bahasa tolaki","size":1}];
+				var totalWeight = 0;
+				var width = 300;
+				var height = 200;
+				var transitionDuration = 200;
+				var length_keywords = keywords.length;
+				var layout = d3.layout.cloud();
+
+				layout.size([width, height])
+					.words(keywords)
+					.fontSize(function(d)
+					{
+						return fontSize(+d.size);
+					})
+					.on('end', draw);
+
+				var svg = d3.select("#wordcloud").append("svg")
+					.attr("viewBox", "0 0 " + width + " " + height)
+					.attr("width", '100%');
+
+				function update() {
+					var words = layout.words();
+					fontSize = d3.scaleLinear().range([16, 34]);
+					if (words.length) {
+						fontSize.domain([+words[words.length - 1].size || 1, +words[0].size]);
+					}
+				}
+
+				keywords.forEach(function(item,index){totalWeight += item.size;});
+
+				update();
+
+				function draw(words, bounds) {
+					var w = layout.size()[0],
+						h = layout.size()[1];
+
+					scaling = bounds
+						? Math.min(
+							w / Math.abs(bounds[1].x - w / 2),
+							w / Math.abs(bounds[0].x - w / 2),
+							h / Math.abs(bounds[1].y - h / 2),
+							h / Math.abs(bounds[0].y - h / 2),
+						) / 2
+						: 1;
+
+					svg
+					.append("g")
+					.attr(
+						"transform",
+						"translate(" + [w >> 1, h >> 1] + ")scale(" + scaling + ")",
+					)
+					.selectAll("text")
+						.data(words)
+					.enter().append("text")
+						.style("font-size", function(d) { return d.size + "px"; })
+						.style("font-family", 'serif')
+						.style("fill", randomColor)
+						.style('cursor', 'pointer')
+						.style('opacity', 0.7)
+						.attr('class', 'keyword')
+						.attr("text-anchor", "middle")
+						.attr("transform", function(d) {
+							return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+						})
+						.text(function(d) { return d.text; })
+						.on("click", function(d, i){
+							window.location = "http://jurnal.uts.ac.id/index.php/JINTEKS/search?query=QUERY_SLUG".replace(/QUERY_SLUG/, encodeURIComponent(''+d.text+''));
+						})
+						.on("mouseover", function(d, i) {
+							d3.select(this).transition()
+								.duration(transitionDuration)
+								.style('font-size',function(d) { return (d.size + 3) + "px"; })
+								.style('opacity', 1);
+						})
+						.on("mouseout", function(d, i) {
+							d3.select(this).transition()
+								.duration(transitionDuration)
+								.style('font-size',function(d) { return d.size + "px"; })
+								.style('opacity', 0.7);
+						})
+						.on('resize', function() { update() });
+				}
+
+				layout.start();
+
+			});
+			</script>
+</div>
+</div><!-- pkp_sidebar.left -->
+</div><!-- pkp_structure_content -->
+<div class="pkp_structure_footer_wrapper" role="contentinfo">
+<a id="pkp_content_footer"></a>
+<div class="pkp_structure_footer">
+<div class="pkp_footer_content">
+<p><a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img alt="Lisensi Creative Commons" src="https://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width: 0;"/></a><br/><span style="color: #ffffff;">Ciptaan disebarluaskan di bawah</span> <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Lisensi Creative Commons Atribusi 4.0 Internasional</a>.</p>
+<p style="box-sizing: border-box; color: rgba(0, 0, 0, 0.87); font-family: &amp;quot; noto serif&amp;quot;,-apple-system,blinkmacsystemfont,&amp;quot;segoe ui&amp;quot;,&amp;quot;roboto&amp;quot;,&amp;quot;oxygen-sans&amp;quot;,&amp;quot;ubuntu&amp;quot;,&amp;quot;cantarell&amp;quot;,&amp;quot;helvetica neue&amp;quot;,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"><span style="color: #fbb31e;"><strong style="box-sizing: border-box; font-weight: &lt;hr /&gt;bolder;">PRODI INFORMATIKA - UNIVERSITAS TEKNOLOGI SUMBAWA</strong></span></p>
+<p style="box-sizing: border-box; color: rgba(0, 0, 0, 0.87); font-family: &amp;quot; noto serif&amp;quot;,-apple-system,blinkmacsystemfont,&amp;quot;segoe ui&amp;quot;,&amp;quot;roboto&amp;quot;,&amp;quot;oxygen-sans&amp;quot;,&amp;quot;ubuntu&amp;quot;,&amp;quot;cantarell&amp;quot;,&amp;quot;helvetica neue&amp;quot;,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"><span style="color: #ffffff;">Jln. Olat Maras Dsn. Batu Alang, Kec. Moyo Hulu, Kab. Sumbawa Besar, Nusa Tenggara Barat.</span></p>
+<p style="box-sizing: border-box; color: rgba(0, 0, 0, 0.87); font-family: &amp;quot; noto serif&amp;quot;,-apple-system,blinkmacsystemfont,&amp;quot;segoe ui&amp;quot;,&amp;quot;roboto&amp;quot;,&amp;quot;oxygen-sans&amp;quot;,&amp;quot;ubuntu&amp;quot;,&amp;quot;cantarell&amp;quot;,&amp;quot;helvetica neue&amp;quot;,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"><span style="color: #ffffff;">Telp/Fax: 0371-2629906<em style="box-sizing: border-box;"> | </em>e-mail:</span><em style="box-sizing: border-box;"> <a href="mailto:jurnal.ft@uts.ac.id" style="background-color: transparent; box-sizing: border-box; color: #007ab2;">jurnal.informatika@uts.ac.id</a> <span style="color: #ffffff;">| </span></em><span style="color: #ffffff;">website:</span> <em><a href="http://informatika.uts.ac.id/" rel="noopener" target="_blank">informatika.uts.ac.id</a></em></p>
+</div>
+<div class="pkp_brand_footer" role="complementary">
+<a href="http://jurnal.uts.ac.id/index.php/JINTEKS/about/aboutThisPublishingSystem">
+<img alt="About this Publishing System" src="http://jurnal.uts.ac.id/templates/images/ojs_brand.png"/>
+</a>
+</div>
+</div>
+</div><!-- pkp_structure_footer_wrapper -->
+</div><!-- pkp_structure_page -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js?v=3.2.0.3" type="text/javascript"></script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.js?v=3.2.0.3" type="text/javascript"></script><script src="http://jurnal.uts.ac.id/lib/pkp/js/lib/jquery/plugins/jquery.tag-it.js?v=3.2.0.3" type="text/javascript"></script><script src="http://jurnal.uts.ac.id/plugins/themes/default/js/lib/popper/popper.js?v=3.2.0.3" type="text/javascript"></script><script src="http://jurnal.uts.ac.id/plugins/themes/default/js/lib/bootstrap/util.js?v=3.2.0.3" type="text/javascript"></script><script src="http://jurnal.uts.ac.id/plugins/themes/default/js/lib/bootstrap/dropdown.js?v=3.2.0.3" type="text/javascript"></script><script src="http://jurnal.uts.ac.id/plugins/themes/default/js/main.js?v=3.2.0.3" type="text/javascript"></script><script src="http://jurnal.uts.ac.id/plugins/generic/citationStyleLanguage/js/articleCitation.js?v=3.2.0.3" type="text/javascript"></script><script src="https://d3js.org/d3.v4.js?v=3.2.0.3" type="text/javascript"></script><script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js?v=3.2.0.3" type="text/javascript"></script>
+</body>
+</html>

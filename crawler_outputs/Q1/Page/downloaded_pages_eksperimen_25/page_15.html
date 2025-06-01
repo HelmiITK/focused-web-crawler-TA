@@ -1,0 +1,830 @@
+
+<!DOCTYPE html>
+
+<html lang="en-US" xml:lang="en-US">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
+		 PERANCANGAN SISTEM INFORMASI PENGELOLAAN LAPANGAN FUTSAL BERBASIS WEB DENGAN METODE RAPID APPLICATION DEVELOPMENT MENGGUNAKAN ALGORITMA STRING MATCHING DI MAESTRO FUTSAL KEMAYORAN  JAKARTA
+							| Journal of Information System, Informatics and Computing
+			</title>
+<meta content="Open Journal Systems 3.0.2.0" name="generator"/>
+<meta content="1.1" name="gs_meta_revision">
+<meta content="Journal of Information System, Informatics and Computing" name="citation_journal_title">
+<meta content="2597-3673" name="citation_issn">
+<meta content="Wahidin Wahidin" name="citation_author"/>
+<meta content="Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta" name="citation_author_institution"/>
+<meta content="Verdi Yasin" name="citation_author"/>
+<meta content="Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta" name="citation_author_institution"/>
+<meta content="Rachmawaty Haroen" name="citation_author"/>
+<meta content="Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta" name="citation_author_institution"/>
+<meta content=" PERANCANGAN SISTEM INFORMASI PENGELOLAAN LAPANGAN FUTSAL BERBASIS WEB DENGAN METODE RAPID APPLICATION DEVELOPMENT MENGGUNAKAN ALGORITMA STRING MATCHING DI MAESTRO FUTSAL KEMAYORAN  JAKARTA" name="citation_title"/>
+<meta content="2021/06/20" name="citation_date"/>
+<meta content="5" name="citation_volume"/>
+<meta content="1" name="citation_issue"/>
+<meta content="1" name="citation_firstpage"/>
+<meta content="15" name="citation_lastpage"/>
+<meta content="10.52362/jisicom.v5i1.375" name="citation_doi"/>
+<meta content="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/view/375" name="citation_abstract_html_url"/>
+<meta content="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/download/375/305" name="citation_pdf_url"/>
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC"/>
+<meta content=", " name="DC.Creator.PersonalName"/>
+<meta content="2021-06-20" name="DC.Date.created" scheme="ISO8601"/>
+<meta content="2021-02-07" name="DC.Date.dateSubmitted" scheme="ISO8601"/>
+<meta content="2021-06-20" name="DC.Date.issued" scheme="ISO8601"/>
+<meta content="2021-06-20" name="DC.Date.modified" scheme="ISO8601"/>
+<meta content="Penelitian ini bertujuan menciptakan sistem informasi yang dapat merekap data aset dan fasilitas, penyewa dan pembayaran Pada Maestro Futsal Kemayoran. Masalah utama yang menjadi pembahasan penelitian adalah penggunaan sistem informasi yang ada saat ini masih manual. Transaksi pembayaran dan rekap laporan yang dilakukan dengan buku besar, membuat pengelola dalam merekap data transaksi menjadi sulit. karena sering terjadinya salah penghitungan yang akibatnya proses pembuatan laporan tidak tepat waktu, karena semua proses dilakukan secara manual. &amp;nbsp;&amp;nbsp;Status bayar oleh penyewa sulit untuk di lacak jika pemilik meminta hasil laporan. Adapun metode penelitian yang digunakan adalah penelitian Metode Rapid Application Development Menggunakan Algoritma String Matching, dalam prosesnya terdiri dari perencanaan sistem, analisis sistem, perancangan sistem, dan implementasi sistem. Hasil Penelitian ini adalah sebuah sistem informasi sewa aset dan fasilitas lapangan futsal Maestro Futsal Kemayoran berbasis web. Dengan adanya sistem informasi ini diharapkan transaksi kedua belah pihak dapat dengan mudah dan saling menguntungkan dan para pemilik juga dapat mengawasi transaksi yang ada dimanapun." name="DC.Description" xml:lang="en"/>
+<meta content="application/pdf" name="DC.Format" scheme="IMT"/>
+<meta content="375" name="DC.Identifier"/>
+<meta content="1-15" name="DC.Identifier.pageNumber"/>
+<meta content="10.52362/jisicom.v5i1.375" name="DC.Identifier.DOI"/>
+<meta content="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/view/375" name="DC.Identifier.URI"/>
+<meta content="en" name="DC.Language" scheme="ISO639-1"/>
+<meta content="Copyright (c) 2021 Wahidin Wahidin, Verdi Yasin, Rachmawaty Haroen" name="DC.Rights"/>
+<meta content="http://creativecommons.org/licenses/by/4.0" name="DC.Rights"/>
+<meta content="Journal of Information System, Informatics and Computing" name="DC.Source"/>
+<meta content="2597-3673" name="DC.Source.ISSN"/>
+<meta content="1" name="DC.Source.Issue"/>
+<meta content="5" name="DC.Source.Volume"/>
+<meta content="https://journal.stmikjayakarta.ac.id/index.php/jisicom" name="DC.Source.URI"/>
+<meta content=" PERANCANGAN SISTEM INFORMASI PENGELOLAAN LAPANGAN FUTSAL BERBASIS WEB DENGAN METODE RAPID APPLICATION DEVELOPMENT MENGGUNAKAN ALGORITMA STRING MATCHING DI MAESTRO FUTSAL KEMAYORAN  JAKARTA" name="DC.Title"/>
+<meta content="Text.Serial.Journal" name="DC.Type"/>
+<meta content="Articles" name="DC.Type.articleType"/>
+<link href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/$$$call$$$/page/page/css?name=stylesheet" rel="stylesheet" type="text/css"/><link href="//fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css"/><link href="https://journal.stmikjayakarta.ac.id/plugins/generic/orcidProfile/css/orcidProfile.css" rel="stylesheet" type="text/css"/>
+</meta></meta></meta></head><body class="pkp_page_article pkp_op_view has_site_logo" dir="ltr">
+<div class="cmp_skip_to_content">
+<a href="#pkp_content_main">Skip to main content</a>
+<a href="#pkp_content_nav">Skip to main navigation menu</a>
+<a href="#pkp_content_footer">Skip to site footer</a>
+</div>
+<div class="pkp_structure_page">
+<header class="pkp_structure_head" id="headerNavigationContainer" role="banner">
+<div class="pkp_head_wrapper">
+<div class="pkp_site_name_wrapper">
+<div class="pkp_site_name">
+<a class="is_img" href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/index">
+<img alt="Jisicom" height="350" src="https://journal.stmikjayakarta.ac.id/public/journals/1/pageHeaderLogoImage_en_US.png" width="1351"/>
+</a>
+</div>
+</div>
+<nav aria-label="Site Navigation" class="pkp_navigation_primary_row navDropdownMenu" id="pkp_content_nav">
+<div class="pkp_navigation_primary_wrapper">
+<ul class="pkp_navigation_primary pkp_nav_list" id="navigationPrimary">
+<li>
+<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/issue/current">
+					Current
+				</a>
+</li>
+<li>
+<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/issue/archive">
+					Archives
+				</a>
+</li>
+<li aria-expanded="false" aria-haspopup="true">
+<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/about">
+				About
+			</a>
+<ul>
+<li>
+<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/about">
+						About the Journal
+					</a>
+</li>
+<li>
+<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/about/editorialTeam">
+							Editorial Team
+						</a>
+</li>
+<li>
+<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/about/submissions">
+						Submissions
+					</a>
+</li>
+<li>
+<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/about/contact">
+							Contact
+						</a>
+</li>
+</ul>
+</li>
+</ul>
+<form action="https://journal.stmikjayakarta.ac.id/index.php/jisicom/search/search" class="pkp_search" method="post" role="search">
+<input name="csrfToken" type="hidden" value="c80a36a086848c745bf11fc03d3a360b"/>
+<input aria-label="Search Query" name="query" type="text" value=""/>
+<button type="submit">
+			Search
+		</button>
+<div aria-hidden="true" class="search_controls">
+<a aria-hidden="true" class="headerSearchPrompt search_prompt" href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/search/search">
+				Search
+			</a>
+<a aria-hidden="true" class="search_cancel headerSearchCancel" href="#"></a>
+<span aria-hidden="true" class="search_loading"></span>
+</div>
+</form>
+</div>
+</nav>
+<nav aria-label="User Navigation" class="pkp_navigation_user_wrapper navDropdownMenu" id="navigationUserWrapper">
+<ul class="pkp_navigation_user pkp_nav_list" id="navigationUser">
+<li><a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/user/register">Register</a></li>
+<li><a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/login">Login</a></li>
+</ul>
+</nav><!-- .pkp_navigation_user_wrapper -->
+</div><!-- .pkp_head_wrapper -->
+</header><!-- .pkp_structure_head -->
+<div class="pkp_structure_content has_sidebar">
+<div class="pkp_structure_main" id="pkp_content_main" role="main">
+<div class="page page_article">
+<nav aria-label="You are here:" class="cmp_breadcrumbs" role="navigation">
+<ol>
+<li>
+<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/index">
+				Home
+			</a>
+<span class="separator">/</span>
+</li>
+<li>
+<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/issue/archive">
+				Archives
+			</a>
+<span class="separator">/</span>
+</li>
+<li>
+<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/issue/view/29">
+				Vol 5 No 1 (2021): JISICOM : Volume 5, Nomor 1, Juni 2021
+			</a>
+<span class="separator">/</span>
+</li>
+<li class="current">
+									Articles
+						</li>
+</ol>
+</nav>
+<article class="obj_article_details">
+<h1 class="page_title">
+		 PERANCANGAN SISTEM INFORMASI PENGELOLAAN LAPANGAN FUTSAL BERBASIS WEB DENGAN METODE RAPID APPLICATION DEVELOPMENT MENGGUNAKAN ALGORITMA STRING MATCHING DI MAESTRO FUTSAL KEMAYORAN  JAKARTA
+	</h1>
+<h2 class="subtitle">
+			Designing a web-based futsal field management information system with the   rapid application development method using the string matching algorithm at maestro futsal kemayoran jakarta.
+		</h2>
+<div class="row">
+<div class="main_entry">
+<ul class="item authors">
+<li>
+<span class="name">
+								Wahidin Wahidin
+							</span>
+<span class="affiliation">
+									Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta
+								</span>
+</li>
+<li>
+<span class="name">
+								Verdi Yasin
+							</span>
+<span class="affiliation">
+									Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta
+								</span>
+</li>
+<li>
+<span class="name">
+								Rachmawaty Haroen
+							</span>
+<span class="affiliation">
+									Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta
+								</span>
+</li>
+</ul>
+<div class="item doi">
+<span class="label">
+							DOI:
+						</span>
+<span class="value">
+<a href="https://doi.org/10.52362/jisicom.v5i1.375">
+								https://doi.org/10.52362/jisicom.v5i1.375
+							</a>
+</span>
+</div>
+<div class="item abstract">
+<h3 class="label">Abstract</h3>
+<p>Penelitian ini bertujuan menciptakan sistem informasi yang dapat merekap data aset dan fasilitas, penyewa dan pembayaran Pada Maestro Futsal Kemayoran. Masalah utama yang menjadi pembahasan penelitian adalah penggunaan sistem informasi yang ada saat ini masih manual. Transaksi pembayaran dan rekap laporan yang dilakukan dengan buku besar, membuat pengelola dalam merekap data transaksi menjadi sulit. karena sering terjadinya salah penghitungan yang akibatnya proses pembuatan laporan tidak tepat waktu, karena semua proses dilakukan secara manual.   Status bayar oleh penyewa sulit untuk di lacak jika pemilik meminta hasil laporan. Adapun metode penelitian yang digunakan adalah penelitian <em>Metode Rapid Application Development </em>Menggunakan <em>Algoritma String Matching</em>, dalam prosesnya terdiri dari perencanaan sistem, analisis sistem, perancangan sistem, dan implementasi sistem. Hasil Penelitian ini adalah sebuah sistem informasi sewa aset dan fasilitas lapangan futsal Maestro Futsal Kemayoran berbasis <em>web</em>. Dengan adanya sistem informasi ini diharapkan transaksi kedua belah pihak dapat dengan mudah dan saling menguntungkan dan para pemilik juga dapat mengawasi transaksi yang ada dimanapun.</p>
+</div>
+<div class="item downloads_chart">
+<h3 class="label">
+		Downloads
+	</h3>
+<div class="value">
+<canvas class="usageStatsGraph" data-object-id="375" data-object-type="PublishedArticle"></canvas>
+<div class="usageStatsUnavailable" data-object-id="375" data-object-type="PublishedArticle">
+			Download data is not yet available.
+		</div>
+</div>
+</div>
+<div class="item author_bios">
+<h3 class="label">
+													Author Biographies
+											</h3>
+<div class="sub_item">
+<div class="label">
+																																							Wahidin Wahidin, <span class="affiliation">Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta</span>
+</div>
+<div class="value">
+<p>Program Studi Teknik Informatika (S1)</p>
+</div>
+</div>
+<div class="sub_item">
+<div class="label">
+																																							Verdi Yasin, <span class="affiliation">Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta</span>
+</div>
+<div class="value">
+<p>Program Studi  Teknik Informatika </p>
+</div>
+</div>
+<div class="sub_item">
+<div class="label">
+																																							Rachmawaty Haroen, <span class="affiliation">Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta</span>
+</div>
+<div class="value">
+<p>Program Studi Sistem Informasi</p>
+</div>
+</div>
+</div>
+<div class="item references">
+<h3 class="label">
+						References
+					</h3>
+<div class="value">
+						[1] Abdulloh, Rohi ‘7 in 1 Pemograman Web untuk Pemula’, 2018, PT. Elex Media Komputindo, Jakarta<br/>
+[2] MF, Mundzir ‘Buku Sakti Pemograman Web Seri PHP’, 2018, Start Up, Yogyakarta<br/>
+[3] Suprapto, Falahah. 2018. Rekayasa Perangkat Lunak. Jakarta : LENTERA ILMU CENDEKIA<br/>
+[4] Rosa A.S dan Shalahuddin, M. 2018. Rekayasa Perangkat Lunak Terstruktur dan Berorientasi Objek Edisi Revisi. Bandung : INFORMATIKA<br/>
+[5] Sukamto, R. A., &amp; Shalahuddin, M. (2018). Rekayasa Perangkat Lunak Terstruktur dan Berorientasi Objek (edisi revisi). Bandung: Informatika.<br/>
+[6] Rohi, Abdulloh. 2018. 7 in 1 Pemograman Web Untuk Pemula. Jakarta: PT. Elex Media Komputindo.<br/>
+  [7] Jurnal Merdekawati, “ Sistem Informasi Penyewaan Lapangan Futsal Berbasis Web Pada Futsal Station Bekasi,” Jurnal Pendidikan Teknologi dan Kejuruan Vol. 16, No. 1, Januari 2019 P-ISSN : 0216-3241 E-ISSN : 2541-0652<br/>
+[8] M. Ilham Habil “ Pengembangan Sistem Informasi Penyewaan Lapang “Jurnal Algoritma Sekolah Tinggi Teknologi Garut ISSN : 2302-7339 Vol. 11 No. 2 2015<br/>
+[9] Sarif  Ngabdilah “ Sistem Pemesanan Lapangan Futsal Berasis Android Futsal Court Ordering System Based On Androiddi Sudirman Futsal” simki.unpkediri.ac.id.<br/>
+[10] Anoname_________“Pengertian \MySQL” http://www.scribd.com/doc/57726016/18/Pengertian-MySQL (diakses tanggal 12 Oktober  2019)<br/>
+[11] Anoname________“Relasi Tabel”  http://www.scribd.com/doc/54052219/Internet-Merupakan-Jaringan-Global-Komputer-Dunia di akses pada tanggal 2 Oktober 2019 <br/>
+[12]  http://www.definisi-pengertian.com/2015/03/definisi-dan-pengertian-informasi.html di akses pada tanggal 7 April 2020
+					</div>
+</div>
+</div><!-- .main_entry -->
+<div class="entry_details">
+<div class="item cover_image">
+<div class="sub_item">
+<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/issue/view/29">
+<img src="https://journal.stmikjayakarta.ac.id/public/journals/1/cover_issue_29_en_US.png"/>
+</a>
+</div>
+</div>
+<div class="item galleys">
+<ul class="value galleys_links">
+<li>
+<a class="obj_galley_link pdf" href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/view/375/305">
+
+		
+	PDF
+</a> </li>
+</ul>
+</div>
+<div class="item published">
+<div class="label">
+						Published
+					</div>
+<div class="value">
+						2021-06-20
+					</div>
+</div>
+<div class="item citation_formats">
+<div class="sub_item citation_display">
+<div class="label">
+								How to Cite
+							</div>
+<div class="value" id="citationOutput">
+															WAHIDIN, Wahidin; 						YASIN, Verdi; 						HAROEN, Rachmawaty.
+ PERANCANGAN SISTEM INFORMASI PENGELOLAAN LAPANGAN FUTSAL BERBASIS WEB DENGAN METODE RAPID APPLICATION DEVELOPMENT MENGGUNAKAN ALGORITMA STRING MATCHING DI MAESTRO FUTSAL KEMAYORAN  JAKARTA.
+<strong>Journal of Information System, Informatics and Computing</strong>, [S.l.], v. 5, n. 1, p. 1-15, june 2021.
+ISSN 2597-3673.
+Available at: &lt;<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/view/375" target="_new">https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/view/375</a>&gt;. Date accessed: 01 june 2025.
+doi: <a href="https://doi.org/10.52362/jisicom.v5i1.375">https://doi.org/10.52362/jisicom.v5i1.375</a>. 
+							</div>
+</div>
+<div class="sub_item citation_format_options">
+<div class="label">
+							Citation Formats
+						</div>
+<div class="value">
+<ul>
+<li class="AbntCitationPlugin current">
+<a data-load-citation="true" href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/cite/375/AbntCitationPlugin" target="_blank">ABNT</a>
+</li>
+<li class="ApaCitationPlugin">
+<a data-load-citation="true" href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/cite/375/ApaCitationPlugin" target="_blank">APA</a>
+</li>
+<li class="BibtexCitationPlugin">
+<a data-load-citation="true" href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/cite/375/BibtexCitationPlugin" target="_blank">BibTeX</a>
+</li>
+<li class="CbeCitationPlugin">
+<a data-load-citation="true" href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/cite/375/CbeCitationPlugin" target="_blank">CBE</a>
+</li>
+<li class="EndNoteCitationPlugin">
+<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/cite/375/EndNoteCitationPlugin" target="_blank">EndNote - EndNote format (Macintosh &amp; Windows)</a>
+</li>
+<li class="MlaCitationPlugin">
+<a data-load-citation="true" href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/cite/375/MlaCitationPlugin" target="_blank">MLA</a>
+</li>
+<li class="ProCiteCitationPlugin">
+<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/cite/375/ProCiteCitationPlugin" target="_blank">ProCite - RIS format (Macintosh &amp; Windows)</a>
+</li>
+<li class="RefWorksCitationPlugin">
+<a data-load-citation="true" href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/cite/375/RefWorksCitationPlugin" target="_blank">RefWorks</a>
+</li>
+<li class="RefManCitationPlugin">
+<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/cite/375/RefManCitationPlugin" target="_blank">Reference Manager - RIS format (Windows only)</a>
+</li>
+<li class="TurabianCitationPlugin">
+<a data-load-citation="true" href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/cite/375/TurabianCitationPlugin" target="_blank">Turabian</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="item issue">
+<div class="sub_item">
+<div class="label">
+						Issue
+					</div>
+<div class="value">
+<a class="title" href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/issue/view/29">
+							Vol 5 No 1 (2021): JISICOM : Volume 5, Nomor 1, Juni 2021
+						</a>
+</div>
+</div>
+<div class="sub_item">
+<div class="label">
+							Section
+						</div>
+<div class="value">
+							Articles
+						</div>
+</div>
+</div>
+<div class="item copyright">
+<a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img alt="Creative Commons License" src="//i.creativecommons.org/l/by/4.0/88x31.png"/></a><p>This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a>.</p>
+</div>
+</div><!-- .entry_details -->
+</div><!-- .row -->
+</article>
+<div id="articlesBySameAuthorList">
+<h3>Most read articles by the same author(s)</h3>
+<ul>
+<li>
+													Muhammad Hendriawan,
+													Thomas Budiman,
+													Verdi Yasin,
+													Asih Septia Rini,
+												<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/view/371">
+							 PENGEMBANGAN APLIKASI E-COMMERCE DI PT. PUTRA SUMBER ABADI MENGGUNAKAN FLUTTER
+						</a>,
+						<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/issue/view/29">
+							Journal of Information System, Informatics and Computing: Vol 5 No 1 (2021): JISICOM : Volume 5, Nomor 1, Juni 2021
+						</a>
+</li>
+<li>
+													Ito Riris Immasari,
+													Rhino Ardiansah Mansyur,
+													Rachmawaty Haroen,
+												<a href="https://journal.stmikjayakarta.ac.id/index.php/jisamar/article/view/372">
+							 RANCANG BANGUN SISTEM INFORMASI  PENGOLAHAN DATA NILAI SISWA SMP ABC MENGGUNAKAN  PHP dan MySQL
+						</a>,
+						<a href="https://journal.stmikjayakarta.ac.id/index.php/jisamar/issue/view/25">
+							Journal of Information System, Applied, Management, Accounting and Research: Vol 5 No 1 (2021): JISAMAR : Volume 5, Nomor 1, February 2021
+						</a>
+</li>
+<li>
+													Arif Sudrajat,
+													Thomas Budiman,
+													Rachmawaty Haroen,
+													Verdi Yasin,
+												<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/view/376">
+							 PENDATAAN ASET BIRO PENGELOLAAN BARANG MILIK NEGARA KEMENTERIAN PEKERJAAN UMUM DAN PERUMAHAN RAKYAT MENGGUNAKAN SISTEM INFORMASI GEOGRAFIS BERBASIS WEB
+						</a>,
+						<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/issue/view/29">
+							Journal of Information System, Informatics and Computing: Vol 5 No 1 (2021): JISICOM : Volume 5, Nomor 1, Juni 2021
+						</a>
+</li>
+<li>
+													Kemas Hasyim Azhari,
+													Thomas Budiman,
+													Rachmawaty Haroen,
+													Verdi Yasin,
+												<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/view/381">
+							 ANALISIS  DAN RANCANGAN MANAJEMEN PROSES BISNIS UNTUK LAYANAN PELANGGAN DI PT. PGAS TELEKOMUNIKASI NUSANTARA
+						</a>,
+						<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/issue/view/29">
+							Journal of Information System, Informatics and Computing: Vol 5 No 1 (2021): JISICOM : Volume 5, Nomor 1, Juni 2021
+						</a>
+</li>
+<li>
+													Rendi Sukmawan,
+													Usman Gultom,
+													Rachmawaty Haroen,
+													Verdi Yasin,
+												<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/view/384">
+							 SISTEM PEMINJAMAN DAN PENGEMBALIAN BUKU PERPUSTAKAAN KELILING BERBASIS WEB MENGGUNAKAN ALGORITMA STRING MATCHING PADA SUKU DINAS PERPUSTAKAAN DAN KEARSIPAN KOTA ADMINISTRASI JAKARTA UTARA
+						</a>,
+						<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/issue/view/29">
+							Journal of Information System, Informatics and Computing: Vol 5 No 1 (2021): JISICOM : Volume 5, Nomor 1, Juni 2021
+						</a>
+</li>
+<li>
+													Agres Dwi Saputra,
+													Ifan Junaedi,
+													Rachmawaty Haroen,
+												<a href="https://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/view/410">
+							 Perancangan sistem manajemen pengelolaan persuratan berbasis web dengan metode rapid application development menggunakan algoritma bubble sort di PT Asuransi Adira Dinamika, Tbk
+						</a>,
+						<a href="https://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/issue/view/26">
+							Jurnal Manajamen Informatika Jayakarta: Vol 1 No 1 (2021): Jurnal Manajemen Informatika Jayakarta
+						</a>
+</li>
+<li>
+													Putri Setiani,
+													Ifan Junaedi,
+													Anton Zulkarnain Sianipar,
+													Verdi Yasin,
+												<a href="https://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/view/414">
+							 Perancangan sistem informasi pelayanan penduduk berbasis website di rw 010 Kelurahan Keagungan Kecamatan Tamansari - Jakarta Barat
+						</a>,
+						<a href="https://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/issue/view/26">
+							Jurnal Manajamen Informatika Jayakarta: Vol 1 No 1 (2021): Jurnal Manajemen Informatika Jayakarta
+						</a>
+</li>
+<li>
+													Maulia Usnaini,
+													Verdi Yasin,
+													Anton Zulkarnain Sianipar,
+												<a href="https://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/view/415">
+							 Perancangan sistem informasi inventarisasi aset berbasis web menggunakan metode waterfall
+						</a>,
+						<a href="https://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/issue/view/26">
+							Jurnal Manajamen Informatika Jayakarta: Vol 1 No 1 (2021): Jurnal Manajemen Informatika Jayakarta
+						</a>
+</li>
+<li>
+													Eny Rifani,
+													Rumadi Hartawan,
+													Rachmawaty Haroen,
+												<a href="https://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/view/444">
+							 PENGARUH PENGEMBANGAN APLIKASI PEMETAAN VISUAL DAN PENCATATAN PELANGGAN TERHADAP PRODUKTIVITAS PENAGIHAN PADA PT.TELEKOMUNIKASI INDONESIA
+						</a>,
+						<a href="https://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/issue/view/27">
+							Jurnal Manajamen Informatika Jayakarta: Vol 1 No 2 (2021): Jurnal Manajemen Informatika Jayakarta
+						</a>
+</li>
+<li>
+													Maulana Syepanda,
+													Zulhalim Zulhalim,
+													Rachmawaty Haroen,
+												<a href="https://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/article/view/448">
+							 PERANCANGAN APLIKASI PENCARIAN RUTE WISATA KULINER BERBASIS ANDROID MENGGUNAKAN ALGORITMA DIJKSTRA DI KOTA TANGERANG SELATAN
+						</a>,
+						<a href="https://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta/issue/view/27">
+							Jurnal Manajamen Informatika Jayakarta: Vol 1 No 2 (2021): Jurnal Manajemen Informatika Jayakarta
+						</a>
+</li>
+</ul>
+<div id="articlesBySameAuthorPages">
+<strong>1</strong> <a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/view/375?articlesBySameAuthorPage=2#articlesBySameAuthor">2</a> <a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/view/375?articlesBySameAuthorPage=2#articlesBySameAuthor">&gt;</a> <a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/article/view/375?articlesBySameAuthorPage=2#articlesBySameAuthor">&gt;&gt;</a> 
+			</div>
+</div>
+</div><!-- .page -->
+</div><!-- pkp_structure_main -->
+<div aria-label="Sidebar" class="pkp_structure_sidebar left" role="complementary">
+<div class="pkp_block block_custom" id="customblock-SintaIndex">
+<div class="content">
+<center>
+<div class="content-box">
+<div class="univ-profile">
+<div class="bg-univ" style="background-image: url('https://sinta.kemdikbud.go.id/public/assets/img/bg-univ.jpg');">
+<div class="univ-name"><img alt="cover" class="img-fluid round-corner mb-4 univ-logo-main" src="https://scholar.google.com/citations?view_op=medium_photo&amp;user=nqD8Y64AAAAJ&amp;citpid=2"/>
+<h3><a href="#!">JISICOM (Journal of Information System, Infomatics and Computing)</a></h3>
+<div class="meta-profile"><a class="affil-loc" href="#!"> SEKOLAH TINGGI MANAJEMEN INFORMATIKA DAN KOMPUTER JAYAKARTA</a> <a class="affil-code" href="#!"> P-ISSN : 25795201 E-ISSN : 25973673 </a></div>
+</div>
+</div>
+</div>
+<div class="row stat-card affil-profile-card mb-6">
+<div class="col-md mb-2">
+<div class="card bg-card-default">
+<div class="card-body">
+<div class="stat-ic"> </div>
+<div class="stat-num">3.19417</div>
+<div class="stat-text">Impact Factor</div>
+</div>
+</div>
+</div>
+<div class="col-md mb-2">
+<div class="card bg-card-red">
+<div class="card-body">
+<div class="stat-ic"> </div>
+<div class="stat-num">577</div>
+<div class="stat-text">Google Citations</div>
+</div>
+</div>
+</div>
+<div class="col-md mb-2">
+<div class="card bg-card-orange">
+<div class="card-body">
+<div class="stat-ic"> </div>
+<div class="stat-num">Sinta 5</div>
+<div class="stat-text">Current Acreditation</div>
+<center></center></div>
+</div>
+</div>
+</div>
+</div>
+</center>
+</div>
+</div><div class="pkp_block block_custom" id="customblock-SitasiScholar">
+<div class="content">
+<center><strong><span class="gsc_rsb_title">Cited by Google Scholar</span></strong>
+<table id="gsc_rsb_st" style="height: 125px;" width="238">
+<thead>
+<tr><th class="gsc_rsb_sth"> </th><th class="gsc_rsb_sth">Semua</th><th class="gsc_rsb_sth">Sejak 2017</th></tr>
+</thead>
+<tbody>
+<tr>
+<td class="gsc_rsb_sc1"><a class="gsc_rsb_f gs_ibl" title='Ini adalah jumlah kutipan untuk semua terbitan. Kolom kedua mencantumkan versi "terkini" dari metrik ini yang merupakan jumlah kutipan baru ke semua terbitan dalam 5 tahun terakhir.'>Kutipan</a></td>
+<td class="gsc_rsb_std">577</td>
+<td class="gsc_rsb_std">577</td>
+</tr>
+<tr>
+<td class="gsc_rsb_sc1"><a class="gsc_rsb_f gs_ibl" title='indeks-h adalah jumlah h terbesar sehingga h publikasi memiliki setidaknya h kutipan. Kolom kedua memiliki versi "terkini" dari metrik ini yang merupakan jumlah terbesar h sehingga h publikasi memiliki setidaknya h kutipan baru dalam 5 tahun terakhir.'>indeks-h</a></td>
+<td class="gsc_rsb_std">11</td>
+<td class="gsc_rsb_std">11</td>
+</tr>
+<tr>
+<td class="gsc_rsb_sc1"><a class="gsc_rsb_f gs_ibl" title='indeks-i10 adalah jumlah publikasi dengan setidaknya 10 kutipan. Kolom kedua memiliki versi "terkini" dari metrik ini yang merupakan jumlah publikasi yang telah diterima setidaknya di 10 kutipan baru dalam 5 tahun terakhir.'>indeks-i10</a></td>
+<td class="gsc_rsb_std">11</td>
+<td class="gsc_rsb_std">11</td>
+</tr>
+</tbody>
+</table>
+<strong>Journal Cited By Google Scholar (SINTA)</strong><br/>
+<table class="table table-sm table-borderless" style="height: 115px;" width="237">
+<tbody>
+<tr>
+<td> </td>
+<td class="text-right">All</td>
+<td class="text-right">Since 2017</td>
+</tr>
+<tr>
+<td>Citation</td>
+<td class="text-right">577</td>
+<td class="text-right">577</td>
+</tr>
+<tr>
+<td>h-index</td>
+<td class="text-right">11</td>
+<td class="text-right">11</td>
+</tr>
+<tr>
+<td>i10-index</td>
+<td class="text-right">11</td>
+<td class="text-right">11</td>
+</tr>
+</tbody>
+</table>
+</center>
+</div>
+</div><div class="pkp_block block_custom" id="customblock-Partners">
+<div class="content">
+<h2><strong>Supervised Member by:</strong></h2>
+<p><strong><a href="https://relawanjurnal.id/%20" title="Relawan Jurnal Indonesia (RJI)"><img alt="" src="/public/site/images/verdiyasin/Logo_RJI._uk50_2.jpg"/></a></strong></p>
+<p> <strong>INTERNATIONAL STANDAR SERIAL NUMBER CENTER</strong></p>
+<p><a href="https://portal.issn.org/api/search?search[]=MUST=allissnbis=%222579-5201%22&amp;search_id=8017400#%20"><strong><img alt="" src="/public/site/images/verdiyasin/logo_ISSN_Center.jpg"/></strong></a></p>
+<h3><strong> ACCREDITED GRADE 5 (S5)</strong></h3>
+<p>DECREE OF THE MINISTER OF RESEARCH AND TECHNOLOGY / HEAD OF THE NATIONAL RESEARCH AND INNOVATION AGENCY OF THE REPUBLIC OF INDONESIA, <strong>NUMBER 200 / M / KPT / 2020</strong> ON THE ACCREDITATION RATING OF SCIENTIFIC JOURNALS PERIOD III OF 2020. JOURNAL OF INFORMATION SYSTEM, INFORMATICS AND COMPUTING, RANKED 5TH (SINTA 5), CALCULATED VOLUME 2 NUMBER 2 (2018) TO VOLUME 7 NUMBER 1 (2023), WAS SET IN JAKARTA, ON DECEMBER 23, 2020.</p>
+<p><a href="https://sinta.kemdikbud.go.id/journals/detail?id=7247" title="SINTA-JISICOM"><img alt="" src="/public/site/images/verdiyasin/Akreditasi_SINTA_5.jpg"/></a></p>
+<p><a href="https://drive.google.com/file/d/1gN8ZJOKR_ycjJ0b7TM-y_YEvXhHO3iCO/view?usp=sharing">KEPUTUSAN KETUA SEKOLAH TINGGI MANAJEMEN INFORMATIKA DAN KOMPUTER JAYAKARTA Nomor : 105/KT/STMIK-J/IX/2024 Ditetapkan di Jakarta, 7 September 2024. Tentang PENGANGKATAN SUSUNAN DEWAN REDAKSI &amp; REVIEWER/PUBLIKASI JISICOM (JOURNAL OF INFORMATION SYSTEM, INFORMATICS AND COMPUTING) ISSN : 2579-5201 (CETAK) DAN ISSN : 2597-3673 (ELEKTRONIK)</a></p>
+<p><strong>SILAKHKAN KLIK</strong> <a href="https://forms.gle/PUkqRF3DZuvLJN7T7">DAFTAR - REKRUT CALON REVIEWER</a></p>
+<p> </p>
+</div>
+</div><div class="pkp_block block_custom" id="customblock-Tools">
+<div class="content">
+<p><strong>TOOLS :</strong></p>
+<p>Please Ceck Plagiarism or Similarity of Manuscript Contents / Journal Articles of the Author by Using Softwrae below!</p>
+<p><strong><a href="https://www.grammarly.com/%20"><img alt="" src="/public/site/images/verdiyasin/logo_grammarly_uk601.jpg"/></a></strong></p>
+<p><a href="https://crosscheck.ithenticate.com/en_us/login%20"><img alt="" src="/public/site/images/verdiyasin/logo_crossref_similarity_check_uk401.png"/></a></p>
+<p><a href="https://www.turnitin.com/" title="Turnitin Plagiarism"><img alt="" src="/public/site/images/admin/logo_Turnitin11.png"/></a></p>
+</div>
+</div><div class="pkp_block block_custom" id="customblock-AccreditedSertificate">
+<div class="content">
+<p><strong>Accredited Sertificate of RISTEKBRIN</strong></p>
+<p><a href="https://drive.google.com/file/d/1kF-wQ5vcLfkXEtguTTN00p_v385HKQ6B/view?usp=sharing" title="AccreditedSertificate"><strong><img alt="" src="/public/site/images/admin/sertifika_akreditasi_sinta_5_jisicom_uk20.jpg"/></strong></a></p>
+</div>
+</div><div class="pkp_block block_custom" id="customblock-detail">
+<div class="content">
+<table border="3" cellpadding="10" cellspacing="3" style="height: 121px; border-color: #ffffff;" width="100%">
+<tbody>
+<tr style="background-color: #1c498d;">
+<td style="border-color: #ffffff; vertical-align: middle; text-align: center;"><strong><span style="color: #ffffff;"> .:: Journal Detail ::.</span></strong></td>
+</tr>
+<tr style="background-color: #7eaef9; text-align: center;">
+<td style="border-color: #ffffff; vertical-align: middle; text-align: center;"><span style="color: #ffffff;"><a href="http://journal.stmikjayakarta.ac.id/index.php/jisicom/publication" style="color: #ffffff;">Publication Frequency</a></span></td>
+</tr>
+<tr style="background-color: #7eaef9; text-align: center;">
+<td style="border-color: #ffffff; vertical-align: middle; text-align: center;"><span style="color: #ffffff;"> <a href="http://journal.stmikjayakarta.ac.id/index.php/jisicom/openaccess" style="color: #ffffff;">Open Access Policy</a></span></td>
+</tr>
+<tr style="background-color: #7eaef9; text-align: center;">
+<td style="border-color: #ffffff; vertical-align: middle; text-align: center;"><span style="color: #ffffff;"><a href="http://journal.stmikjayakarta.ac.id/index.php/jisicom/Scope" style="color: #ffffff;">Focus and Scope</a></span></td>
+</tr>
+<tr style="background-color: #7eaef9; text-align: center;">
+<td style="border-color: #ffffff; vertical-align: middle; text-align: center;"><span style="color: #ffffff;"><a href="http://journal.stmikjayakarta.ac.id/index.php/jisicom/about/submissions" style="color: #ffffff;">Online Submissions </a></span></td>
+</tr>
+<tr style="background-color: #7eaef9; text-align: center;">
+<td style="border-color: #ffffff; vertical-align: middle; text-align: center;"><span style="color: #ffffff;"><a href="http://journal.stmikjayakarta.ac.id/index.php/jisicom/Panduan-Penulisan" style="color: #ffffff;">Author Guidelines </a></span></td>
+</tr>
+<tr style="background-color: #7eaef9; text-align: center;">
+<td style="border-color: #ffffff; vertical-align: middle; text-align: center;"><span style="color: #ffffff;"><a href="http://journal.stmikjayakarta.ac.id/index.php/jisicom/review" style="color: #ffffff;">Review Guidelines </a></span></td>
+</tr>
+<tr style="background-color: #7eaef9; text-align: center;">
+<td style="border-color: #ffffff; vertical-align: middle; text-align: center;"><span style="color: #ffffff;"><a href="http://journal.stmikjayakarta.ac.id/index.php/jisicom/Peer-Reviewer" style="color: #ffffff;">Peer Reviewer</a></span></td>
+</tr>
+<tr style="background-color: #7eaef9; text-align: center;">
+<td style="border-color: #ffffff; vertical-align: middle; text-align: center;"><span style="color: #ffffff;"><a href="http://journal.stmikjayakarta.ac.id/index.php/jisicom/ethics" style="color: #ffffff;">Publication Ethics</a></span></td>
+</tr>
+<tr style="background-color: #7eaef9;">
+<td style="border-color: #ffffff; vertical-align: middle; text-align: center;"><a href="http://journal.stmikjayakarta.ac.id/index.php/jisicom/fees" title="Publication Fees"><span style="color: #ffffff;"> Publication Fees</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><div class="pkp_block block_custom" id="customblock-CallforPaper">
+<div class="content">
+<center>
+<table style="height: 411px;" width="440">
+<tbody>
+<tr>
+<td width="311">
+<h2>Published 2 times a year: June &amp; December</h2>
+<h1><strong>CALL FOR PAPERS </strong></h1>
+<h2><strong>(English or Indonesian Journal</strong><strong> Manuscript</strong><strong>)</strong></h2>
+</td>
+</tr>
+<tr>
+<td width="311">
+<p><strong>Vol. 8 No.1 (2024) Published, June 2024 (Closed Submission)</strong></p>
+</td>
+</tr>
+<tr>
+<td width="311">
+<p><strong>Vol. 8 No.2 (2024) Published, December 2024 (Open Submission)</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2><strong>REFERENCES &amp; TOOLS</strong></h2>
+<p><img alt="" src="/public/site/images/verdiyasin/JISICOM_references_standard_150pxl.jpg"/></p>
+<p><a href="https://www.mendeley.com/%20" title="MENDELEY"><img alt="" src="http://journal.stmikjayakarta.ac.id/public/site/images/verdiyasin/1200px-Mendeley_Logo_Vertical_150pxl.png"/></a></p>
+<center></center></center>
+</div>
+</div><div class="pkp_block block_custom" id="customblock-ArticleTemplate">
+<div class="content">
+<p>Please download the JISICOM Journal template below!</p>
+<p><a href="https://drive.google.com/file/d/1HZz2a4D2crxT_Fcx426Sq7QBdjNFKOOf/view?usp=sharing" target="_blank" title="Tempalte JISICOM DOI"><img alt="" src="/public/site/images/admin/artikel-template1.png"/></a></p>
+</div>
+</div><div class="pkp_block block_custom" id="customblock-IndexJurnal">
+<div class="content">
+<h2 style="text-align: center;"><strong>Journal Indexed By:</strong></h2>
+<p style="text-align: center;"><strong>DOI Prefix: <a href="https://doi.org/10.52362">10.52362</a></strong></p>
+<p style="text-align: center;"><a href="https://search.crossref.org/?q=jisicom&amp;from_ui=yes" title="DOI Indexed by Crossref"><strong><img alt="" src="/public/site/images/verdiyasin/doi_crossref_uk501.png"/></strong></a></p>
+<p style="text-align: center;"><a href="https://onesearch.id/Repositories/Repository?library_id=3377" title="IOS Repository Library"><img alt="" src="/public/site/images/verdiyasin/IOS_PERPUSNAS_RI_uk15.png"/></a></p>
+<table style="height: 510px; margin-left: auto; margin-right: auto;" width="254">
+<tbody>
+<tr style="text-align: center;">
+<td style="width: 78px;"><a href="https://scholar.google.com/citations?user=nqD8Y64AAAAJ&amp;hl=en" rel="noopener" target="_blank" title="Garuda"><img alt="" src="/public/site/images/admin/Logo-Google_Scholar1.jpg"/></a></td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 78px;"><a href="http://garuda.kemdikbud.go.id/journal/view/15111" rel="noopener" target="_blank" title="Garuda"><img alt="" src="/public/site/images/admin/logo-garuda21.png"/></a></td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 78px;"><a href="http://www.issn.lipi.go.id/issn.cgi?daftar&amp;1478855574&amp;1001&amp;&amp;2016" rel="noopener" target="_blank" title="LIPI"><img alt="" src="/public/site/images/admin/logo-lipi2.jpg"/></a></td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 78px;"><a href="https://index.pkp.sfu.ca/index.php/browse/index/7199" rel="noopener" target="_blank" title="PKP Index"><img alt="" height="64" src="/public/site/images/admin/pkp-index.png" width="268"/></a></td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 78px;"><a href="https://onesearch.id/Search/Results?filter[]=repoId:IOS13518" rel="noopener" target="_blank" title="IOS"><img alt="" height="53" src="/public/site/images/admin/ios.png" width="271"/></a></td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 78px;">
+<p><a href="http://journal.stmikjayakarta.ac.id/index.php/jisicom/oai?verb=ListRecords&amp;amp;metadataPrefix=oai_dc" rel="noopener" target="_blank" title="OAI"><img alt="" height="68" src="/public/site/images/admin/openaccess.png" width="270"/></a></p>
+<p> <a href="https://journals.indexcopernicus.com/search/details?id=70000" title="ICI"><img alt="" src="/public/site/images/verdiyasin/ici2_uk15.png"/></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>                                                                             <a href="https://paperity.org/journal/511378/jisicom-journal-of-information-system-infomatics-and-computing" title="Indexed by Paperity of JISICOM"><img alt="" src="/public/site/images/verdiyasin/Logo_Paperity-1-uk200_pxl1.jpg"/></a></p>
+<p> </p>
+</div>
+</div><div class="pkp_block block_custom" id="customblock-Statistik">
+<div class="content">
+<table border="3" cellpadding="10" cellspacing="3" style="height: 121px; border-color: #ffffff;" width="100%">
+<tbody>
+<tr style="background-color: #1c498d;">
+<td style="border-color: #ffffff; vertical-align: middle; text-align: center;"><strong><span style="color: #ffffff;"> .:: Statistik ::.</span></strong></td>
+</tr>
+<tr style="background-color: #ffffff; text-align: center;">
+<td style="border-color: #ffffff; vertical-align: middle;"><!-- Default Statcounter code for Jisicom
+http://journal.stmikjayakarta.ac.id/index.php/jisicom -->
+<script type="text/javascript">// <![CDATA[
+var sc_project=12158257; 
+var sc_invisible=0; 
+var sc_security="4c47f883"; 
+var sc_https=1; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+// ]]></script>
+<noscript><div class="statcounter"><a href="https://statcounter.com/" target="_blank" title="Web Analytics Made Easy -
+StatCounter"><img alt="Web Analytics Made Easy - StatCounter" class="statcounter" src="https://c.statcounter.com/12158257/0/4c47f883/0/"/></a></div></noscript><!-- End of Statcounter Code -->
+<p> <img alt="" src="/public/site/images/admin/logo-statcounter.gif"/></p>
+<a href="https://statcounter.com/p12158257/?guest=1">View My Stats</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><div class="pkp_block block_custom" id="customblock-Barcode">
+<div class="content">
+<table border="3" cellpadding="10" cellspacing="3" style="height: 121px; border-color: #ffffff;" width="100%">
+<tbody>
+<tr style="background-color: #1c498d;">
+<td style="border-color: #ffffff; vertical-align: middle; text-align: center;">
+<p><strong><span style="color: #ffffff;"> .:: ISSN ::.</span></strong></p>
+<p><strong><span style="color: #ffffff;">e-ISSN: 2597-3673 (online)</span></strong></p>
+<p><strong><span style="color: #ffffff;">p-ISSN: 2579-5201 (Print)</span></strong></p>
+</td>
+</tr>
+<tr style="background-color: #ffffff; text-align: center;">
+<td style="border-color: #ffffff; vertical-align: middle;">
+<p><a href="http://issn.pdii.lipi.go.id/issn.cgi?daftar&amp;1478858849&amp;1&amp;&amp;" title="ISSN : 2597-3673 (Online)"><img alt="" src="/public/site/images/verdiyasin/ISSN_2597-3673_(Online).png"/></a></p>
+<p><a href="http://issn.pdii.lipi.go.id/issn.cgi?daftar&amp;1478855574&amp;1&amp;&amp;" title="ISSN : 2579-5201 (Print)"><img alt="" src="/public/site/images/verdiyasin/ISSN_2579-5201_(Print).png"/></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><div class="pkp_block block_information">
+<span class="title">Information</span>
+<div class="content">
+<ul>
+<li>
+<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/information/readers">
+						For Readers
+					</a>
+</li>
+<li>
+<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/information/authors">
+						For Authors
+					</a>
+</li>
+<li>
+<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/information/librarians">
+						For Librarians
+					</a>
+</li>
+</ul>
+</div>
+</div>
+</div><!-- pkp_sidebar.left -->
+</div><!-- pkp_structure_content -->
+<div class="pkp_structure_footer_wrapper" id="pkp_content_footer" role="contentinfo">
+<div class="pkp_structure_footer">
+<div class="pkp_footer_content">
+<p><a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png" style="border-width: 0;"/></a><br/><strong>JISICOM</strong> This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International License</a>.</p>
+<p>Publisher: Sekolah Tinggi Manajemen Informatika dan Komputer Jayakarta<br/>Website Jurnal : <a href="http://journal.stmikjayakarta.ac.id/index.php/jisicom/" rel="noopener" target="_blank">journal.stmikjayakarta.ac.id/index.php/jisicom</a> - Email : jisicom2017@gmail.com  <strong>or</strong> jisicom@jayakarta.ac.id<br/>JISICOM (Journal of Information System, Informatics and Computing), <a href="http://issn.pdii.lipi.go.id/issn.cgi?daftar&amp;1478858849&amp;1&amp;&amp;">e-</a><a href="http://issn.pdii.lipi.go.id/issn.cgi?daftar&amp;1478858849&amp;1&amp;&amp;">ISSN: 2597-3673</a>  (Online), <a href="http://issn.pdii.lipi.go.id/issn.cgi?daftar&amp;1478855574&amp;1&amp;&amp;">p-</a><a href="http://issn.pdii.lipi.go.id/issn.cgi?daftar&amp;1478855574&amp;1&amp;&amp;">ISSN: 2579-5201</a> (Print).</p>
+</div>
+<div aria-label="About this Publishing System" class="pkp_brand_footer" role="complementary">
+<a href="https://journal.stmikjayakarta.ac.id/index.php/jisicom/about/aboutThisPublishingSystem">
+<img alt="Open Journal Systems" src="https://journal.stmikjayakarta.ac.id/templates/images/ojs_brand.png"/>
+</a>
+<a href="http://pkp.sfu.ca/ojs">
+<img alt="Public Knowledge Project" src="https://journal.stmikjayakarta.ac.id/lib/pkp/templates/images/pkp_brand.png"/>
+</a>
+</div>
+</div>
+</div><!-- pkp_structure_footer_wrapper -->
+</div><!-- pkp_structure_page -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js" type="text/javascript"></script><script src="https://journal.stmikjayakarta.ac.id/lib/pkp/js/lib/jquery/plugins/jquery.tag-it.js" type="text/javascript"></script><script src="https://journal.stmikjayakarta.ac.id/plugins/themes/default/js/main.js" type="text/javascript"></script><script src="https://journal.stmikjayakarta.ac.id/js/plugins/citationFormats.js" type="text/javascript"></script><script type="text/javascript">var pkpUsageStats = pkpUsageStats || {};pkpUsageStats.data = pkpUsageStats.data || {};pkpUsageStats.data.PublishedArticle = pkpUsageStats.data.PublishedArticle || {};pkpUsageStats.data.PublishedArticle[375] = {"data":{"2021":{"1":0,"2":0,"3":0,"4":0,"5":0,"6":9,"7":12,"8":19,"9":25,"10":26,"11":34,"12":4},"2022":{"1":20,"2":5,"3":32,"4":31,"5":14,"6":24,"7":14,"8":18,"9":27,"10":52,"11":45,"12":37},"2023":{"1":21,"2":25,"3":40,"4":12,"5":35,"6":34,"7":35,"8":9,"9":19,"10":24,"11":29,"12":15},"2024":{"1":14,"2":16,"3":37,"4":20,"5":50,"6":44,"7":22,"8":16,"9":31,"10":37,"11":22,"12":30},"2025":{"1":20,"2":11,"3":16,"4":20,"5":12,"6":0,"7":0,"8":0,"9":0,"10":0,"11":0,"12":0}},"label":"All Downloads","color":"79,181,217","total":1164};</script><script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.0.1/Chart.js" type="text/javascript"></script><script type="text/javascript">var pkpUsageStats = pkpUsageStats || {};pkpUsageStats.locale = pkpUsageStats.locale || {};pkpUsageStats.locale.months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];pkpUsageStats.config = pkpUsageStats.config || {};pkpUsageStats.config.chartType = "line";</script><script src="https://journal.stmikjayakarta.ac.id/lib/pkp/plugins/generic/usageStats/js/UsageStatsFrontendHandler.js" type="text/javascript"></script><script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'user=nqD8Y64AAAAJ&hl=id', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+</html>
